@@ -1,0 +1,61 @@
+.in-progress {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-progress__img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -5;
+}
+
+.in-progress__container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 5%;
+}
+
+.in-progress__container-text {
+    color: #383838;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-shadow:
+        1px 1px 0 #ccc,
+        2px 2px 0 #c9c9c9,
+        3px 3px 0 #bbb,
+        4px 4px 0 #b9b9b9,
+        5px 5px 0 #aaa,
+        6px 6px 1px rgba(0, 0, 0, 0.1),
+        1px 1px 3px rgba(0, 0, 0, 0.3),
+        3px 3px 5px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.25),
+        10px 10px 10px rgba(0, 0, 0, 0.2),
+        20px 20px 20px rgba(0, 0, 0, 0.15);
+
+
+    /* 8px -8px #cfcece, */
+    /* 9px -9px #cfcece, */
+    /* 10px -10px #cfcece,
+        11px -11px #cfcece,
+        12px -12px #cfcece,
+        13px -13px #cfcece, */
+    ;
+}
+
+
+
+.in-progress__container-emoji {
+    font-size: 5rem;
+}
