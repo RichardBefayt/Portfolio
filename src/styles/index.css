@@ -1,7 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root {
+	--firstColor: #fff;
+	--secondColor: #f8d90f;
+}
+
 body {
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
-	background-color: #ecf0f3;
+	background-color: #202020;
+}
+
+/* Pour tous les titres, paragraphes et liens */
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	color: var(--firstColor);
+	text-decoration: none;
+}
+
+/* Pour toutes les listes (non ordonnées) */
+ul {
+	list-style: none;
+}
+
+/* Pour tous les boutons de classe .btn */
+.btn {
+	cursor: pointer;
+	padding: 12px 32px;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #222;
+	background: var(--secondColor);
+	border: 1px solid var(--firstColor);
+}
+
+/* Pour les boutons de classe .btn-light */
+.btn-light {
+	background: transparent;
+	color: var(--firstColor);
+}
+
+/* Au survol des boutons */
+.btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+	color: var(--firstColor);
+	transition: 0.3s;
 }

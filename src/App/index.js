@@ -9,7 +9,7 @@ import Contact from '../pages/Contact';
 
 // Composants
 import InProgress from '../components/InProgress';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 import "./app.css";
 
@@ -25,7 +25,7 @@ const App = () => {
                 
 				<Route path='/en-construction' element={<InProgress />} />
 			</Routes>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
