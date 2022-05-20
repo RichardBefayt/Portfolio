@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import './presentation.css';
 
+
 import background from "../../assets/images/background.jpg";
 
 const Presentation = () => (
@@ -9,7 +10,7 @@ const Presentation = () => (
         <div className='background'>
             <img className='background-img' src={background} alt="Fond d'écran" />
         </div>
-
+        
         <div className='content'>
             <h2 className='title'>Richard Befayt</h2>
             <h3 className='subtitle'>Développeur Web Front-End</h3>
