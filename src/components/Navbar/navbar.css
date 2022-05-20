@@ -32,6 +32,7 @@
         left: -100%;
         background: #202020f1;
         z-index: -3;
+        transition: 0.3s;
     }
 
     .navbar-menu.active {

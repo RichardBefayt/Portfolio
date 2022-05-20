@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             {/* Ternaire : au click j'affiche la classe active, sinon la classe de base */}
-            <ul className={click ? "navbar-menu.active" : "navbar-menu"}>
+            <ul className={click ? "navbar-menu active" : "navbar-menu"}>
                 <li>
                     <Link to="/">Accueil</Link>
                 </li>
