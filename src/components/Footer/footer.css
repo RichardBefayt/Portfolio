@@ -1,0 +1,55 @@
+.footer {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #000;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 0.5rem;
+    }
+
+    .location,
+    .phone,
+    .email {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2rem;
+    }
+}

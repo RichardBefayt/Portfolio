@@ -8,14 +8,17 @@ import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 
 // Composants
+import Navbar from "../components/Navbar";
 import InProgress from '../components/InProgress';
-// import Footer from '../components/Footer';
+import Footer from "../components/Footer";
+
 
 import "./app.css";
 
 const App = () => {
     return (
         <div className="app">
+            <Navbar />
 
             <Routes>
 				<Route path='/' element={<Home />} />
@@ -25,7 +28,8 @@ const App = () => {
                 
 				<Route path='/en-construction' element={<InProgress />} />
 			</Routes>
-            {/* <Footer /> */}
+
+            <Footer />
         </div>
     )
 }

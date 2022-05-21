@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import './navbar.css';
 
-// Icône hamburger de la librairie react-icons, de la catégorie "fa"
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -28,7 +27,6 @@ const Navbar = () => {
                 <h1 className="header-title">Portfolio</h1>
             </Link>
 
-                {/* Ternaire : au click j'affiche la classe active, sinon la classe de base */}
                 <ul className={click ? "navbar-menu active" : "navbar-menu"}>
                     <li>
                         <Link to="/">Accueil</Link>
@@ -46,7 +44,17 @@ const Navbar = () => {
 
                 <div className='navbar-hamburger' onClick={handleClick}>
                     {/* Ternaire : au click j'affiche la croix pour fermer, sinon j'affiche l'icône hamburger */}
-                    {click ? (<FaTimes size={20} style={{color: "#fff"}} />): (<FaBars size={20} style={{color: "#fff"}} />)}
+                    {click ? (
+                        <FaTimes
+                            size={20}
+                            style={{color: "#fff"}}
+                        />
+                    ) : (
+                        <FaBars
+                            size={20}
+                            style={{color: "#fff"}}
+                        />
+                    )}
                 </div>
         </div>
     );
