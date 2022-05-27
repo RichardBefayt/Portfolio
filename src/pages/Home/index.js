@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import background from "../../assets/images/background.jpg";
 
 import './home.css';
@@ -14,8 +14,8 @@ const Home = () => (
             <h3 className='subtitle'>Développeur Web Front-End</h3>
             
             <div className='buttons'>
-                <Link to='/projets' className='btn'>Projets</Link>
-                <Link to='/contact' className='btn btn-light'>Contact</Link>
+                <NavLink to='/projets' className='btn'>Projets</NavLink>
+                <NavLink to='/contact' className='btn btn-light'>Contact</NavLink>
             </div>
         </div>
     </div>

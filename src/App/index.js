@@ -9,9 +9,10 @@ import Contact from '../pages/Contact';
 
 // Composants
 import Navbar from "../components/Navbar";
+import WebSites from '../components/WebSites';
+
 import InProgress from '../components/InProgress';
 import Footer from "../components/Footer";
-
 
 import "./app.css";
 
@@ -22,8 +23,13 @@ const App = () => {
 
             <Routes>
 				<Route path='/' element={<Home />} />
+
 				<Route path='/a-propos' element={<About />} />
+
 				<Route path='/projets' element={<Projects />} />
+				<Route path='/projets/:slug' element={<WebSites />} />
+
+
 				<Route path='/contact' element={<Contact />} />
                 
 				<Route path='/en-construction' element={<InProgress />} />

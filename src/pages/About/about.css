@@ -1,0 +1,49 @@
+.about,
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 80%;
+    height: 50%;
+    border: 1px solid var(--firstColor);
+}
+
+.informations,
+.formations,
+.personal {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid var(--firstColor);
+    background: var(--secondColor);
+    transition: 0.3s ease-in-out;
+}
+
+.informations:hover,
+.formations:hover,
+.personal:hover {
+    transform: scale(1.01, 1.01);
+}
+
+.informations.active,
+.formations.active,
+.personal.active {
+    color: var(--firstColor);
+    background: transparent;
+}
+
+.informations-title,
+.formations-title,
+.personal-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.informations-contact,
+.informations-presentation {
+    font-size: 1rem;
+    color: black;
+}

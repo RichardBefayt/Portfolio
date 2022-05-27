@@ -1,14 +1,10 @@
 .projects {
-    overflow: hidden;
-}
-
-.projects-background {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.projects-background::before {
+.projects::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -30,7 +26,34 @@
 .projects-heading {
     position: absolute;
     text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects-heading h2 {
+    font-size: 3rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.projects-container {
+    position: absolute;
+    width: 550px;
+    height: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .projects-heading h2 {
+        font-size: 2rem;
+    }
+
+    .projects-heading p {
+        font-size: 1rem;
+    }
 }
