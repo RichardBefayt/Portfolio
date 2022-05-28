@@ -6,6 +6,7 @@
     height: 90px;
     padding: 1rem;
     z-index: 10;
+    color: var(--firstColor);
 }
 
 .header-bg {

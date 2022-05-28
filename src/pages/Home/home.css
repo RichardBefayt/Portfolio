@@ -1,5 +1,6 @@
 .home {
     overflow: hidden;
+    color: var(--firstColor);
 }
 
 .background {
@@ -23,7 +24,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: var(--thirdColor);
     opacity: 0.7;
 }
 

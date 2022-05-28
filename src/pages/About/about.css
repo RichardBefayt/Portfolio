@@ -9,6 +9,11 @@
     width: 80%;
     height: 50%;
     border: 1px solid var(--firstColor);
+    box-shadow: rgba(248, 248, 248, 0.24) 0px 3px 6px;
+}
+
+.about-right {
+    color: var(--thirdColor);
 }
 
 .informations,
@@ -24,26 +29,23 @@
 .informations:hover,
 .formations:hover,
 .personal:hover {
+    cursor: pointer;
     transform: scale(1.01, 1.01);
 }
 
-.informations.active,
-.formations.active,
-.personal.active {
+.active {
     color: var(--firstColor);
     background: transparent;
 }
 
+
 .informations-title,
 .formations-title,
 .personal-title {
-    color: black;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.informations-contact,
-.informations-presentation {
-    font-size: 1rem;
-    color: black;
+.personal-item {
+    margin: 15px;
 }

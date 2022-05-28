@@ -3,6 +3,7 @@
 :root {
 	--firstColor: #fff;
 	--secondColor: #f8d90f;
+	--thirdColor: #000;
 }
 
 body {
@@ -10,14 +11,8 @@ body {
 	background-color: #202020;
 }
 
-/* Pour tous les titres, paragraphes et liens */
-h1,
-h2,
-h3,
-h4,
-p,
+/* Pour tous les liens */
 a {
-	color: var(--firstColor);
 	text-decoration: none;
 }
 
