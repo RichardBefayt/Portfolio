@@ -2,7 +2,7 @@
 export default [
     {
         id: 1,
-        entitled: 'Cinéma',
+        entitled: '📽️ Cinéma',
         subtitle: 'Formation audiovisuelle, section réalisation - EICAR',
         duration: '2003 - 2006',
         description: "Au sein de l'école, nous avons appris de nombreux métiers et techniques du cinéma orientés vers la réalisation de courts et longs métrages",
@@ -12,7 +12,7 @@ export default [
     },
     {
         id: 2,
-        title: 'Sapeur-Pompier Volontaire',
+        entitled: '🧯 Sapeur-Pompier Volontaire',
         subtitle: 'Formation Initiale - SDIS95',
         duration: 'oct 2007 - fev 2008',
         description: "Durant 3 mois, j'ai suivi la formation de base de sapeur-pompier volontaire : secourisme, incendie et interventions diverses",
@@ -22,7 +22,7 @@ export default [
     },
     {
         id: 3,
-        title: 'Coach Professionnel',
+        entitled: '👨‍💼 Coach Professionnel',
         subtitle: 'Formation Initiale - École Supérieure de Coaching',
         duration: 'oct 2013 - avril 2014',
         description: "Durant 3 mois, j'ai suivi la formation de base de sapeur-pompier volontaire : secourisme, incendie et interventions diverses",
@@ -32,7 +32,7 @@ export default [
     },
     {
         id: 4,
-        title: 'Développeur Web',
+        entitled: '💻 Développeur Web',
         subtitle: "Formation Développeur Web Fullstack - O'clock",
         duration: 'mai 2021 - oct 2022',
         description: "Durant 3 mois nous avons appris les bases des langages : HTML, CSS, JavaScript, NodeJS, SQL... Puis un mois de spécialisation où j'ai choisi le Front avec React. Et enfin, un dernier mois sur la réalisation d'un projet fullstack en équipe.",

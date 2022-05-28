@@ -1,12 +1,16 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import CurriculumItems from "../../components/CurriculumItems";
+import FormationsItems from "../../components/FormationsItems";
 
 import './about.css';
 
 import meImg from '../../assets/images/apropos-img.jpg';
+
+import { CgGames } from "react-icons/cg";
+import { MdDirectionsBike, MdHistoryEdu } from "react-icons/md";
+import { FaUserAstronaut } from "react-icons/fa";
+import { SiYourtraveldottv } from "react-icons/si";
 
 const About = () => {
     const curriculums = useSelector((state) => state.curriculum.data);
@@ -44,7 +48,7 @@ const About = () => {
                     <div className='formations-container'>
                 {
                     curriculums.map(
-                        (curriculum) => <CurriculumItems key={curriculum.id} {...curriculum}
+                        (curriculum) => <FormationsItems key={curriculum.id} {...curriculum}
                     />
                 )}
             </div>
@@ -57,14 +61,30 @@ const About = () => {
                     <h2 className="personal-title">Loisirs et Passions</h2>
                     
                     <ul className='personal-list'>
-                        <li className='personal-item'>Jeux Vidéo</li>
-                        <li className='personal-item'>Moto</li>
-                        <li className='personal-item'>Astronomie</li>
-                        <li className='personal-item'>Histoire</li>
-                        <li className='personal-item'>Voyages</li>
-                        <li className='personal-item'>Airsoft</li>
+                        <li className='personal-item'>
+                            <CgGames size={30} style={{color: "#000", marginRight: "0.6rem" }} />
+                            Jeux Vidéo
+                        </li>
+
+                        <li className='personal-item'>
+                            <MdDirectionsBike size={30} style={{color: "#000", marginRight: "0.6rem" }} />
+                            Moto
+                        </li>
+                        <li className='personal-item'>
+                            <SiYourtraveldottv size={30} style={{color: "#000", marginRight: "0.6rem" }} />
+                            Voyages
+                        </li>
+                        <li className='personal-item'>
+                            <FaUserAstronaut size={30} style={{color: "#000", marginRight: "0.6rem" }} />
+                            Astronomie
+                        </li>
+                        <li className='personal-item'>
+                            <MdHistoryEdu size={30} style={{color: "#000", marginRight: "0.6rem" }} />
+                            Histoire
+                        </li>
                     </ul>
                 </section>
+                
             </div>
         </div>
     );

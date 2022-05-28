@@ -1,0 +1,19 @@
+.formations-items>* {
+    margin-bottom: 20px;
+}
+
+.formations-entitled {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.formations-description,
+.formations-experience {
+    line-height: 1.5rem;
+}
+
+.formations-experience {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--thirdColor);
+}

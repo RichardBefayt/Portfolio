@@ -38,6 +38,10 @@
     background: transparent;
 }
 
+.informations>*,
+.formations-container>* {
+    margin: 10px;
+}
 
 .informations-title,
 .formations-title,
@@ -47,5 +51,7 @@
 }
 
 .personal-item {
-    margin: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
 }
