@@ -7,13 +7,12 @@ export const initialState = {
 };
 
 const reducer = (state = initialState, action = {}) => {
-    // console.log("reducer curriculumData", state);
-    switch (action.type) {
+    switch (action.type) {   
         case "TOGGLE_SETTINGS":
             return {
                 ...state,
-                isClick: !state.isClick,
                 open: !state.open,
+                isClick: !state.isClick,
             }
         default:
             return state;

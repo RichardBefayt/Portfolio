@@ -1,9 +1,10 @@
 .footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 1.5rem 0;
     color: var(--firstColor);
     background-color: var(--thirdColor);
-    bottom: 0;
 }
 
 .footer-container {
