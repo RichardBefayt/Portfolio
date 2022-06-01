@@ -1,21 +1,21 @@
-.web-sites {
+.websites {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: var(--firstColor);
 }
 
-.web-sites__img {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+.websites-img__container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
     z-index: -5;
     filter: blur(2px);
 }
 
-.web-sites__title {
+.websites-title {
     text-align: center;
 }

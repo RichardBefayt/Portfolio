@@ -1,15 +1,16 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
+// Composants
+import Navbar from "../components/Navbar";
+
 // Pages
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
-
-// Composants
-import Navbar from "../components/Navbar";
-import WebSites from '../components/WebSites';
+import WebSites from '../pages/WebSites';
+import Games from '../pages/Games';
 
 import InProgress from '../components/InProgress';
 import Footer from "../components/Footer";
@@ -27,7 +28,8 @@ const App = () => {
 				<Route path='/a-propos' element={<About />} />
 
 				<Route path='/projets' element={<Projects />} />
-				<Route path='/projets/:slug' element={<WebSites />} />
+				<Route path='/projets/sites-web' element={<WebSites />} />
+				<Route path='/projets/jeux' element={<Games />} />
 
 
 				<Route path='/contact' element={<Contact />} />

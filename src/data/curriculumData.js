@@ -18,7 +18,7 @@ export default [
         description: "Durant 3 mois, j'ai suivi la formation de base de sapeur-pompier volontaire : secourisme, incendie et interventions diverses",
         job: 'Incorporation : CSP Vigny',
         time: '2007 - 2012',
-        experience: "De , j'ai intégré le centre de secours de Vigny pour tout types d'intervention. J'ai eu la chance au sein de cette caserne, en plus d'être intégré à un personnel formidable, de bénéficier de la formation de secours routier."
+        experience: "Après la formation j'ai intégré le centre de secours de Vigny pour tout types d'intervention. J'ai eu la chance au sein de cette caserne, en plus d'être intégré à un personnel formidable, de bénéficier de la formation de secours routier."
     },
     {
         id: 3,

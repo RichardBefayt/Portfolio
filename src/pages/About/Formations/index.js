@@ -5,17 +5,12 @@ import FormationsItems from "./FormationsItems";
 
 import './formations.css';
 
-const Formations = ({ open }) => {
+const Formations = () => {
     const curriculums = useSelector((state) => state.curriculum.data);
 
-    let className = "formations";
-
-	if (open) {
-		className = "formations formations--open";
-	}
-
     return (
-        <div className={className}>
+        <div className="formations">
+            <h2 className="formations-title">Formations et expériences professionnelles</h2>
             <div className='formations-container'>
                 {
                     curriculums.map(

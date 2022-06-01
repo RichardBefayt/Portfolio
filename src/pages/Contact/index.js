@@ -1,8 +1,10 @@
+import Form from './Form';
+
 import './contact.css';
 
 const Contact = () => (
     <div className='contact'>
-        Contact
+        <Form />
     </div>
 );
 

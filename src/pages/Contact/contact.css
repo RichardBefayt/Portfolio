@@ -1,0 +1,8 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 82.1vh;
+    color: var(--firstColor);
+}

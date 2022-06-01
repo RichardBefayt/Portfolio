@@ -1,14 +1,13 @@
-import projectsData from "../data/projectsData";
+import websitesData from "../data/projectsData";
+import gamesData from "../data/projectsData";
 
 export const initialState = {
-    data: projectsData,
+    websitesData,
+    gamesData: gamesData,
+
 };
 
-console.log("initialState", initialState);
-console.log("data", initialState.data);
-
 const reducer = (state = initialState, action = {}) => {
-    console.log("reducer", reducer);
     switch (action.type) {
         default:
             return state;

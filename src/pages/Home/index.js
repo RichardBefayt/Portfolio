@@ -5,15 +5,13 @@ import './home.css';
 
 const Home = () => (
     <div className='home'>
-        <div className='background'>
-            <img className='background-img' src={background} alt="Fond d'écran" />
-        </div>
+        <img className='home-background__img' src={background} alt="Fond d'écran" />
         
-        <div className='content'>
-            <h2 className='title'>Richard Befayt</h2>
-            <h3 className='subtitle'>Développeur Web Front-End</h3>
+        <div className='home-content'>
+            <h2 className='home-title'>Richard Befayt</h2>
+            <h3 className='home-subtitle'>Développeur Web Front-End</h3>
             
-            <div className='buttons'>
+            <div className='home-buttons'>
                 <NavLink to='/projets' className='btn'>Projets</NavLink>
                 <NavLink to='/contact' className='btn btn-light'>Contact</NavLink>
             </div>
