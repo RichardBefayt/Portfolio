@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 import { useSelector } from "react-redux";
 
@@ -13,7 +12,7 @@ const Games = () => {
 
     return (
         <div className='games'>
-            <h2 className="games-title">Sites Web</h2>
+            <h2 className="games-title">Jeux</h2>
             
             <div className='games-img__container'>
                 <img className="games-img" src={backgroundGames} alt="Fond d'écran" />
@@ -30,10 +29,4 @@ const Games = () => {
     );
 };
 
-Games.propTypes = {
-	title: PropTypes.string.isRequired,
-	introduction: PropTypes.string.isRequired,
-	subtitle: PropTypes.string.isRequired,
-	description: PropTypes.string.isRequired,
-}
 export default Games;

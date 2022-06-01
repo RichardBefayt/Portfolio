@@ -1,5 +1,5 @@
-import websitesData from "../data/projectsData";
-import gamesData from "../data/projectsData";
+import websitesData from "../data/websites";
+import gamesData from "../data/games";
 
 export const initialState = {
     websitesData,
