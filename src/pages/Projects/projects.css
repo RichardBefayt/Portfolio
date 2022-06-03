@@ -53,6 +53,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.projectsCard-link:hover {
+    transform: scale(1.1);
 }
 
 .projectsCard-link__title {

@@ -1,4 +1,5 @@
 .websites {
+    margin-top: 5rem;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -10,7 +11,7 @@
 .websites-img__container {
     position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     z-index: -5;
     filter: blur(2px);
 }
@@ -19,5 +20,4 @@
     text-align: center;
     font-size: 2.5rem;
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
 }

@@ -1,4 +1,5 @@
 .header {
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     padding: 1rem;
     z-index: 10;
     color: var(--firstColor);
-    background: transparent;
+    background: #202020f1;
 }
 
 .header-bg {
