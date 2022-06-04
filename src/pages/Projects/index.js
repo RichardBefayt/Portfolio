@@ -17,24 +17,29 @@ const Projects = () => {
                 <img className='projects-img' src={ProjetsImg} alt="Fond d'écran" />
             </div>
             
-            <div className='projects-container'>
             <h2 className="projects-title">Projets en cours</h2>
 
-                <div className="projectsCard-container">
-                    <Link className="projectsCard-link" to="/projets/sites-web">
-                        <h3 className="projectsCard-link__title">Sites Web</h3>
-                        <div className="projectsCard-img__container">
-                            <img className="projectsCard-img" src={WebsitesImg} alt="Image sites web" />
+            <div className='projectsCard-container'>
+
+                <div className="projectsCard__websites-container">
+                    <Link className="projectsCard__websites-link" to="/projets/sites-web">
+                        <h3 className="projectsCard__websites-title">Sites Web</h3>
+
+                        <div className="projectsCard__websites-imgContainer">
+                            <img className="projectsCard__websites-img" src={WebsitesImg} alt="Image sites web" />
                         </div>
+
                     </Link>
                 </div>
                 
-                <div className="projectsCard-container">
-                    <Link className="projectsCard-link" to="/projets/jeux">
-                        <h3 className="projectsCard-link__title">Jeux</h3>
-                        <div className="projectsCard-img__container">
-                            <img className="projectsCard-img" src={GamesImg} alt="Image jeux" />
+                <div className="projectsCard__games-container">
+                    <Link className="projectsCard__games-link" to="/projets/jeux">
+                        <h3 className="projectsCard__games-title">Jeux</h3>
+
+                        <div className="projectsCard__games-imgContainer">
+                            <img className="projectsCard__games-img" src={GamesImg} alt="Image jeux" />
                         </div>
+
                     </Link>
                 </div>
 

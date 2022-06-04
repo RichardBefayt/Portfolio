@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     padding: 1rem;
     z-index: 10;
     color: var(--firstColor);
-    background: #202020f1;
+    background: transparent;
 }
 
 .header-bg {

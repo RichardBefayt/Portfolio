@@ -5,7 +5,9 @@ import './home.css';
 
 const Home = () => (
     <div className='home'>
-        <img className='home-background__img' src={background} alt="Fond d'écran" />
+        <div className='home-background__img-container'>
+            <img className='home-background__img' src={background} alt="Fond d'écran" />
+        </div>
         
         <div className='home-content'>
             <h2 className='home-title'>Richard Befayt</h2>

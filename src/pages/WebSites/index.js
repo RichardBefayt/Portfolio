@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 import WebsiteCard from "./WebsiteCard";
 
-// import backgroundWebsites from "../../assets/images/sites-web.jpg";
+import WebsitesBg from "../../assets/images/websites-bg.jpg";
 
 import './websites.css';
 
@@ -14,9 +14,9 @@ const WebSites = () => {
 
     return (
         <div className='websites'>
-            {/* <div className='websites-img__container'>
-                <img className="websites__img" src={backgroundWebsites} alt="Fond d'écran" />
-            </div> */}
+            <div className='websites-img__container'>
+                <img className="websites-img" src={WebsitesBg} alt="Fond d'écran" />
+            </div>
 
             <h2 className="websites-title">Sites Web</h2>
 

@@ -1,16 +1,11 @@
 .projects {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
     color: var(--firstColor);
 }
 
 .projects-img__container {
-    position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     z-index: -5;
 }
 
@@ -25,29 +20,30 @@
 
 .projects-title {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -80%);
     font-size: 2.5rem;
 }
 
-.projects-container {
-    width: 900px;
-    height: 700px;
+.projectsCard-container {
+    position: absolute;
+    width: 600px;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 2rem;
 }
 
-.projectsCard-container {
-    position: relative;
-    width: 500px;
-    height: 400px;
+.projectsCard__websites-container,
+.projectsCard__games-container {
     margin: 1rem;
 }
 
-.projectsCard-link {
-    position: relative;
+.projectsCard__websites-link,
+.projectsCard__games-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,23 +52,23 @@
     transition: 0.3s ease-in-out;
 }
 
-.projectsCard-link:hover {
+.projectsCard__websites-link:hover,
+.projectsCard__games-link:hover {
     transform: scale(1.1);
 }
 
-.projectsCard-link__title {
+.projectsCard__websites-title,
+.projectsCard__games-title {
+    position: absolute;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.projectsCard-img {
-    position: absolute;
-    width: 70%;
+.projectsCard__websites-img,
+.projectsCard__games-img {
+    width: 100%;
     height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 1px solid var(--firstColor);
     z-index: -4;
 }

@@ -5,7 +5,7 @@ import GameCard from "./GameCard";
 
 import './games.css';
 
-// import backgroundGames from "../../assets/images/jeux.jpg";
+import backgroundGames from "../../assets/images/jeux.jpg";
 
 const Games = () => {
     const games = useSelector((state) => state.projects.gamesData);
@@ -14,9 +14,9 @@ const Games = () => {
         <div className='games'>
             <h2 className="games-title">Jeux</h2>
             
-            {/* <div className='games-img__container'>
+            <div className='games-img__container'>
                 <img className="games-img" src={backgroundGames} alt="Fond d'écran" />
-            </div> */}
+            </div>
 
             <div className='games-container'>
                 {

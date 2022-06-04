@@ -4,6 +4,9 @@ import { Routes, Route } from "react-router-dom";
 // Composants
 import Navbar from "../components/Navbar";
 
+import InProgress from '../components/InProgress';
+import Footer from "../components/Footer";
+
 // Pages
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -12,8 +15,6 @@ import Contact from '../pages/Contact';
 import WebSites from '../pages/WebSites';
 import Games from '../pages/Games';
 
-import InProgress from '../components/InProgress';
-import Footer from "../components/Footer";
 
 import "./app.css";
 

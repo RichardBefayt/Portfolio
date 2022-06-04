@@ -11,7 +11,9 @@ const WebsiteCard = ({ subtitle, slug, thumbnail, description }) => {
         <div className='website-card'>
             <Link to={`/projets/sites-web/${slug}`} className="website-card__link">
                 <h2 className="website-card__subtitle">{subtitle}</h2>
-                <img className='website-card__img' src={thumbnail} alt={subtitle} />
+                <div className="website-card__img-container">
+                    <img className='website-card__img' src={thumbnail} alt={subtitle} />
+                </div>
             </Link>
             <p className="website-card__description">{description}</p>
         </div>
