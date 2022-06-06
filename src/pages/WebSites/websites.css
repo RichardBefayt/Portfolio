@@ -30,6 +30,20 @@
     filter: brightness(40%);
 }
 
+.websites-link {
+    color: #cecece;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    transform: translateX(-60%);
+    font-size: 1rem;
+}
+
+.websites-link:hover {
+    color: var(--firstColor);
+    transition: 0.3s;
+}
+
 .websites-title {
     position: absolute;
     top: 20%;

@@ -30,6 +30,20 @@
     align-items: center;
 }
 
+.games-link {
+    color: #cecece;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    transform: translateX(-60%);
+    font-size: 1rem;
+}
+
+.games-link:hover {
+    color: var(--firstColor);
+    transition: 0.3s;
+}
+
 .games-title {
     position: absolute;
     top: 20%;

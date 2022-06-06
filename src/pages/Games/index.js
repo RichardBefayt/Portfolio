@@ -1,5 +1,6 @@
-
 import { useSelector } from "react-redux";
+
+import { Link } from "react-router-dom";
 
 import GameCard from "./GameCard";
 
@@ -12,6 +13,8 @@ const Games = () => {
 
     return (
         <div className='games'>
+            <Link className="games-link" to="/projets">⬅ Retour</Link>
+
             <h2 className="games-title">Jeux</h2>
             
             <div className='games-img__container'>

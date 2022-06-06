@@ -1,6 +1,6 @@
-
-
 import { useSelector } from "react-redux";
+
+import { Link } from "react-router-dom";
 
 import WebsiteCard from "./WebsiteCard";
 
@@ -18,6 +18,8 @@ const WebSites = () => {
                 <img className="websites-img" src={WebsitesBg} alt="Fond d'écran" />
             </div>
 
+            <Link className="websites-link" to="/projets">⬅ Retour</Link>
+            
             <h2 className="websites-title">Sites Web</h2>
 
             <div className='websites-container'>

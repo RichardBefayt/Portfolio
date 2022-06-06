@@ -38,7 +38,7 @@ const App = () => {
                 
 				<Route path='/en-construction' element={<InProgress />} />
 
-				<Route path='/404' element={<NotFound />} />
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 
             <Footer />
@@ -51,4 +51,5 @@ export default App;
 /** Notes V2 :
  * Animations menu déroulant dans About
  * Focus onglet sur page active
+ * Bordures qui se colorisent lors d'un survol pour chaque Card des projets
 **/ 
