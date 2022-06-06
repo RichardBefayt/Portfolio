@@ -3,9 +3,10 @@ import { Routes, Route } from "react-router-dom";
 
 // Composants
 import Navbar from "../components/Navbar";
-
-import InProgress from '../components/InProgress';
 import Footer from "../components/Footer";
+
+import InProgress from '../pages/InProgress';
+import NotFound from '../pages/NotFound';
 
 // Pages
 import Home from '../pages/Home';
@@ -36,6 +37,8 @@ const App = () => {
 				<Route path='/contact' element={<Contact />} />
                 
 				<Route path='/en-construction' element={<InProgress />} />
+
+				<Route path='/404' element={<NotFound />} />
 			</Routes>
 
             <Footer />
@@ -44,3 +47,8 @@ const App = () => {
 }
 
 export default App;
+
+/** Notes V2 :
+ * Animations menu déroulant dans About
+ * Focus onglet sur page active
+**/ 

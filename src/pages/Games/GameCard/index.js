@@ -7,7 +7,8 @@ import './game-card.css';
 
 const GameCard = ({ subtitle, slug, thumbnail, description }) => (
     <div className='game-card'>
-        <Link to={`/projets/jeux/${slug}`} className="game-card__link">
+        {/* <Link to={`/projets/jeux/${slug}`} className="game-card__link"> */}
+        <Link to='/en-construction' className="game-card__link">
             <h2 className="game-card__subtitle">{subtitle}</h2>
             <div className="game-card__img-container">
                 <img className='game-card__img' src={thumbnail} alt={subtitle} />
@@ -19,7 +20,7 @@ const GameCard = ({ subtitle, slug, thumbnail, description }) => (
 
 GameCard.propTypes = {
 	subtitle: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
+    // slug: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 }

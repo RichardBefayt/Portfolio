@@ -50,4 +50,4 @@ const Projects = () => {
 
 export default Projects;
 
-// Ici on place le ProjectsCard qui contiendra Website et Games
+// Ici on place le ProjectsCard qui contiendra Website et Games.
