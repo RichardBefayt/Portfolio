@@ -6,7 +6,7 @@ export const initialState = {
     open: false,
 };
 
-const reducer = (state = initialState, action = {}) => {
+const curriculumReducer = (state = initialState, action = {}) => {
     switch (action.type) {   
         case "TOGGLE_SETTINGS":
             return {
@@ -19,4 +19,4 @@ const reducer = (state = initialState, action = {}) => {
     }
 };
 
-export default reducer;
+export default curriculumReducer;

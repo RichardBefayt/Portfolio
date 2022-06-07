@@ -7,11 +7,11 @@ export const initialState = {
     gamesData,
 };
 
-const reducer = (state = initialState, action = {}) => {
+const projectsReducer = (state = initialState, action = {}) => {
     switch (action.type) {
         default:
             return state;
     }
 };
 
-export default reducer;
+export default projectsReducer;
