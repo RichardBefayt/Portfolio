@@ -25,6 +25,23 @@ form {
     resize: none;
 }
 
+.btn-submit {
+    cursor: pointer;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222;
+    background: var(--secondColor);
+    border: 1px solid var(--firstColor);
+}
+
+.btn-submit:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--firstColor);
+    transition: 0.3s;
+}
+
 @media screen and (max-width: 700px) {
 
     .form-input,

@@ -1,11 +1,8 @@
-import PropTypes from "prop-types";
-
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import useModal from '../../../hooks/useModal';
-
 import Input from '../../../components/Input';
+import Modal from '../../../components/Modal';
 
 import './form.css';
 
@@ -16,8 +13,6 @@ const Form = () => {
     const [mail, setMail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState(""); 
-    const [sendMessage, setSendMessage] = useState("");
-    const { isShowing, toggle } = useModal();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -38,7 +33,6 @@ const Form = () => {
         )
         .then((response) => {
             console.log('SUCCESS! 😃', response.text);
-            setSendMessage("Votre message a bien été envoyé");
         })
         .catch((error) => {
             console.error('FAILED... 😠', error);
@@ -50,6 +44,9 @@ const Form = () => {
         setSubject("");
         setMessage("");
     }
+
+    // Modal
+    const [openModal, setOpenModal] = useState(false);
 
     return (
         <div className='form'>
@@ -66,7 +63,7 @@ const Form = () => {
                     type='text'
                     value={name}
                     handleChange={setName}
-                ></Input>
+                />
                 
                 <label
                     className='form-label'
@@ -79,7 +76,7 @@ const Form = () => {
                     type='text'
                     value={firme}
                     handleChange={setFirme}
-                ></Input>
+                />
                 
                 <label
                     className='form-label'
@@ -90,7 +87,7 @@ const Form = () => {
                     type='email'
                     value={mail}
                     handleChange={setMail}
-                ></Input>
+                />
                 
                 <label
                     className='form-label'
@@ -101,7 +98,7 @@ const Form = () => {
                     type='text'
                     value={subject}
                     handleChange={setSubject}
-                ></Input>
+                />
                 
                 <label
                     className='form-label'
@@ -116,36 +113,20 @@ const Form = () => {
                     onChange={(event) => setMessage(event.target.value)}
                 />
 
-                <button className='btn' type='submit' handleClick={toggle}>Envoyer</button>
-                
-                {isShowing && 
-                <div className="modal-overlay">
-                    <div className="modal-wrapper">
-                        <div className="modal">
-                            <div className="modal-header">
-                                <p>
-                                    {sendMessage}
-                                </p>
-                                <button
-                                    type="button"
-                                    className="modal-close-button"
-                                    onClick={toggle}
-                                >
-                                    <span style={{fontSize: "3rem"}}>&times;</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                }
+                <button
+                    className='btn-submit'
+                    type='submit'
+                    onClick={() => {
+                        setOpenModal(true);
+                    }}
+                >
+                    Envoyer
+                </button>
+                {openModal && <Modal closeModal={setOpenModal} />}
 
             </form>
         </div>
     );
 };
-
-Form.propTypes = {
-    handleSubmit: PropTypes.func.isRequired,
-}
 
 export default Form;
