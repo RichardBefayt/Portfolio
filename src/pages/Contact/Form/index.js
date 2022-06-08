@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -12,7 +14,7 @@ const Form = () => {
     const [name, setName] = useState("");
     const [firme, setFirme] = useState("");
     const [mail, setMail] = useState("");
-    const [object, setObject] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState(""); 
     const [sendMessage, setSendMessage] = useState("");
     const { isShowing, toggle } = useModal();
@@ -24,7 +26,7 @@ const Form = () => {
             name,
             firme,
             mail,
-            object,
+            subject,
             message,
         }
 
@@ -35,17 +37,17 @@ const Form = () => {
             'TlBEsEGNoSlEv-oLi'
         )
         .then((response) => {
-            console.log('SUCCESS!', response.text);
+            console.log('SUCCESS! 😃', response.text);
             setSendMessage("Votre message a bien été envoyé");
-        }, 
-        (error) => {
-            console.log('FAILED...', error);
+        })
+        .catch((error) => {
+            console.error('FAILED... 😠', error);
         });
         
         setName("");
         setFirme("");
         setMail("");
-        setObject("");
+        setSubject("");
         setMessage("");
     }
 
@@ -93,12 +95,12 @@ const Form = () => {
                 <label
                     className='form-label'
                 >
-                    Objet
+                    Sujet
                 </label>
                 <Input
                     type='text'
-                    value={object}
-                    handleChange={setObject}
+                    value={subject}
+                    handleChange={setSubject}
                 ></Input>
                 
                 <label
@@ -141,5 +143,9 @@ const Form = () => {
         </div>
     );
 };
+
+Form.propTypes = {
+    handleSubmit: PropTypes.func.isRequired,
+}
 
 export default Form;
