@@ -9,16 +9,14 @@
 }
 
 .contact-title {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
     font-size: 3rem;
 }
 
 .contact-introduction {
     font-size: 1.4rem;
-}
-
-.contact-title,
-.contact-introduction {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 1250px) {

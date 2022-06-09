@@ -2,34 +2,25 @@ import './modal.css';
 
 const Modal = ({ closeModal }) => (
     <div className='modal'>
-        <div className='modal-bg'>
-            <div className='modal-container'>
-                <button
-                    className="btn btn-light"
-                    onClick={() => closeModal(false)}
-                >
-                    X
-                </button>
-                
-                <div className='modal-header'>
-                    <h2>Merci !</h2>
-                </div>
-                
-                <div className='modal-body'>
-                    <p>Votre message a bien été envoyé. Je tâcherai de vous répondre dans les plus brefs délais.</p>
-                    <p>À bientôt !</p>
-                </div>
-                
-                <div className='modal-footer'>
-                    <button
-                        className="btn"
-                        onClick={() => closeModal(false)}  
-                    >
-                        Fermer
-                    </button>
-                </div>
-
+        <div className='modal-container'>
+            <div className='modal-header'>
+                <h2>Merci !</h2>
             </div>
+            
+            <div className='modal-body'>
+                <p className='modal-text'>Votre message a bien été envoyé. Je tâcherai de vous répondre dans les plus brefs délais.</p>
+                <p className='modal-text'>À bientôt !</p>
+            </div>
+            
+            <div className='modal-footer'>
+                <button
+                    className="btn"
+                    onClick={() => closeModal(false)}  
+                >
+                    Fermer
+                </button>
+            </div>
+
         </div>
     </div>
 );

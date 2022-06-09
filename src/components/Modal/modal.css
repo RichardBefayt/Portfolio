@@ -1,0 +1,27 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.modal-container {
+    background: rgb(39, 39, 39);
+    border: 1px solid var(--firstColor);
+}
+
+.modal-container>* {
+    margin: 2rem;
+    text-align: center;
+}
+
+.modal-text {
+    margin: 1rem 0;
+}
