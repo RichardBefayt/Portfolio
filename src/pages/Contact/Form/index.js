@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 import Input from '../../../components/Input';
 import Modal from '../../../components/Modal';
@@ -9,41 +9,41 @@ import './form.css';
 
 const Form = () => {
     const form = useRef();
-    // const [name, setName] = useState("");
-    // const [firme, setFirme] = useState("");
-    // const [mail, setMail] = useState("");
-    // const [subject, setSubject] = useState("");
-    // const [message, setMessage] = useState(""); 
+    const [name, setName] = useState("");
+    const [firme, setFirme] = useState("");
+    const [mail, setMail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState(""); 
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
-    //     const templateParams = {
-    //         name,
-    //         firme,
-    //         mail,
-    //         subject,
-    //         message,
-    //     }
+        const templateParams = {
+            name,
+            firme,
+            mail,
+            subject,
+            message,
+        }
 
-    //     emailjs.send(
-    //         'service_e0a29ta',
-    //         'template_mbdey2t',
-    //         templateParams,
-    //         'TlBEsEGNoSlEv-oLi'
-    //     )
-    //     .then((response) => {
-    //         console.log('SUCCESS! 😃', response.text);
-    //     })
-    //     .catch((error) => {
-    //         console.error('FAILED... 😠', error);
-    //     });
+        emailjs.send(
+            'service_e0a29ta',
+            'template_mbdey2t',
+            templateParams,
+            'TlBEsEGNoSlEv-oLi'
+        )
+        .then((response) => {
+            console.log('SUCCESS! 😃', response.text);
+        })
+        .catch((error) => {
+            console.error('FAILED... 😠', error);
+        });
         
-    //     setName("");
-    //     setFirme("");
-    //     setMail("");
-    //     setSubject("");
-    //     setMessage("");
+        setName("");
+        setFirme("");
+        setMail("");
+        setSubject("");
+        setMessage("");
     }
 
     // Modal
@@ -65,8 +65,8 @@ const Form = () => {
                 <Input
                     id='name'
                     type='text'
-                    // value={name}
-                    // handleChange={setName}
+                    value={name}
+                    handleChange={setName}
                 />
                 
                 <label
@@ -78,8 +78,8 @@ const Form = () => {
                 <Input
                     id='firme'
                     type='text'
-                    // value={firme}
-                    // handleChange={setFirme}
+                    value={firme}
+                    handleChange={setFirme}
                 />
                 
                 <label
@@ -89,8 +89,8 @@ const Form = () => {
                 </label>
                 <Input
                     type='email'
-                    // value={mail}
-                    // handleChange={setMail}
+                    value={mail}
+                    handleChange={setMail}
                 />
                 
                 <label
@@ -100,8 +100,8 @@ const Form = () => {
                 </label>
                 <Input
                     type='text'
-                    // value={subject}
-                    // handleChange={setSubject}
+                    value={subject}
+                    handleChange={setSubject}
                 />
                 
                 <label
@@ -113,8 +113,8 @@ const Form = () => {
                     className='form-textarea'
                     rows='6'
                     placeholder='Votre Message'
-                    // value={message}
-                    // onChange={(event) => setMessage(event.target.value)}
+                    value={message}
+                    onChange={(event) => setMessage(event.target.value)}
                 />
 
                 <button

@@ -25,6 +25,7 @@ Pour accéder au visuel, veuillez taper :
 npm start
 ```
 
-### Hébergement Heroku
+### Hébergement Netlify
+
 
 ## Bonne visite et à bientôt
