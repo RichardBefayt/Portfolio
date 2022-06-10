@@ -8,7 +8,7 @@ const Modal = ({ closeModal }) => (
             </div>
             
             <div className='modal-body'>
-                <p className='modal-text'>Votre message a bien été envoyé. Je tâcherai de vous répondre dans les plus brefs délais.</p>
+                <p className='modal-text'>Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.</p>
                 <p className='modal-text'>À bientôt !</p>
             </div>
             
