@@ -9,8 +9,7 @@
 }
 
 .contact-title {
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
+    margin: 5vh 0;
     font-size: 3rem;
 }
 
@@ -20,12 +19,16 @@
 }
 
 @media screen and (max-width: 1250px) {
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
     .contact-introduction {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1040px) {
     .contact-introduction {
         font-size: 1rem;
     }
@@ -40,12 +43,12 @@
 
     .contact-introduction {
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
         margin: 1rem 1rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
 
     .contact-title {
         font-size: 2rem;
@@ -54,7 +57,6 @@
 
     .contact-introduction {
         font-size: 1rem;
-        text-align: center;
         margin: 1rem 1rem;
     }
 }

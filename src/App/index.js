@@ -47,9 +47,3 @@ const App = () => {
 }
 
 export default App;
-
-/** Notes V2 :
- * Animations menu déroulant dans About
- * Focus onglet sur page active
- * Bordures qui se colorisent lors d'un survol pour chaque Card des projets
-**/ 

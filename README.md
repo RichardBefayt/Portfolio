@@ -2,25 +2,27 @@
 
 Bonjour et bienvenue sur mon Portfolio (Version 1).
 
-Actuellement je suis en train de créer différents projets (sites web et jeux). Vous y trouverez une petite présentation sur la page "Projets".
+## Technos utilisées :
+- React
+- Redux
+- CSS
 
-Le Portfolio comprendra lui-même plusieurs versions d'améliorations, telles que :
--
+## Améliorations Portfolio
+Actuellement je suis en train de créer différents projets (sites web et jeux), tout en améliorant le Portfolio lui-même. Voici quelques exemples de modifications qui seront apportées :
 
+### **A propos** :
+- un carrousel présentant les *Loisirs*.
+- Un système d'onglets dans la partie *Formations et Expériences Professionnelles*.
+
+### **Sites Web** et **Jeux** :
+- Une courte vidéo de présentation au survol pour chaque carte.
+
+## Contact
 Pour me contacter, vous pouvez me joindre : 
 - Par mail : ```rbefayt@gmail.com```
 - Par téléphone : ```06.35.02.11.58```
-- Par voie postale : 
-```
-Richard Befayt
-59 avenue Roger Guichard
-95610 Éragny
-```
 - Par le formulaire de contact dans la page "Contact".
 
-Bonne visite et à bientôt.
-
-Richard
 ## Lancement de l'application
 ### Depuis la ligne de commande
 Pour accéder au visuel, veuillez taper :
