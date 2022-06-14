@@ -16,7 +16,7 @@ export default [
         subtitle: 'Restaurant',
         slug: 'restaurant',
         thumbnail: restaurant,
-        description: 'Consultez la carte de notre restaurant, nous ne doutons pas que vous réserverez une table dans les 24h.',
+        description: 'Consultez la carte de notre restaurant, nous ne doutons pas que vous réserviez une table dans les 24h.',
     },
     {
         id: 3,

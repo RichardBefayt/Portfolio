@@ -3,7 +3,7 @@ import './footer.css';
 import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Footer = () => (
-    <div className='footer'>
+    <footer className='footer'>
 
         <div className='footer-container'>
 
@@ -36,7 +36,7 @@ const Footer = () => (
             
         </div>
 
-    </div>
+    </footer>
 );
 
 export default Footer;

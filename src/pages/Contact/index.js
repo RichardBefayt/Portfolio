@@ -6,7 +6,7 @@ const Contact = () => (
     <div className='contact'>
         <h1 className='contact-title'>Contact</h1>
         
-        <p className='contact-introduction'>Pour tout renseignement ou demande de contact, merci de bien vouloir rempli les champs ci-dessous</p>
+        <p className='contact-introduction'>Pour tout renseignement ou demande de contact, merci de bien vouloir remplir les champs ci-dessous</p>
 
         <Form />
     </div>
