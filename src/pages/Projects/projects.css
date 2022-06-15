@@ -78,23 +78,53 @@
     .projects-title {
         top: 13%;
         font-size: 1.5rem;
-        transform: translateX(-38%);
+        transform: translateX(-50%);
     }
 
 
     .projectsCard-container {
-        width: 400px;
-        height: 700px;
-        flex-direction: column;
-        top: 53%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-20%, -50%);
     }
 
 
 
     .projectsCard__websites-imgContainer,
     .projectsCard__games-imgContainer {
-        width: 50%;
-        height: 100%;
+        width: 184px;
+        height: 278px;
     }
 
+}
+
+@media screen and (max-width: 464px) {
+
+    .projects-title {
+        top: 5%;
+        font-size: 1rem;
+    }
+
+    .projectsCard-container {
+        top: 40%;
+        left: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .projectsCard__websites-imgContainer,
+    .projectsCard__games-imgContainer {
+        width: ;
+    } */
+
+}
+
+@media screen and (max-width: 390px) {
+    .projects {}
+
+    .projectsCard-container {
+        width: 70%;
+        height: auto;
+        top: 40%;
+    }
 }

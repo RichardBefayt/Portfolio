@@ -2,12 +2,11 @@
 
 :root {
 	--firstColor: #fff;
-	--secondColor: #3ef80f;
+	--secondColor: #fce300;
 	--thirdColor: #000;
 }
 
 body {
-
 	font-family: 'Poppins', sans-serif;
 	background-color: #202020;
 }

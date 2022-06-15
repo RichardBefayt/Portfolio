@@ -8,8 +8,7 @@ Bonjour et bienvenue sur mon Portfolio (Version 1).
 - CSS
 
 ## Améliorations Portfolio
-Actuellement je suis en train de créer différents projets (sites web et jeux), tout en améliorant le Portfolio lui-même. Voici quelques exemples de modifications qui seront apportées :
-
+Quelques exemples de modifications qui seront apportées :
 ### **A propos** :
 - un carrousel présentant les *Loisirs*.
 - Un système d'onglets dans la partie *Formations et Expériences Professionnelles*.
@@ -31,6 +30,6 @@ npm start
 ```
 
 ### Hébergement Netlify
-https://richardbefayt.netlify.app
+[Portfolio](https://richardbefayt.netlify.app)
 
 ## Bonne visite et à bientôt
