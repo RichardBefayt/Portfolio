@@ -10,17 +10,21 @@
 
 .contact-title {
     margin: 5vh 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .contact-introduction {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 2.5rem;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
+    .contact {
+        margin: 6vh 0;
+    }
+
     .contact-title {
-        font-size: 2.5rem;
+        font-size: 1.5em;
     }
 
     .contact-introduction {

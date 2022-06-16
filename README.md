@@ -1,6 +1,6 @@
 # Bienvenue
 
-Bonjour et bienvenue sur mon Portfolio (Version 1).
+Bonjour et bienvenue sur mon Portfolio (Version 1 en cours).
 
 ## Technos utilisées :
 - React
@@ -10,7 +10,7 @@ Bonjour et bienvenue sur mon Portfolio (Version 1).
 ## Améliorations Portfolio
 Quelques exemples de modifications qui seront apportées :
 ### **A propos** :
-- un carrousel présentant les *Loisirs*.
+- Un carrousel présentant les *Loisirs*.
 - Un système d'onglets dans la partie *Formations et Expériences Professionnelles*.
 
 ### **Sites Web** et **Jeux** :
@@ -20,7 +20,7 @@ Quelques exemples de modifications qui seront apportées :
 Pour me contacter, vous pouvez me joindre : 
 - Par mail : ```rbefayt@gmail.com```
 - Par téléphone : ```06.35.02.11.58```
-- Par le formulaire de contact dans la page "Contact".
+- Par le formulaire de contact dans la page *Contact*.
 
 ## Lancement de l'application
 ### Depuis la ligne de commande
