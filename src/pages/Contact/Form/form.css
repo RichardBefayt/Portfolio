@@ -48,6 +48,9 @@ form {
 
 
 @media screen and (max-width: 1280px) {
+    form {
+        height: 400px;
+    }
 
     .form-input,
     .form-textarea,
@@ -78,11 +81,20 @@ form {
     }
 }
 
-@media screen and (max-width: 351px) {
+@media screen and (max-width: 375px) {
+    .form-label {
+        margin-top: 10px;
+    }
 
     .form-input,
     .form-textarea,
     .btn-submit {
-        width: 200px;
+        width: 250px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .form-textarea {
+        text-align: center;
     }
 }

@@ -79,3 +79,17 @@
         margin: 1rem 1rem;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .contact-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-introduction {
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+}
