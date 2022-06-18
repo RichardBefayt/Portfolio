@@ -12,7 +12,7 @@ const Footer = () => (
             <div className="left box">
                 <h2>A propos</h2>
                 <div className="content">
-                    <p className="description">Bonjour et bienvenue sur mon Portfolio.</p>
+                    <p className="description">Bonjour et bienvenue sur mon Portfolio. Pour ne pas manquer les avancées de mon travail, rendez-vous sur les réseaux sociaux.</p>
                     <div className="social">
                         <NavLink to="#"><FaLinkedin size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
                         <NavLink to="#"><FaTwitter size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
@@ -46,14 +46,14 @@ const Footer = () => (
                     <form action="#">
                         <div className="email">
                             <div className="text">Email *</div>
-                            <input type="email" required />
+                            <input className="right-input" type="email" required />
                         </div>
                         <div className="msg">
                             <div className="text">Message *</div>
                             <textarea rows="2" cols="25" required></textarea>
                         </div>
-                        <div className="btn">
-                            <button type="submit">Send</button>
+                        <div className="btn-content">
+                            <button className="btn" type="submit">Send</button>
                         </div>
                     </form>
                 </div>
