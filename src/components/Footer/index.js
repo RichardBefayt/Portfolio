@@ -1,37 +1,62 @@
+import { NavLink } from "react-router-dom";
+
 import './footer.css';
 
-import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => (
     <footer className='footer'>
 
-        <div className='footer-container'>
-
-            <div className='location'>
-                <FaHome size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
-                <div>
-                    <h4>59 avenue Roger Guichard, 95610 - Éragny</h4>
+        <div className='main-content'>
+            
+            <div className="left box">
+                <h2>A propos</h2>
+                <div className="content">
+                    <p className="description">Bonjour et bienvenue sur mon Portfolio.</p>
+                    <div className="social">
+                        <NavLink to="#"><FaLinkedin size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
+                        <NavLink to="#"><FaTwitter size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
+                        <NavLink to="#"><FaInstagram size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
+                        <NavLink to="#"><FaGithub size={20} style={{color: "#fff", marginRight: "2rem" }} /></NavLink>
+                    </div>
                 </div>
             </div>
 
-            <div className='phone'>
-                <h4>
-                    <FaPhone size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
-                    06.35.02.11.58
-                </h4>
+            <div className="center box">
+                <h2>Adresse</h2>
+                <div className="content">
+                    <div className="place">
+                        <FaHome size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
+                        <span className="text">59 avenue Roger Guichard, 95610 Éragny</span>
+                    </div>
+                    <div className="phone">
+                        <FaPhone size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
+                        <span className="text">06.35.02.11.58</span>
+                    </div>
+                    <div className="place">
+                        <FaMailBulk size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
+                        <span className="text">rbefayt@gmail.com</span>
+                    </div>
+                </div>
             </div>
 
-            <div className='email'>
-                <h4>
-                    <FaMailBulk size={20} style={{color: "#fff", marginRight: "1rem", marginLeft: "2rem" }} />
-                    rbefayt@gmail.com
-                </h4>
-            </div>
-
-            <div className='social'>
-                <FaLinkedin size={20} style={{color: "#fff", marginRight: "2rem" }} />
-                <FaTwitter size={20} style={{color: "#fff", marginRight: "2rem" }} />
-                <FaGithub size={20} style={{color: "#fff", marginRight: "2rem" }} />
+            <div className="right box">
+                <h2>Contact</h2>
+                <div className="content">
+                    <form action="#">
+                        <div className="email">
+                            <div className="text">Email *</div>
+                            <input type="email" required />
+                        </div>
+                        <div className="msg">
+                            <div className="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div className="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             
         </div>

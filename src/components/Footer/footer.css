@@ -1,81 +1,161 @@
-.footer {
-    margin-top: auto;
+footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 1.5rem 0;
+    background: #202020;
     color: var(--firstColor);
-    background-color: var(--thirdColor);
 }
 
-.footer-container {
-    margin: 0 auto;
+.main-content {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.location,
-.phone,
-.email {
-    display: flex;
-    line-height: 25px;
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
 }
 
-h4 {
-    font-size: 1rem;
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #1a1a1a;
+}
+
+.box .content::after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    width: 15%;
+    height: 2px;
+    background: var(--secondColor);
+    top: -10px;
+}
+
+.left .content p {
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #1a1a1a;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: var(--secondColor);
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: var(--secondColor);
+}
+
+.center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: #3498db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    width: 100%;
+    height: 20px;
+    border: none;
+    background: var(--secondColor);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right form .btn button:hover {
+    background: #000;
 }
 
 @media screen and (max-width: 900px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 0.5rem;
+    footer {
+        position: relative;
+        bottom: 0px;
     }
 
-    .location,
-    .phone,
-    .email {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
-    .social {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 2rem;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .footer {
-        font-size: 0.8rem;
-        padding: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 534px) {
-    footer h4 {
-        font-size: 0.7rem;
-        padding: 0.1rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    footer h4 {
-        font-size: 10px;
-    }
-
-    .location,
-    .phone,
-    .email {
-        line-height: 10px;
-        margin-top: 10px;
+    .main-content .box {
+        margin: 5px 0;
     }
 }
