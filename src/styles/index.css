@@ -31,12 +31,14 @@ ul {
 	color: #222;
 	background: var(--secondColor);
 	border: 1px solid var(--firstColor);
+	border-radius: 10px;
 }
 
 /* Pour les boutons de classe .btn-light */
 .btn-light {
 	background: transparent;
 	color: var(--firstColor);
+	border-radius: 10px;
 }
 
 /* Au survol des boutons */

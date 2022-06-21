@@ -20,6 +20,7 @@ form {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
     color: var(--firstColor);
+    border-radius: 10px;
 }
 
 .form-textarea {
@@ -36,6 +37,7 @@ form {
     color: #333;
     background: var(--secondColor);
     border: 1px solid var(--firstColor);
+    border-radius: 10px;
 
 }
 

@@ -32,6 +32,11 @@
 .navbar-menu li a {
     font-size: 1rem;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+    color: var(--secondColor);
 }
 
 .navbar-hamburger {
