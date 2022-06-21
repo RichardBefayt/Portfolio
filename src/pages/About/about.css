@@ -1,9 +1,16 @@
 .about {
-    width: 100%;
-    height: auto;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    margin: 0 30px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .about-title {
@@ -14,11 +21,72 @@
     margin: 1rem 0;
 }
 
-.about-container {
-    display: flex;
+.about-container .tab {
+    position: relative;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.about-left {
+.about-container .tab input {
+    appearance: none;
+}
+
+.about-container .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-container .tab label::after {
+    content: '+';
+    position: absolute;
+    right: 30px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+
+.about-container .tab:hover label::after {
+    color: #fff;
+}
+
+.about-container .tab input:checked~label::after {
+    transform: rotate(135deg);
+}
+
+.about-container .tab label h2 {
+    width: 100%;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.about-container .tab .content {
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.about-container .tab input:checked~.content {
+    max-height: 100vh;
+}
+
+.about-container .tab .content p {
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}
+
+
+/* .about-left {
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -26,7 +94,7 @@
 
 .about-right {
     width: 65%;
-}
+} */
 
 .informations,
 .formations,

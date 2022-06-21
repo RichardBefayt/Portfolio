@@ -1,4 +1,12 @@
+.formations {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .formations-container>* {
+
     margin: 20px;
     text-align: justify;
+    color: #333;
+
 }

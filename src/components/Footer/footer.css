@@ -57,25 +57,32 @@ footer {
     padding: 0 2px;
 }
 
-.left .content .social a span {
+.left .content .social {
+    display: flex;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: #1a1a1a;
     border-radius: 5px;
     transition: 0.3s;
 }
 
-.left .content .social a span:hover {
-    background: var(--secondColor);
+.social-link {
+    width: 20px;
+    height: 20px;
+    margin-right: 2rem;
 }
 
-.center .content .fas {
+.social-link:hover {
+    background: var(--secondColor);
+    border-radius: 5px;
+}
+
+.right .content .fas {
     font-size: 1.4375rem;
     background: #1a1a1a;
-    width: 45px;
-    height: 45px;
+    width: 20px;
+    height: 20px;
     line-height: 45px;
     text-align: center;
     border-radius: 50%;
@@ -83,59 +90,18 @@ footer {
     cursor: pointer;
 }
 
-.center .content .fas:hover {
+.right .content .fas:hover {
     background: var(--secondColor);
 }
 
-.center .content .text {
+.right .content .text {
     font-size: 1.0625rem;
     font-weight: 500;
     padding-left: 10px;
 }
 
-.center .content .phone {
+.right .content .phone {
     margin: 10px 0;
-}
-
-.right form .text {
-    font-size: 1.0625rem;
-    margin-bottom: 2px;
-    color: #656565;
-}
-
-.right form .msg {
-    margin-top: 10px;
-}
-
-.right-input,
-.right form textarea {
-    width: 100%;
-    font-size: 1.0625rem;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222;
-}
-
-.right-input:focus,
-.right form textarea:focus {
-    outline-color: var(--firstColor);
-}
-
-.right-input {
-    height: 35px;
-}
-
-.right form .btn-content {
-    margin-top: 10px;
-}
-
-
-.btn {
-    width: 100%;
-    border: none;
-    background: var(--secondColor);
-    font-weight: 500;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {

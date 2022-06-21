@@ -7,7 +7,6 @@ import meImg from '../../../assets/images/apropos-img.jpg';
 const Informations = () => {
     return (
         <div className="informations">
-            <h2 className="informations-title">Informations</h2>
             <p className='informations-presentation'>Bonjour et bienvenue sur mon Portfolio. Passionné depuis toujours par la création, j'ai débuté ma carrière professionnelle par le cinéma. Aujourd'hui je me reconverti en tant que Développeur Web Front-End.</p>
             <div className='img-container'>
                 <img className='informations-img' src={meImg} alt="Photo de profil" />
