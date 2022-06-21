@@ -26,7 +26,7 @@ const About = () => {
                 <div className='tab'>
                     <input type='radio' name='acc' id='acc2' />
                     <label for='acc2'>
-                        <h2>Formations</h2>
+                        <h2>Formations et Expériences Professionnelles</h2>
                     </label>
                     <div className='content'>
                         <Formations />

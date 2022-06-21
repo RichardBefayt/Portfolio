@@ -1,7 +1,7 @@
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     padding: 4rem 1rem;
     margin: auto;
@@ -13,10 +13,10 @@ form {
 
 .form-input,
 .form-textarea {
-    width: 600px;
+    width: 800px;
     margin-bottom: 1rem;
     padding: 10px 18px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
     color: var(--firstColor);
@@ -28,12 +28,12 @@ form {
 
 .btn-submit {
     cursor: pointer;
-    width: 600px;
+    width: 800px;
     padding: 12px 32px;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #222;
+    color: #333;
     background: var(--secondColor);
     border: 1px solid var(--firstColor);
 

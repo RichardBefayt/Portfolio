@@ -72,6 +72,10 @@
 
 @media screen and (max-width: 534px) {
     .header-title {
-        visibility: hidden;
+        font-size: 1rem;
+    }
+
+    .navbar-hamburger {
+        width: 30%;
     }
 }
