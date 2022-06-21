@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .about-container {
@@ -50,7 +51,7 @@
 }
 
 .about-container .tab:hover label::after {
-    color: #fff;
+    color: var(--secondColor);
 }
 
 .about-container .tab input:checked~label::after {

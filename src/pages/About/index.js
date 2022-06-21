@@ -43,18 +43,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-            
-            {/* <div className='about-container'>
-                <div className='about-left'>
-                    <Informations />
-                    <Personal />
-                </div>
-
-                <div className='about-right'>
-                    <Formations />
-                </div>
-            </div> */}
         </div>
     );
 };
