@@ -9,6 +9,7 @@ const WebSites = () => {
 
     return (
         <div className='websites'>
+            <div className='websites-img-container'></div>
             <h2 className='websites-title'>Sites Web</h2>
             <div className='websites-container'>
                 {

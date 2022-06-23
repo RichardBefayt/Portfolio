@@ -10,6 +10,7 @@ const About = () => {
 
     return (
         <div className='about'>
+            {/* <div className='about-img-container'></div> */}
             <div className='about-container'>
                 <h1 className='about-title'>Curriculum Vitae</h1>
                 

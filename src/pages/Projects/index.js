@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import './projects.css';
 
-import ProjetsImg from "../../assets/images/projets-img.jpg";
 import WebsitesImg from "../../assets/images/sites-web.pe.jpg";
 import GamesImg from "../../assets/images/jeux.pe.jpg";
 
@@ -13,9 +12,7 @@ const Projects = () => {
     return (
         <div className='projects'>
             
-            <div className='projects-img__container'>
-                <img className='projects-img' src={ProjetsImg} alt="Fond d'écran" />
-            </div>
+            <div className='projects-img__container'></div>
             
             <h2 className="projects-title">Projets en cours</h2>
 

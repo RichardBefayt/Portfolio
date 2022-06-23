@@ -73,6 +73,7 @@ footer {
 }
 
 .social-link:hover {
+    color: var(--thirdColor);
     background: var(--secondColor);
     border-radius: 5px;
 }
@@ -90,6 +91,7 @@ footer {
 }
 
 .right .content .fas:hover {
+    color: var(--thirdColor);
     background: var(--secondColor);
 }
 

@@ -12,17 +12,12 @@
 
 
 .projects-img__container {
+    background: url(../../assets/images/projets-img.jpg) no-repeat center/cover;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    z-index: -5;
-}
-
-.projects-img {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
     filter: brightness(50%);
+    z-index: -5;
 }
 
 .projects-title {

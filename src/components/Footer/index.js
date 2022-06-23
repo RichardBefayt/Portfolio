@@ -14,10 +14,10 @@ const Footer = () => (
                 <div className="content">
                     <p className="description">Bonjour et bienvenue sur mon Portfolio. Pour suivre les prochaines avancées de mon travail, rendez-vous sur les réseaux sociaux.</p>
                     <div className="social">
-                        <NavLink to="#"><FaLinkedin className="social-link" /></NavLink>
-                        <NavLink to="#"><FaTwitter className="social-link" /></NavLink>
-                        <NavLink to="#"><FaInstagram className="social-link" /></NavLink>
-                        <NavLink to="#"><FaGithub className="social-link" /></NavLink>
+                        <NavLink to="https://www.linkedin.com/in/richardbefayt/"><FaLinkedin className="social-link" /></NavLink>
+                        <NavLink to="https://twitter.com/RichardBefayt"><FaTwitter className="social-link" /></NavLink>
+                        <NavLink to="https://www.instagram.com/ric_dev.front/"><FaInstagram className="social-link" /></NavLink>
+                        <NavLink to="https://github.com/RichardBefayt"><FaGithub className="social-link" /></NavLink>
                     </div>
                 </div>
             </div>

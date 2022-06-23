@@ -4,6 +4,15 @@
     color: var(--firstColor);
 }
 
+.websites-img-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(../../assets/images/websites-bg.jpg) no-repeat center/cover;
+    filter: brightness(50%);
+    z-index: -5;
+}
+
 .websites-title {
     font-size: 2rem;
     text-align: center;

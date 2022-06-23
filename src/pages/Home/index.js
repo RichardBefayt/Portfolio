@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
-import background from "../../assets/images/background.jpg";
 
 import './home.css';
 
 const Home = () => (
     <div className='home'>
-        <div className='home-background__img-container'>
-            <img className='home-background__img' src={background} alt="Fond d'écran" />
-        </div>
+        <div className='home-background__img-container'></div>
         
         <div className='home-content'>
             <h2 className='home-title'>Richard Befayt</h2>
