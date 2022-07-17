@@ -25,6 +25,7 @@
     height: 100%;
     border: 1px solid var(--firstColor);
     border-radius: 10px;
+    /* background: no-repeat center/cover; */
 }
 
 @media screen and (max-width: 1040px) {

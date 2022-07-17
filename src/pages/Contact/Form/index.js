@@ -60,7 +60,7 @@ const Form = () => {
                     className='form-label'
                     htmlFor='name'
                 >
-                    Nom & Prénom
+                    Prénom & NOM
                 </label>
                 <Input
                     id='name'

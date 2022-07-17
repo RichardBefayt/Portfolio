@@ -13,7 +13,7 @@ const InProgress = () => (
         </div>
         
         <div className='in-progress__content'>
-            <p className="in-progress__container-text">Construction en cours</p>
+            <p className="in-progress__container-text">En cours de création</p>
             <div className="in-progress__container-emoji">👷‍♂️</div>
         </div>
 

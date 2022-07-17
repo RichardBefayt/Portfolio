@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom";
-
 import './footer.css';
 
 import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
@@ -14,10 +12,10 @@ const Footer = () => (
                 <div className="content">
                     <p className="description">Bonjour et bienvenue sur mon Portfolio. Pour suivre les prochaines avancées de mon travail, rendez-vous sur les réseaux sociaux.</p>
                     <div className="social">
-                        <NavLink to="https://www.linkedin.com/in/richardbefayt/"><FaLinkedin className="social-link" /></NavLink>
-                        <NavLink to="https://twitter.com/RichardBefayt"><FaTwitter className="social-link" /></NavLink>
-                        <NavLink to="https://www.instagram.com/ric_dev.front/"><FaInstagram className="social-link" /></NavLink>
-                        <NavLink to="https://github.com/RichardBefayt"><FaGithub className="social-link" /></NavLink>
+                        <a href="https://www.linkedin.com/in/richardbefayt/" target="_blank" rel="noreferrer"><FaLinkedin className="social-link" /></a>
+                        <a href="https://twitter.com/RichardBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
+                        <a href="https://www.instagram.com/sprichie/" target="_blank" rel="noreferrer"><FaInstagram className="social-link" /></a>
+                        <a href="https://github.com/RichardBefayt" target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
                     </div>
                 </div>
             </div>
