@@ -10,6 +10,7 @@ export default [
         subtitle: 'Salle de Cinéma (code en développement)',
         thumbnail: cinema,
         description: 'Réservez votre place de cinéma, consultez les bandes-annonces, sans oublier de faire un tour sur notre boutique pour commander vos friandises.',
+        target: "https://github.com/RichardBefayt/monappcine",
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ export default [
         // slug: '',
         thumbnail: restaurant,
         description: 'Consultez la carte de notre restaurant, nous ne doutons pas que vous réserviez une table dans les 24h.',
+        // target: "",
     },
     {
         id: 3,
@@ -24,5 +26,6 @@ export default [
         // slug: '',
         thumbnail: moto,
         description: "Envie d'un bolide ? Ne cherchez plus, vous l'avez trouvé.",
+        // target: "",
     },
 ]

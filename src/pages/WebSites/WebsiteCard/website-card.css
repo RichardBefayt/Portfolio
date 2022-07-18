@@ -26,6 +26,10 @@
     border-radius: 10px;
 }
 
+.website-card__description {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 1040px) {
     .website-card {
         width: 400px;
