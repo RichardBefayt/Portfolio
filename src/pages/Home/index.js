@@ -11,6 +11,7 @@ const Home = () => (
             <h3 className='home-subtitle'>Développeur Web Front-End</h3>
             
             <div className='home-buttons'>
+                <NavLink to='/savoir-faire' className='btn'>Savoir-faire</NavLink>
                 <NavLink to='/projets' className='btn'>Projets</NavLink>
                 <NavLink to='/contact' className='btn btn-light'>Contact</NavLink>
             </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import './footer.css';
 
 import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
@@ -25,14 +27,16 @@ const Footer = () => (
                 <div className="content">
                     <div className="place">
                         <FaHome className="fas" />
-                        <span className="text">59 avenue Roger Guichard, 95610 Éragny</span>
+                        <span className="text address">59 avenue Roger Guichard, 95610 Éragny</span>
                     </div>
                     <div className="phone">
                         <FaPhone className="fas" />
-                        <span className="text">06.35.02.11.58</span>
+                        <span className="text phone">06.35.02.11.58</span>
                     </div>
                     <div className="place">
-                        <FaMailBulk className="fas" />
+                        <Link to="/contact">
+                            <FaMailBulk className="fas" />
+                        </Link>
                         <span className="text">rbefayt@gmail.com</span>
                     </div>
                 </div>

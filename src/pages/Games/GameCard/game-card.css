@@ -3,12 +3,7 @@
     width: 500px;
     height: 350px;
     text-align: justify;
-    transition: 0.3s ease-in-out;
     flex-grow: 1;
-}
-
-.game-card:hover {
-    transform: scale(1.1);
 }
 
 .game-card__link>* {
@@ -25,7 +20,11 @@
     height: 100%;
     border: 1px solid var(--firstColor);
     border-radius: 10px;
-    /* background: no-repeat center/cover; */
+    transition: 0.3s ease-in-out;
+}
+
+.game-card__img:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 1040px) {

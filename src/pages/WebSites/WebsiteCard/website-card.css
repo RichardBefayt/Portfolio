@@ -3,11 +3,7 @@
     width: 500px;
     height: 350px;
     text-align: justify;
-    transition: 0.3s ease-in-out;
-}
-
-.website-card:hover {
-    transform: scale(1.1);
+    
 }
 
 .website-card__link>* {
@@ -24,7 +20,13 @@
     height: 100%;
     border: 1px solid var(--firstColor);
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
 }
+.website-card__img:hover {
+    transform: scale(1.1);
+}
+
+
 
 .website-card__description {
     margin-bottom: 10px;

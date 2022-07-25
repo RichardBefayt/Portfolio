@@ -11,6 +11,7 @@ import NotFound from '../pages/NotFound';
 // Pages
 import Home from '../pages/Home';
 import About from '../pages/About';
+import Skills from '../pages/Skills';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 import WebSites from '../pages/WebSites';
@@ -28,6 +29,8 @@ const App = () => {
 				<Route path='/' element={<Home />} />
 
 				<Route path='/a-propos' element={<About />} />
+
+				<Route path='/savoir-faire' element={<Skills />} />
 
 				<Route path='/projets' element={<Projects />} />
 				<Route path='/projets/sites-web' element={<WebSites />} />

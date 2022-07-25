@@ -1,0 +1,25 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--firstColor);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+
+.skills-img__container {
+    background: url(../../assets/images/programmation.jpg) no-repeat center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(50%);
+    z-index: -5;
+}
+
+.skills-title {
+    top: 20%;
+    font-size: 2.5rem;
+}
