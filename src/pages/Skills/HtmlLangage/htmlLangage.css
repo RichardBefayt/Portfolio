@@ -1,13 +1,11 @@
-
-.snippet-container {
-    display: block;
-    padding: 10px 20px;
+.snippets-content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s linear ease-in-out;
 }
 
-.snippet-container.open {
-    visibility: visible;
-    transform: translateY(0);
-    transition: 0.3s ease;
+.snippets-content.open {
+    height: 100%;
 }
 
 .snippets-img {
