@@ -1,0 +1,16 @@
+
+.snippet-container {
+    display: block;
+    padding: 10px 20px;
+}
+
+.snippet-container.open {
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.3s ease;
+}
+
+.snippets-img {
+    max-height: 300px;
+}
+
