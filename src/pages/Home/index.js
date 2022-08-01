@@ -13,7 +13,7 @@ const Home = () => (
             <div className='home-buttons'>
                 <NavLink to='/savoir-faire' className='btn'>Savoir-faire</NavLink>
                 <NavLink to='/projets' className='btn'>Projets</NavLink>
-                <NavLink to='/contact' className='btn btn-light'>Contact</NavLink>
+                <NavLink to='/contact' className='btn'>Contact</NavLink>
             </div>
         </div>
     </div>

@@ -1,3 +1,19 @@
+.htmlLangage-presentation {
+    margin-bottom: 30px;
+}
+
+.snippets-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    overflow-y: scroll/hidden;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
 .snippets-content {
     height: 0;
     overflow: hidden;
@@ -5,10 +21,20 @@
 }
 
 .snippets-content.open {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .snippets-img {
-    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid var(--firstColor);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
