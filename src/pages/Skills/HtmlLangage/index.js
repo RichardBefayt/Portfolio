@@ -25,13 +25,14 @@ const HtmlLangage = () => {
             >
                 HTML
             </button>
-            <p className='htmlLangage-presentation'>Le HTML est un langage qui nous permet de créer la structure statique de notre application.</p>
+            <p className='htmlLangage-presentation'>Le HTML est un langage qui nous permet de créer la structure statique (squelette) de notre application.</p>
             <div className={`${openHtml ? 'snippets-content open' : 'snippets-content'}`}>
                 
                 <div className="snippets-container">
+                    {/* Factoriser */}
                     {/* Titres */}
                     <button
-                        className='btn'
+                        className='btn btn-light'
                         onClick={() => setOpenTitle(!openTitle)}
                     >
                         Titres
@@ -47,7 +48,7 @@ const HtmlLangage = () => {
 
                     {/* Liens */}
                     <button
-                        className='btn'
+                        className='btn btn-light'
                         onClick={() => setOpenLink(!openLink)}
                     >
                         Liens
@@ -63,7 +64,7 @@ const HtmlLangage = () => {
 
                     {/* Images */}
                     <button
-                        className='btn'
+                        className='btn btn-light'
                         onClick={() => setOpenImg(!openImg)}
                     >
                         Images
@@ -79,7 +80,7 @@ const HtmlLangage = () => {
 
                     {/* Listes */}
                     <button
-                        className='btn'
+                        className='btn btn-light'
                         onClick={() => setOpenList(!openList)}
                     >
                         Listes
@@ -95,7 +96,7 @@ const HtmlLangage = () => {
 
                     {/* Boutons */}
                     <button
-                        className='btn'
+                        className='btn btn-light'
                         onClick={() => setOpenButton(!openButton)}
                     >
                         Boutons
