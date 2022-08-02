@@ -26,7 +26,7 @@ const HtmlLangage = () => {
                 HTML
             </button>
             <p className='htmlLangage-presentation'>Le HTML est un langage qui nous permet de créer la structure statique (squelette) de notre application.</p>
-            <div className={`${openHtml ? 'snippets-content open' : 'snippets-content'}`}>
+            <div className={`${openHtml ? 'snippets-content open-html' : 'snippets-content'}`}>
                 
                 <div className="snippets-container">
                     {/* Factoriser */}
