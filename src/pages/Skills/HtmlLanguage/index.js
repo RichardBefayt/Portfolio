@@ -1,21 +1,21 @@
 import { useState } from 'react';
 
-import './htmlLangage.css';
+import '../skillsLanguage.css';
 
 import titles from "../../../assets/images/html/Titres.png";
-import links from "../../../assets/images/html/Liens.png";
-import lists from "../../../assets/images/html/Listes.png";
 import images from "../../../assets/images/html/Images.png";
-import buttons from "../../../assets/images/html/Boutons.png";
+import lists from "../../../assets/images/html/Listes.png";
+import array from "../../../assets/images/html/Tableaux.png";
+import form from "../../../assets/images/html/Formulaires.png";
 
 const HtmlLangage = () => {
 
     const [openHtml, setOpenHtml] = useState(false);
     const [openTitle, setOpenTitle] = useState(false);
-    const [openLink, setOpenLink] = useState(false);
     const [openList, setOpenList] = useState(false);
     const [openImg, setOpenImg] = useState(false);
-    const [openButton, setOpenButton] = useState(false);
+    const [openArray, setOpenArray] = useState(false);
+    const [openForm, setOpenForm] = useState(false);
 
     return (
         <div className='htmlLangage-container'>
@@ -25,8 +25,8 @@ const HtmlLangage = () => {
             >
                 HTML
             </button>
-            <p className='htmlLangage-presentation'>Le HTML est un langage qui nous permet de créer la structure statique (squelette) de notre application.</p>
-            <div className={`${openHtml ? 'snippets-content open-html' : 'snippets-content'}`}>
+            <p className='language-presentation'>Le HTML est un langage qui nous permet de créer la structure statique (squelette) de notre application.</p>
+            <div className={`${openHtml ? 'snippets-content open-language' : 'snippets-content'}`}>
                 
                 <div className="snippets-container">
                     {/* Factoriser */}
@@ -46,28 +46,12 @@ const HtmlLangage = () => {
                         <p className="snippets-description">Il y a 6 niveaux de titres. A noter qu'il ne peut y avoir qu'un seul h1 par page</p>
                     </div>
 
-                    {/* Liens */}
-                    <button
-                        className='btn btn-light'
-                        onClick={() => setOpenLink(!openLink)}
-                    >
-                        Liens
-                    </button>
-                    <div className={`${openLink ? 'snippets-content open' : 'snippets-content'}`}>
-                        <img
-                            className='snippets-img'
-                            src={links}
-                            alt="Extraits codes HTML : Liens"
-                            />
-                        <p className="snippets-description">target="_blank" permet d'ouvrir le lien dans un nouvel onglet.</p>
-                    </div>
-
-                    {/* Images */}
+                    {/* Liens & Images */}
                     <button
                         className='btn btn-light'
                         onClick={() => setOpenImg(!openImg)}
                     >
-                        Images
+                        Liens & Images
                     </button>
                     <div className={`${openImg ? 'snippets-content open' : 'snippets-content'}`}>
                         <img
@@ -75,7 +59,7 @@ const HtmlLangage = () => {
                             src={images}
                             alt="Extraits codes HTML : Images"
                             />
-                        <p className="snippets-description">Images.</p>
+                        <p className="snippets-description">Grâce à l'attribut "target='_blank'", le lien s'ouvre dans un nouvel onglet.</p>
                     </div>
 
                     {/* Listes */}
@@ -94,20 +78,36 @@ const HtmlLangage = () => {
                         <p className="snippets-description">Listes ordonnées et non-ordonnées.</p>
                     </div>
 
-                    {/* Boutons */}
+                    {/* Tableaux */}
                     <button
                         className='btn btn-light'
-                        onClick={() => setOpenButton(!openButton)}
+                        onClick={() => setOpenArray(!openArray)}
                     >
-                        Boutons
+                        Tableaux
                     </button>
-                    <div className={`${openButton ? 'snippets-content open' : 'snippets-content'}`}>
+                    <div className={`${openArray ? 'snippets-content open' : 'snippets-content'}`}>
                         <img
                             className='snippets-img'
-                            src={buttons}
-                            alt="Extraits codes HTML : Boutons"
+                            src={array}
+                            alt="Extraits codes HTML : Tableaux"
                             />
-                        <p className="snippets-description">Boutons.</p>
+                        <p className="snippets-description">Tableaux.</p>
+                    </div>
+
+                    {/* Formulaires */}
+                    <button
+                        className='btn btn-light'
+                        onClick={() => setOpenForm(!openForm)}
+                    >
+                        Formulaires
+                    </button>
+                    <div className={`${openForm ? 'snippets-content open' : 'snippets-content'}`}>
+                        <img
+                            className='snippets-img'
+                            src={form}
+                            alt="Extraits codes HTML : Formulaires"
+                            />
+                        <p className="snippets-description">Formulaires.</p>
                     </div>
                 </div>
 

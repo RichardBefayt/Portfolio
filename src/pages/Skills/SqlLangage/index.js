@@ -1,4 +1,4 @@
-import './sqlLangage.css';
+import '../skillsLanguage.css';
 
 const SqlLangage = () => (
     <div className='sqlLangage'>

@@ -1,4 +1,4 @@
-import './cssLangage.css';
+import '../skillsLanguage.css';
 
 const CssLangage = () => (
     <div className='cssLangage'>

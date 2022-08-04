@@ -1,4 +1,4 @@
-import './gitLangage.css';
+import '../skillsLanguage.css';
 
 const GitLangage = () => (
     <div className='gitLangage'>
