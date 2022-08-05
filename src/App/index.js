@@ -12,10 +12,11 @@ import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
+import SkillsCard from '../pages/Skills/SkillsCard';
 import Projects from '../pages/Projects';
-import Contact from '../pages/Contact';
 import WebSites from '../pages/WebSites';
 import Games from '../pages/Games';
+import Contact from '../pages/Contact';
 
 
 import "./app.css";
@@ -31,6 +32,7 @@ const App = () => {
 				<Route path='/a-propos' element={<About />} />
 
 				<Route path='/savoir-faire' element={<Skills />} />
+				<Route path='/savoir-faire/:slug' element={<SkillsCard />} />
 
 				<Route path='/projets' element={<Projects />} />
 				<Route path='/projets/sites-web' element={<WebSites />} />

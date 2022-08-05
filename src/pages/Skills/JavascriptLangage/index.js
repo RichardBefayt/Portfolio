@@ -5,7 +5,7 @@ import '../skillsLanguage.css';
 import loops from "../../../assets/images/js/Boucles.png";
 import conditions from "../../../assets/images/js/Conditions.png";
 import objects from "../../../assets/images/js/Objets.png";
-import arrays from "../../../assets/images/js/Tableaux.png";
+import arraysJs from "../../../assets/images/js/Tableaux.png";
 import dom from "../../../assets/images/js/DOM.png";
 import promises from "../../../assets/images/js/Promesses.png";
 
@@ -89,7 +89,7 @@ const JavascriptLangage = () => {
                     <div className={`${openArray ? 'snippets-content open' : 'snippets-content'}`}>
                         <img
                             className='snippets-img'
-                            src={arrays}
+                            src={arraysJs}
                             alt="Extraits codes Javascript : Tableaux"
                         />
                         <p className="snippets-description">Tableaux</p>

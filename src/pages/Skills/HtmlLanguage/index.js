@@ -5,8 +5,8 @@ import '../skillsLanguage.css';
 import titles from "../../../assets/images/html/Titres.png";
 import images from "../../../assets/images/html/Images.png";
 import lists from "../../../assets/images/html/Listes.png";
-import array from "../../../assets/images/html/Tableaux.png";
-import form from "../../../assets/images/html/Formulaires.png";
+import arrays from "../../../assets/images/html/Tableaux.png";
+import forms from "../../../assets/images/html/Formulaires.png";
 
 const HtmlLangage = () => {
 
@@ -19,6 +19,7 @@ const HtmlLangage = () => {
 
     return (
         <div className='htmlLangage-container'>
+            {/* Ne pas faire des boutons mais des cartes ! */}
             <button
                 className='btn'
                 onClick={() => setOpenHtml(!openHtml)}
@@ -88,7 +89,7 @@ const HtmlLangage = () => {
                     <div className={`${openArray ? 'snippets-content open' : 'snippets-content'}`}>
                         <img
                             className='snippets-img'
-                            src={array}
+                            src={arrays}
                             alt="Extraits codes HTML : Tableaux"
                             />
                         <p className="snippets-description">Tableaux.</p>
@@ -104,7 +105,7 @@ const HtmlLangage = () => {
                     <div className={`${openForm ? 'snippets-content open' : 'snippets-content'}`}>
                         <img
                             className='snippets-img'
-                            src={form}
+                            src={forms}
                             alt="Extraits codes HTML : Formulaires"
                             />
                         <p className="snippets-description">Formulaires.</p>
