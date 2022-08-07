@@ -1,0 +1,13 @@
+.skills-cards {
+    width: 200px;
+    height: 300px;
+}
+
+.skills-cards-img-container {
+    border: 1px solid var(--firstColor);
+}
+
+.skills-cards-img {
+    width: 284px;
+    height: 340px;
+}

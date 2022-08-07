@@ -13,8 +13,8 @@
 .skills-img__container {
     background: url(../../assets/images/programmation.jpg) no-repeat center/cover;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     filter: brightness(20%);
     z-index: -5;
 }

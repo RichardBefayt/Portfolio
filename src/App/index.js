@@ -12,7 +12,7 @@ import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
-import SkillsCard from '../pages/Skills/SkillsCards/SkillsCard';
+import SkillsCard from '../pages/SkillsCard';
 import Projects from '../pages/Projects';
 import WebSites from '../pages/WebSites';
 import Games from '../pages/Games';

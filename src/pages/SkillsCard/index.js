@@ -2,9 +2,11 @@ import { useSelector, useDispatch } from "react-redux";
 
 import './skills-card.css';
 
-const SkillsCard = ({ name, thumbnail, description }) => {
+const SkillsCard = () => {
     const open = useSelector((state) => state.skills.open);
-    
+
+    const skills = useSelector((state) => state.skills.allLanguage);
+
     const dispatch = useDispatch();
 
     return (
@@ -13,15 +15,15 @@ const SkillsCard = ({ name, thumbnail, description }) => {
                 className='btn btn-light'
                 onClick={() => dispatch({ type: 'TOGGLE_OPEN' })}
             >
-                {name}
+                {skills.name}
             </button>
             <div className={`${open ? 'snippets-content open' : 'snippets-content'}`}>
                 <img
                     className='snippets-img'
-                    src={thumbnail}
-                    alt={`Extraits codes HTML : ${name}`}
+                    src={skills.thumbnail}
+                    alt={`Extraits codes : ${skills.name}`}
                 />
-                <p className="snippets-description">{description}</p>
+                <p className="snippets-description">{skills.description}</p>
             </div>
         </div>
     );
