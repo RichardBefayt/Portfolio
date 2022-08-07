@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 import projectsReducer from './projects';
 import curriculumReducer from './curriculum';
-import skillsReducer from './curriculum';
+import skillsReducer from './skills';
 
 // Ici on donne les "tranches" qui seront combinées pour former le reducer principal
 const rootReducer = combineReducers({

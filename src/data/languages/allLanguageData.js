@@ -2,55 +2,55 @@
 // Mettre importation des images dans 1 autre dossier puis importer ici
 // Images HTML
 import imgHtmlCard from "../../assets/images/html/imgHtmlCarte.jpg";
-import titlesImg from "../../../assets/images/html/Titres.png";
-import linksImg from "../../../assets/images/html/Images.png";
-import listsImg from "../../../assets/images/html/Listes.png";
-import arraysHtmlImg from "../../../assets/images/html/Tableaux.png";
-import formsImg from "../../../assets/images/html/Formulaires.png";
+import titlesImg from "../../assets/images/html/Titres.png";
+import linksImg from "../../assets/images/html/Images.png";
+import listsImg from "../../assets/images/html/Listes.png";
+import arraysHtmlImg from "../../assets/images/html/Tableaux.png";
+import formsImg from "../../assets/images/html/Formulaires.png";
 
 // Images Css
-import imgCssCard from "../../assets/images/html/imgCssCarte.jpg";
-import positionsImg from "../../../assets/images/css/";
-import flexboxImg from "../../../assets/images/css/";
-import gridImg from "../../../assets/images/css/";
-import animationsImg from "../../../assets/images/css/";
-import mediaQueriesImg from "../../../assets/images/css/";
+import imgCssCard from "../../assets/images/css/imgCssCarte.jpg";
+import positionsImg from "../../assets/images/css/Positions.png";
+import flexboxImg from "../../assets/images/css/Flexbox.png";
+import gridImg from "../../assets/images/css/Grid.png";
+import animationsImg from "../../assets/images/css/Animations.png";
+import mediaQueriesImg from "../../assets/images/css/MediaQueries.png";
 
 // Images Javascript
-import imgJsCard from "../../assets/images/js/imgCarte.jpg";
-import loopsImg from "../../../assets/images/js/Boucles.png";
-import conditionsImg from "../../../assets/images/js/Conditions.png";
-import objectsImg from "../../../assets/images/js/Objets.png";
-import arraysJsImg from "../../../assets/images/js/Tableaux.png";
-import domImg from "../../../assets/images/js/DOM.png";
-import promisesImg from "../../../assets/images/js/Promesses.png";
+import imgJsCard from "../../assets/images/js/imgJsCarte.jpg";
+import loopsImg from "../../assets/images/js/Boucles.png";
+import conditionsImg from "../../assets/images/js/Conditions.png";
+import objectsImg from "../../assets/images/js/Objets.png";
+import arraysJsImg from "../../assets/images/js/Tableaux.png";
+import domImg from "../../assets/images/js/DOM.png";
+import promisesImg from "../../assets/images/js/Promesses.png";
 
 // Images React/Redux
-import imgReactCard from "../../assets/images/react/";
-import componentImg from "../../../assets/images/react/";
-import hooksImg from "../../../assets/images/react/";
-import propsImg from "../../../assets/images/react/";
-import renderingConditionalImg from "../../../assets/images/react/";
-import controlledFieldsImg from "../../../assets/images/react/";
-import storeImg from "../../../assets/images/react/";
-import actionsImg from "../../../assets/images/react/";
+import imgReactCard from "../../assets/images/react/imgReactCarte.jpg";
+import componentsImg from "../../assets/images/react/Composants.png";
+import hooksImg from "../../assets/images/react/Hooks.png";
+import propsImg from "../../assets/images/react/Props.png";
+import renderingConditionalImg from "../../assets/images/react/AffichageConditionnel.png";
+import controlledFieldsImg from "../../assets/images/react/ChampsContrôlés.png";
+import storeImg from "../../assets/images/react/Store.png";
+import actionsImg from "../../assets/images/react/Actions.png";
 
 // Images NodeJS
-import imgNodeCard from "../../assets/images/nodejs/";
-import expressImg from "../../../assets/images/nodejs/";
-import roadsImg from "../../../assets/images/nodejs/";
-import dotenvImg from "../../../assets/images/nodejs/";
-import ejsImg from "../../../assets/images/nodejs/";
+import imgNodeCard from "../../assets/images/nodejs/imgNodeJSCarte.jpg";
+import expressImg from "../../assets/images/nodejs/Express.png";
+import roadsImg from "../../assets/images/nodejs/Routes.png";
+import dotenvImg from "../../assets/images/nodejs/Dotenv.png";
+import ejsImg from "../../assets/images/nodejs/Ejs.png";
 
 // Images SQL
-import imgSqlCard from "../../assets/images/nodejs/";
-import diagramImg from "../../../assets/images/nodejs/";
-import crudImg from "../../../assets/images/nodejs/";
+import imgSqlCard from "../../assets/images/sql/imgSqlCarte.jpg";
+import diagramImg from "../../assets/images/sql/Diagrams.png";
+import crudImg from "../../assets/images/sql/Crud.png";
 
 // Images Git
-import imgGitCard from "../../assets/images/nodejs/";
-import commitImg from "../../../assets/images/nodejs/";
-import branchsImg from "../../../assets/images/nodejs/";
+import imgGitCard from "../../assets/images/git/imgGitCarte.jpg";
+import commitImg from "../../assets/images/git/Commit.png";
+import branchsImg from "../../assets/images/git/Branches.png";
 
 export default [
     {
@@ -190,7 +190,7 @@ export default [
             {
                 id: 4.1,
                 name: 'Composants',
-                thumbnail: componentImg,
+                thumbnail: componentsImg,
                 description: "",
             },
             {

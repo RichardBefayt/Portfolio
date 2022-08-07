@@ -1,4 +1,4 @@
-import allLanguage from "../data/languages/allLanguageData";
+import allLanguage from "../data/languages/allLanguageData.js";
 
 export const initialState = {
     allLanguage,
@@ -12,9 +12,9 @@ const skillsReducer = (state = initialState, action = {}) => {
                 ...state,
                 open: !state.open,
             };
-        default:
-            return state;
-    }
-};
-
+            default:
+                return state;
+            }
+        };
+        
 export default skillsReducer;
