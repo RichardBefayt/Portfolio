@@ -18,6 +18,7 @@ import mediaQueriesImg from "../../assets/images/css/MediaQueries.png";
 
 // Images Javascript
 import imgJsCard from "../../assets/images/js/illustrationJs.jpg";
+import functionsImg from "../../assets/images/js/Fonctions.png";
 import loopsImg from "../../assets/images/js/Boucles.png";
 import conditionsImg from "../../assets/images/js/Conditions.png";
 import objectsImg from "../../assets/images/js/Objets.png";
@@ -142,37 +143,43 @@ export default [
         elements: [
             {
                 id: 3.1,
+                name: 'Fonctions & Méthodes',
+                thumbnail: functionsImg,
+                description: "",
+            },
+            {
+                id: 3.2,
                 name: 'Boucles',
                 thumbnail: loopsImg,
                 description: "",
             },
             {
-                id: 3.2,
+                id: 3.3,
                 name: 'Conditions',
                 thumbnail: conditionsImg,
                 description: "",
             },
             {
-                id: 3.3,
+                id: 3.4,
                 name: 'Objets',
                 thumbnail: objectsImg,
                 description: "",
             },
             {
-                id: 3.4,
+                id: 3.5,
                 name: 'Tableaux',
                 thumbnail: arraysJsImg,
                 description: "",
             },
             {
-                id: 3.5,
+                id: 3.6,
                 name: 'DOM',
                 thumbnail: domImg,
                 description: "",
             },
             
             {
-                id: 3.6,
+                id: 3.7,
                 name: 'Promesses',
                 thumbnail: promisesImg,
                 description: "",

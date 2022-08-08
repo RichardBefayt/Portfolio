@@ -7,7 +7,7 @@ import './skills.css';
 const Skills = () => {
 
     const skills = useSelector((state) => state.skills.allLanguage);
-    console.log("skills :", skills);
+    // console.log("skills :", skills);
 
     return (
         <div className='skills'>
