@@ -1,10 +1,11 @@
 .not-found {
-    height: 92vh;
+    margin-top: 8%;
     color: var(--firstColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: auto;
 }
 
 .not-found>* {

@@ -6,7 +6,8 @@ const SkillsCards = ({ slug, title, definition, picture }) => {
 
     return (
         <div className='skills-cards'>
-            <Link className="skills-cards-link" to={`/snippets/${slug}`}>
+            {/* <Link className="skills-cards-link" to={`/snippets/${slug}`}> */}
+            <Link to='/en-construction' className="skills-cards-link">
 
                 <div className="skills-cards-img-container">
                     <img className="skills-cards-img" src={picture} alt={title} />
