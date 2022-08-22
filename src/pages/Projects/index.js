@@ -11,9 +11,6 @@ const Projects = () => {
 
     return (
         <div className='projects'>
-            
-            <div className='projects-img__container'></div>
-            
             <h2 className="projects-title">Projets en cours</h2>
 
             <div className='projectsCard-container'>
@@ -25,7 +22,6 @@ const Projects = () => {
                         <div className="projectsCard__websites-imgContainer">
                             <img className="projectsCard__websites-img" src={WebsitesImg} alt="Image sites web" />
                         </div>
-
                     </Link>
                 </div>
                 
@@ -36,7 +32,6 @@ const Projects = () => {
                         <div className="projectsCard__games-imgContainer">
                             <img className="projectsCard__games-img" src={GamesImg} alt="Image jeux" />
                         </div>
-
                     </Link>
                 </div>
 

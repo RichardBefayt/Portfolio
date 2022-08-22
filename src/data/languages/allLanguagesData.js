@@ -53,6 +53,9 @@ import imgGitCard from "../../assets/images/git/illustrationGit.png";
 import commitImg from "../../assets/images/git/Commit.png";
 import branchsImg from "../../assets/images/git/Branches.png";
 
+// Autres
+import imgNeutre from "../../assets/images/autres/neutre.jpg"
+
 export default [
     {
         id: 1,
@@ -97,7 +100,7 @@ export default [
     {
         id: 2,
         slug: "css",
-        title: 'CSS & SASS',
+        title: 'CSS',
         definition: 'Style/Mise en page',
         picture: imgCssCard,
         elements: [
@@ -190,7 +193,7 @@ export default [
     {
         id: 4,
         slug: "react",
-        title: 'React & Redux',
+        title: 'React',
         definition: 'Single Page Application',
         picture: imgReactCard,
         elements: [
@@ -312,6 +315,27 @@ export default [
                 id: 7.2,
                 name: 'Branches',
                 thumbnail: branchsImg,
+                description: "",
+            },
+        ],
+    },
+    {
+        id: 8,
+        slug: "next",
+        title: 'Autres',
+        definition: 'Langages à venir',
+        picture: imgNeutre,
+        elements: [
+            {
+                id: 8.1,
+                name: '',
+                thumbnail: "",
+                description: "",
+            },
+            {
+                id: 8.2,
+                name: '',
+                thumbnail: "",
                 description: "",
             },
         ],

@@ -9,7 +9,7 @@ export default [
         slug: "https://monappcine.netlify.app/",
         subtitle: 'Salle de Cinéma (code en développement)',
         thumbnail: cinema,
-        description: 'Réservez votre place de cinéma, consultez les bandes-annonces, sans oublier de faire un tour sur notre boutique pour commander vos friandises.',
+        description: "Actuellement je rencontre un problème sur ma clé d'API (pourtant valide), ce qui empêche l'accès au site par Netlify. Malgré tout, vous devriez pouvoir y accéder avec la LDC : `npm start`. Bonne visite.",
         target: "https://github.com/RichardBefayt/monappcine",
     },
     {

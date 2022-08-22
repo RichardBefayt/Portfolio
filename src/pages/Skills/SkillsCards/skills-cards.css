@@ -1,13 +1,36 @@
 .skills-cards {
-    width: 200px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 5px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
 }
 
 .skills-cards-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto 10px;
     border: 1px solid var(--firstColor);
+    /* height: 100%; */
 }
 
 .skills-cards-img {
-    width: 284px;
-    height: 340px;
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+    box-shadow: 0 8px 1px rgba(255, 255, 255, 0.1),
+        0 16px 1px rgba(255, 255, 255, 0.05);
+}
+
+.skills-cards-title,
+.skills-cards-definition {
+    color: var(--thirdColor);
 }

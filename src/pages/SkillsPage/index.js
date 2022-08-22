@@ -7,8 +7,12 @@ import './skills-page.css';
 const SkillsPage = () => {
     const open = useSelector((state) => state.skills.open);
 
-    const elements = useSelector((state) => state.skills.allLanguage.elements);
-    console.log("elements :", elements);
+    const skills = useSelector((state) => state.skills.allLanguages);
+    console.log("skills.elements :", skills.elements);
+
+    // skills.forEach((skill) => console.log(skill.elements));
+    // const elements = skills.forEach((skill) => console.log(skill.elements));
+    
     
     const dispatch = useDispatch();
 
@@ -18,15 +22,16 @@ const SkillsPage = () => {
                 className='btn btn-light'
                 onClick={() => dispatch({ type: 'TOGGLE_OPEN' })}
             >
-                {elements.name}
+                Title
+                {/* {elements.name} */}
             </button>
-            <div className={`${open ? 'snippets-content open' : 'snippets-content'}`}>
+            {/* <div className={`${open ? 'snippets-content open' : 'snippets-content'}`}>
                 {
                     elements.map(
-                        (element) => <Elements key={element.id} {...element} />
+                        (skill) => <Elements key={skill.id} {...skill} />
                     )
                 }
-            </div>
+            </div> */}
         </div>
     );
 }

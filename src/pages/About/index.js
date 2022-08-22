@@ -10,13 +10,12 @@ const About = () => {
 
     return (
         <div className='about'>
-            {/* <div className='about-img-container'></div> */}
             <div className='about-container'>
                 <h1 className='about-title'>Curriculum Vitae</h1>
                 
                 <div className='tab'>
                     <input type='radio' name='acc' id='acc1' />
-                    <label for='acc1'>
+                    <label htmlFor='acc1'>
                         <h2>Informations</h2>
                     </label>
                     <div className='content'>
@@ -26,7 +25,7 @@ const About = () => {
 
                 <div className='tab'>
                     <input type='radio' name='acc' id='acc2' />
-                    <label for='acc2'>
+                    <label htmlFor='acc2'>
                         <h2>Formations et Expériences Professionnelles</h2>
                     </label>
                     <div className='content'>
@@ -36,7 +35,7 @@ const About = () => {
                 
                 <div className='tab'>
                     <input type='radio' name='acc' id='acc3' />
-                    <label for='acc3'>
+                    <label htmlFor='acc3'>
                         <h2>Loisirs et Passions</h2>
                     </label>
                     <div className='content'>

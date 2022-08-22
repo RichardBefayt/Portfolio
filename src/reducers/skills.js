@@ -1,7 +1,7 @@
-import allLanguage from "../data/languages/allLanguageData.js";
+import allLanguages from "../data/languages/allLanguagesData.js";
 
 export const initialState = {
-    allLanguage,
+    allLanguages,
     open: false,
 };
 

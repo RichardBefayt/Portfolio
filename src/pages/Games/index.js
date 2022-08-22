@@ -9,7 +9,6 @@ const Games = () => {
 
     return (
         <div className='games'>
-            <div className='games-img-container'></div>
             <h2 className="games-title">Jeux</h2>
             <div className='games-container'>
                 {
