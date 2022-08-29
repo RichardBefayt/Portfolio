@@ -1,8 +1,8 @@
 footer {
-    bottom: 0;
     width: 100%;
-    background: #202020;
     color: var(--firstColor);
+    background: #202020;
+    bottom: 0;
 }
 
 .main-content {

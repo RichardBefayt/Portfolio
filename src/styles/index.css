@@ -4,6 +4,7 @@
 	--firstColor: #fff;
 	--secondColor: #fce300;
 	--thirdColor: #000;
+	--speed: 500ms;
 }
 
 body {
