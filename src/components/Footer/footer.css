@@ -1,8 +1,9 @@
 footer {
-    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     color: var(--firstColor);
     background: #202020;
-    bottom: 0;
 }
 
 .main-content {

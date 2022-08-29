@@ -1,14 +1,14 @@
 .home {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: var(--firstColor);
-    margin-bottom: auto;
 }
 
 .home-content {
-    position: absolute;
     text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .home-content h2 {

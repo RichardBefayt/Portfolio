@@ -10,15 +10,12 @@ import './about.css';
 import imgProfile from "../../assets/images/apropos-img.jpg";
 import imgJobs from "../../assets/images/travail.jpg";
 import imgBike from "../../assets/images/kawa.jpg";
+import Footer from "../../components/Footer";
 
 const About = () => {
     const [openInfos, setOpenInfos] = useState(false);
     const [openFormations, setOpenFormations] = useState(false);
     const [openPersonal, setOpenPersonal] = useState(false);
-
-    const infosRef = useRef();
-    const formationsRef = useRef();
-    const persoRef = useRef();
 
     return (
         <div className='about'>
@@ -29,7 +26,6 @@ const About = () => {
                 <div
                     className="about-container-two"
                     onClick={() => setOpenInfos(!openInfos)}
-                    ref={infosRef}
                 >
                     <div className="about-container-img">
                         <img src={imgProfile} alt="Photo de profil" />
@@ -44,7 +40,6 @@ const About = () => {
                 <div
                     className="about-container-two"
                     onClick={() => {setOpenFormations(!openFormations)}}
-                    ref={formationsRef}
                 >
                     <div className="about-container-img">
                         <img src={imgJobs} alt="Photo de profil" />
@@ -59,7 +54,6 @@ const About = () => {
                 <div
                     className="about-container-two"
                     onClick={() => setOpenPersonal(!openPersonal)}
-                    ref={persoRef}
                 >
                     <div className="about-container-img">
                         <img src={imgBike} alt="Photo de profil" />
@@ -71,6 +65,8 @@ const About = () => {
                 </div>
                 
             </div>
+
+            <Footer />
         </div>
     );
 };

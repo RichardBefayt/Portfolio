@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import Footer from "../../components/Footer";
+
 import './home.css';
 
 const Home = () => (
@@ -14,6 +16,8 @@ const Home = () => (
                 <NavLink to='/contact' className='btn'>Contact</NavLink>
             </div>
         </div>
+
+        <Footer />
     </div>
 );
 

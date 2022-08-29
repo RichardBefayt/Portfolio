@@ -1,6 +1,7 @@
 import Form from './Form';
 
 import './contact.css';
+import Footer from '../../components/Footer';
 
 const Contact = () => (
     <div className='contact'>
@@ -8,6 +9,7 @@ const Contact = () => (
         <p className='contact-introduction'>Pour tout renseignement ou demande de contact, merci de bien vouloir remplir les champs ci-dessous</p>
 
         <Form />
+        <Footer />
     </div>
 );
 
