@@ -5,6 +5,10 @@
     text-align: justify;
 }
 
+.game-card__link {
+    cursor: not-allowed;
+}
+
 .game-card__link>* {
     margin: 15px 0;
 }

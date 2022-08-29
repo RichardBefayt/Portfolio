@@ -20,6 +20,9 @@
 .header-title {
     font-size: 2rem;
 }
+.header-title:hover {
+    color: var(--secondColor);
+}
 
 .navbar-menu {
     display: flex;

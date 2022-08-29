@@ -5,6 +5,11 @@
     text-align: justify;
 }
 
+.website-card__link {
+    cursor: not-allowed;
+}
+
+
 .website-card__link>* {
     padding: 15px 0;
 }
