@@ -11,27 +11,27 @@ const Personal = () => {
         <div className="personal">
             <ul className='personal-list'>
                 <li className='personal-item'>
-                    <CgGames size={30} style={{color: "#333", marginRight: "0.6rem" }} />
+                    <CgGames size={30} style={{color: "#fff", marginRight: "0.6rem" }} />
                     Jeux Vidéo
                 </li>
 
                 <li className='personal-item'>
-                    <MdDirectionsBike size={30} style={{color: "#333", marginRight: "0.6rem" }} />
+                    <MdDirectionsBike size={30} style={{color: "#fff", marginRight: "0.6rem" }} />
                     Moto
                 </li>
                 
                 <li className='personal-item'>
-                    <SiYourtraveldottv size={30} style={{color: "#333", marginRight: "0.6rem" }} />
+                    <SiYourtraveldottv size={30} style={{color: "#fff", marginRight: "0.6rem" }} />
                     Voyages
                 </li>
                 
                 <li className='personal-item'>
-                    <FaUserAstronaut size={30} style={{color: "#333", marginRight: "0.6rem" }} />
+                    <FaUserAstronaut size={30} style={{color: "#fff", marginRight: "0.6rem" }} />
                     Astronomie
                 </li>
                 
                 <li className='personal-item'>
-                    <MdHistoryEdu size={30} style={{color: "#333", marginRight: "0.6rem" }} />
+                    <MdHistoryEdu size={30} style={{color: "#fff", marginRight: "0.6rem" }} />
                     Histoire
                 </li>
             </ul>

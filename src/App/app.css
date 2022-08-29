@@ -1,8 +1,42 @@
 .app {
+    position: relative;
+    width: 100%;
     min-height: 100vh;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../assets/images/background.jpg) no-repeat center/cover fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil {
+    background-image: url(../assets/images/background.jpg);
+}
+
+.a-propos {
+    background-image: url(../assets/images/about-img.jpeg);
+}
+
+.projets {
+    background-image: url(../assets/images/projets-img.jpg);
+}
+
+.sites-web {
+    background-image: url(../assets/images/websites-bg.jpg);
+}
+
+.jeux {
+    background-image: url(../assets/images/jeux.jpg);
 }

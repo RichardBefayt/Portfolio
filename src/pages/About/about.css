@@ -1,15 +1,14 @@
 .about {
-    height: 140vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     color: var(--firstColor);
     margin-bottom: auto;
 }
 
 .about-title {
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 3rem;;
 }
 
@@ -19,6 +18,7 @@
     align-items: center;
     width: 1200px;
     height: 300px;
+    margin-top: 30px;
 }
 
 .about-container-two {

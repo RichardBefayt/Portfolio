@@ -1,13 +1,12 @@
 .games {
-    width: 100%;
-    height: 100vh;
     color: var(--firstColor);
+    flex: 1;
 }
 
 .games-title {
     font-size: 2rem;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .games-container {

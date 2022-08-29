@@ -1,27 +1,15 @@
 .websites {
-    width: 100%;
-    height: 100vh;
     color: var(--firstColor);
-}
-
-.websites-img-container {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: url(../../assets/images/websites-bg.jpg) no-repeat center/cover;
-    filter: brightness(50%);
-    z-index: -5;
+    flex: 1;
 }
 
 .websites-title {
     font-size: 2rem;
     text-align: center;
-    margin-top: 12vh;
+    margin-top: 5vh;
 }
 
 .websites-container {
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

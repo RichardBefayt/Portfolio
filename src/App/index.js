@@ -1,5 +1,6 @@
-import React from 'react';
-import { Routes, Route } from "react-router-dom";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import { useEffect, useState } from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
 
 // Composants
 import Navbar from "../components/Navbar";
@@ -18,12 +19,46 @@ import WebSites from '../pages/WebSites';
 import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 
-
 import "./app.css";
 
 const App = () => {
+	const [classNameBackground, setClassNameBackground] = useState('accueil');
+	const location = useLocation();
+	// console.log('location:', location);
+
+	useEffect(() => {
+		switch (location.pathname) {
+			case "/":
+			case "/a-propos":
+			case "/contact":
+				setClassNameBackground('accueil');
+				break;
+
+			case "/snippets":
+				setClassNameBackground('snippets');
+				break;
+
+			case "/projets":
+				setClassNameBackground('projets');
+				break;
+
+			case "/projets/sites-web":
+				setClassNameBackground('sites-web');
+				break;
+
+			case "/projets/jeux":
+				setClassNameBackground('jeux');
+				break;
+
+		
+			default:
+				break;
+		}
+	}, [location.pathname]);
+
     return (
         <div className="app">
+			<div className={`background ${classNameBackground}`}></div>
             <Navbar />
 
             <Routes>
