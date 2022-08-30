@@ -4,7 +4,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 // Composants
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 import InProgress from '../pages/InProgress';
 import NotFound from '../pages/NotFound';
@@ -80,6 +80,8 @@ const App = () => {
 
 				<Route path='*' element={<NotFound />} />
 			</Routes>
+
+			<Footer />
         </div>
     )
 }

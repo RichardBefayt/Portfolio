@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import Footer from "../../components/Footer";
 
 import GameCard from "./GameCard";
 
@@ -18,8 +17,6 @@ const Games = () => {
                     )
                 }
             </div>
-
-            <Footer />
         </div>
     );
 };

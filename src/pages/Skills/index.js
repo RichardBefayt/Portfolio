@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import SkillsCards from "./SkillsCards";
 
 import './skills.css';
-import Footer from "../../components/Footer";
 
 const Skills = () => {
 
@@ -24,7 +23,6 @@ const Skills = () => {
                 }
             </div>
             
-            <Footer />
         </div>
     );
 }

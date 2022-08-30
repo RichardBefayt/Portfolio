@@ -10,7 +10,6 @@ import './about.css';
 import imgProfile from "../../assets/images/apropos-img.jpg";
 import imgJobs from "../../assets/images/travail.jpg";
 import imgBike from "../../assets/images/kawa.jpg";
-import Footer from "../../components/Footer";
 
 const About = () => {
     const [openInfos, setOpenInfos] = useState(false);
@@ -74,8 +73,6 @@ const About = () => {
                 </div>
                 
             </div>
-
-            <Footer />
         </div>
     );
 };

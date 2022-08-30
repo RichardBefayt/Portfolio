@@ -6,7 +6,6 @@ import './projects.css';
 
 import WebsitesImg from "../../assets/images/sites-web.pe.jpg";
 import GamesImg from "../../assets/images/jeux.pe.jpg";
-import Footer from "../../components/Footer";
 
 const Projects = () => {
 
@@ -37,7 +36,6 @@ const Projects = () => {
                 </div>
 
             </div>
-            <Footer />
         </div>
     );
 }

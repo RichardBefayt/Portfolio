@@ -1,9 +1,10 @@
 .websites {
-    color: var(--firstColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--firstColor);
+    margin-bottom: auto;
 }
 
 .websites-title {
@@ -19,10 +20,6 @@
 }
 
 @media screen and (max-width: 1040px) {
-    .websites {
-        height: auto;
-    }
-
     .websites-container {
         flex-direction: column;
     }
