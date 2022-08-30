@@ -1,11 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
 
-import Elements from "./Elements";
+// import Elements from "./Elements";
 
 import './skills-page.css';
 
 const SkillsPage = () => {
-    const open = useSelector((state) => state.skills.open);
+    // const open = useSelector((state) => state.skills.open);
 
     const elements = useSelector((state) => state.skills.allLanguages.elements);
     console.log("elements :", elements);

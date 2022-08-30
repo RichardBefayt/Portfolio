@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 import Informations from "./Informations";
 import Formations from "./Formations";
