@@ -5,11 +5,18 @@ import FormationsItems from "./FormationsItems";
 
 import './formations.css';
 
-const Formations = () => {
+const Formations = ({ openFormations, setOpenFormations }) => {
     const curriculums = useSelector((state) => state.curriculum.data);
 
     return (
         <div className="formations">
+            <button
+                className="btn btn-light"
+                onClick={() => setOpenFormations(openFormations)}
+            >
+                X
+            </button>
+            
             <div className='formations-container'>
                 {
                     curriculums.map(

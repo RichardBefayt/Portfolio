@@ -7,8 +7,8 @@ import './skills-page.css';
 const SkillsPage = () => {
     const open = useSelector((state) => state.skills.open);
 
-    const skills = useSelector((state) => state.skills.allLanguages);
-    console.log("skills.elements :", skills.elements);
+    const elements = useSelector((state) => state.skills.allLanguages.elements);
+    console.log("elements :", elements);
 
     // skills.forEach((skill) => console.log(skill.elements));
     // const elements = skills.forEach((skill) => console.log(skill.elements));

@@ -33,7 +33,10 @@ const About = () => {
                     <h3>Informations</h3>
                 </div>
                 <div className={`about-dropdown ${openInfos ? "active" : "inactive"}`}>
-                    <Informations />
+                    <Informations
+                        open={openInfos}
+                        setOpenInfos={setOpenInfos}
+                    />
                 </div>
 
                 {/* Expériences professionnelles */}
@@ -47,7 +50,10 @@ const About = () => {
                     <h3>Expériences professionnelles</h3>
                 </div>
                 <div className={`about-dropdown ${openFormations ? "active" : "inactive"}`}>
-                    <Formations />
+                    <Formations
+                        open={openFormations}
+                        setOpenFormations={setOpenFormations}
+                    />
                 </div>
                 
                 {/* Loisirs */}
@@ -61,7 +67,10 @@ const About = () => {
                     <h3>Loisirs</h3>
                 </div>
                 <div className={`about-dropdown ${openPersonal ? "active" : "inactive"}`}>
-                    <Personal />
+                    <Personal
+                        open={openPersonal}
+                        setOpenPersonal={setOpenPersonal}
+                    />
                 </div>
                 
             </div>

@@ -8,13 +8,6 @@
     align-items: center;
 }
 
-.informations-img {
-    width: 80%;
-    height: 50%;
-    border: 1px solid var(--firstColor);
-    box-shadow: rgba(248, 248, 248, 0.24) 0px 3px 6px;
-}
-
 .informations-presentation {
     line-height: 1.7rem;
     text-align: justify;

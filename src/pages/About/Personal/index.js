@@ -6,9 +6,16 @@ import { MdDirectionsBike, MdHistoryEdu } from "react-icons/md";
 import { FaUserAstronaut } from "react-icons/fa";
 import { SiYourtraveldottv } from "react-icons/si";
 
-const Personal = () => {
+const Personal = ({ openPersonal, setOpenPersonal }) => {
     return (
         <div className="personal">
+            <button
+                className="btn btn-light"
+                onClick={() => setOpenPersonal(openPersonal)}
+            >
+                X
+            </button>
+            
             <ul className='personal-list'>
                 <li className='personal-item'>
                     <CgGames size={30} style={{color: "#fff", marginRight: "0.6rem" }} />

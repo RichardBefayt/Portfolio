@@ -12,7 +12,7 @@ body {
 	background-color: #202020;
 }
 body::-webkit-scrollbar {
-	width: 15px;
+	width: 13px;
 }
 body::-webkit-scrollbar-track {
 	background-color: #202020;

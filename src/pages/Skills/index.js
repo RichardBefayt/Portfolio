@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 const Skills = () => {
 
     const skills = useSelector((state) => state.skills.allLanguages);
-    // console.log("skills :", skills);
+    console.log("skills :", skills);
 
     return (
         <div className='skills'>
