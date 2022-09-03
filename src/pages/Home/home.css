@@ -6,7 +6,7 @@
     align-items: center;
     color: var(--firstColor);
     width: 70%;
-    min-width: 260px;
+    min-width: 200px;
     max-width: 1200px;
     margin-bottom: auto;
 }
@@ -38,9 +38,7 @@
     .home-buttons {
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 360px) {
     .home-buttons .btn {
         margin: 0.3rem;
     }

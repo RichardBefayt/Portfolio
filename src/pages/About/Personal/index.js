@@ -1,6 +1,8 @@
 
 import './personal.css';
 
+import personalImg from "../../../assets/images/loisirs-img.jpg";
+
 import { CgGames } from "react-icons/cg";
 import { MdDirectionsBike, MdHistoryEdu } from "react-icons/md";
 import { FaUserAstronaut } from "react-icons/fa";
@@ -9,12 +11,17 @@ import { SiYourtraveldottv } from "react-icons/si";
 const Personal = ({ openPersonal, setOpenPersonal }) => {
     return (
         <div className="personal">
-            <button
-                className="btn btn-light"
-                onClick={() => setOpenPersonal(openPersonal)}
-            >
-                X
-            </button>
+            <div className="personal-header">
+                <div className="personal-img-container">
+                    <img className="personal-img" src={personalImg} alt="" />
+                </div>
+                <button
+                    className="btn btn-light"
+                    onClick={() => setOpenPersonal(openPersonal)}
+                >
+                    X
+                </button>
+            </div>
             
             <ul className='personal-list'>
                 <li className='personal-item'>

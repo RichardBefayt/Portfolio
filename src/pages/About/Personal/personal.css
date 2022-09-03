@@ -1,3 +1,22 @@
+.personal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    clip-path: ellipse(50% 50%);
+}
+
+.personal-img {
+    width: 150px;
+}
+
 .personal-item {
     display: flex;
     align-items: center;
