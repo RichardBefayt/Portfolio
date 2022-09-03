@@ -10,7 +10,7 @@
 
 .skills-title {
     font-size: 2.5rem;
-    margin: 2rem;
+    margin: 1rem 2rem;
 }
 
 .skills-intro {
@@ -28,11 +28,11 @@
     min-width: 300px;
     max-width: 1280px;
     height: auto;
-    margin: 5px auto 35px;
+    margin: 0 auto 35px;
     padding: 20px 15px;
     background-color: #ccc;
     border-radius: 15px;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 .skills-container>* {

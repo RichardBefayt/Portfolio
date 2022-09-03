@@ -43,14 +43,13 @@
     .website-card {
         width: 400px;
         height: auto;
-        margin-bottom: 0.5rem;
+        margin-bottom: 5rem;
     }
 }
 
 @media screen and (max-width: 479px) {
     .website-card {
         width: 300px;
-        margin-bottom: 0.5rem;
     }
 }
 

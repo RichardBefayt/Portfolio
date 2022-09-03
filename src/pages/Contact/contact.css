@@ -1,8 +1,8 @@
 .contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     color: var(--firstColor);
     margin-bottom: auto;
 }
@@ -13,16 +13,25 @@
 }
 
 .contact-introduction {
-    max-width: 800px;
+    width: 60%;
+    min-width: 260px;
+    max-width: 1200px;
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1920px) {
+    .contact {
+        margin-top: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .contact {
-        margin: 1vh 0;
-        width: 70%;
+        margin-top: 0;
+        margin-bottom: 50px;
     }
 
     .contact-title {
@@ -31,13 +40,24 @@
 
     .contact-introduction {
         font-size: 1.2rem;
-        
     }
 }
 
 @media screen and (max-width: 1040px) {
+
     .contact-introduction {
-        margin-bottom: 1.5rem;
         font-size: 1rem;
     }
 }
+
+/* @media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+} */
