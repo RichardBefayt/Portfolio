@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     color: var(--firstColor);
+    width: 70%;
+    min-width: 260px;
+    max-width: 1200px;
     margin-bottom: auto;
 }
 
@@ -13,7 +16,7 @@
 }
 
 .contact-introduction {
-    width: 60%;
+    width: 70%;
     min-width: 260px;
     max-width: 1200px;
     font-size: 1rem;
@@ -21,18 +24,7 @@
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1920px) {
-    .contact {
-        margin-top: 3.5rem;
-        font-size: 1rem;
-    }
-}
-
 @media screen and (max-width: 1280px) {
-    .contact {
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
 
     .contact-title {
         font-size: 1.5em;
@@ -44,7 +36,6 @@
 }
 
 @media screen and (max-width: 1040px) {
-
     .contact-introduction {
         font-size: 1rem;
     }

@@ -116,12 +116,7 @@ footer {
 }
 
 @media screen and (max-width: 1040px) {
-    footer {
-        bottom: 0;
-    }
-
     .main-content {
-        flex-wrap: wrap;
         flex-direction: column;
     }
 
