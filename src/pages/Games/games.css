@@ -10,21 +10,19 @@
 .games-title {
     font-size: 2rem;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .games-container {
-    width: 100%;
-    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 @media screen and (max-width: 1040px) {
-
-    .games {
-        height: auto;
+    .games-title {
+        margin-top: 0vh;
     }
 
     .games-container {

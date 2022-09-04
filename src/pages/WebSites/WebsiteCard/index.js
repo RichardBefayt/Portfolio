@@ -28,7 +28,7 @@ const WebsiteCard = ({ subtitle, slug, thumbnail, description, target }) => {
 
 WebsiteCard.propTypes = {
 	subtitle: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
+    // slug: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	target: PropTypes.string.isRequired,

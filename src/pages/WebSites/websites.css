@@ -10,16 +10,21 @@
 .websites-title {
     font-size: 2rem;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .websites-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 @media screen and (max-width: 1040px) {
+    .websites-title {
+        margin-top: 0vh;
+    }
+
     .websites-container {
         flex-direction: column;
     }

@@ -16,7 +16,7 @@
 .skills-intro {
     margin: 0 0 2rem;
     line-height: 1.4;
-    min-width: 360px;
+    min-width: 260px;
     max-width: 1280px;
     text-align: justify;
     line-height: 1.8;
@@ -25,7 +25,7 @@
 .skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    min-width: 300px;
+    min-width: 90px;
     max-width: 1280px;
     height: auto;
     margin: 0 auto 35px;
@@ -53,6 +53,22 @@
 
 @media screen and (max-width: 700px) {
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .skills {
+        width: 70%;
+    }
+
+    .skills-intro {
+        font-size: 3vw;
+    }
+
+    .skills-container {
+        
     }
 }
