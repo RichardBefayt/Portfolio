@@ -1,4 +1,16 @@
+.personal {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 .personal-header {
+    grid-area: 1 / 1 / 2 / 6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +27,18 @@
 
 .personal-img {
     width: 150px;
+}
+
+.personal-items {
+    grid-area: 3 / 2 / 6 / 5;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-items ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .personal-item {

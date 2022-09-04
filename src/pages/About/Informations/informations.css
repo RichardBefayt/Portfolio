@@ -1,5 +1,5 @@
 .informations>* {
-    margin: 10px;
+    padding: 10px;
 }
 
 .informations-header {
@@ -21,23 +21,19 @@
     width: 150px;
 }
 
-.informations-text {
+.informations-middle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.informations-text>*,
-.informations-presentation {
-    margin: 20px 0;
+.informations-middle>* {
     text-align: justify;
-}
-.informations-presentation {
     line-height: 1.7rem;
 }
 
-.informations-contact {
+.informations-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -13,7 +13,7 @@ const Skills = () => {
         <div className='skills'>
 
             <h1 className='skills-title'>Snippets</h1>
-            <p className='skills-intro'>Dans une liste non-exhaustive, sont regroupées ici des notions sous forme de bout de code, acquises durant ma formation ainsi que par la pratique personnelle. Elle sera complétée au fil du temps. Il ne s'agit en aucun cas d'un cours ni d'un tuto.</p>
+            <p className='skills-intro'>Dans une liste non-exhaustive, sont regroupées ici, sous forme de bout de code, des notions acquises durant ma formation ainsi que par la pratique personnelle. Elle sera complétée au fil du temps. Il ne s'agit en aucun cas d'un cours ni d'un tuto.</p>
 
             <div className="skills-container">
                 {

@@ -38,6 +38,7 @@ form {
 
 .form-textarea {
     resize: none;
+    height: 250px;
 }
 
 .btn-submit {
@@ -51,6 +52,7 @@ form {
     background: var(--secondColor);
     border: 1px solid var(--firstColor);
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .btn-submit:hover {

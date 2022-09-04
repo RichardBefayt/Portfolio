@@ -113,7 +113,7 @@ const Form = () => {
             </div>
             
             <div className="form-bottom">
-                <div className="form-textarea">
+                <div className="form-textarea-container">
                     <label
                         className='form-label'
                     >

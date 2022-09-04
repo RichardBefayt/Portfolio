@@ -4,7 +4,7 @@ export default [
         id: 1,
         entitled: '💻 Développeur Web',
         subtitle: "Formation Développeur Web Fullstack - O'clock",
-        duration: 'mai 2021 - oct 2022',
+        duration: 'mai 2020 - oct 2021',
         description: "Durant 3 mois nous avons appris les bases des langages : HTML, CSS, JavaScript, NodeJS, SQL... Puis un mois de spécialisation où j'ai choisi le Front avec React. Et enfin, un dernier mois sur la réalisation d'un projet fullstack en équipe.",
         job: 'Développeur Web Front-End',
         time: 'De votre réponse - à la retraite',
