@@ -27,38 +27,38 @@ const Navbar = () => {
                 <h1 className="header-title">Portfolio</h1>
             </Link>
 
-                <ul className={click ? "navbar-menu active" : "navbar-menu"}>
-                    <li>
-                        <Link to="/">Accueil</Link>
-                    </li>
-                    <li>
-                        <Link to="/a-propos">A Propos</Link>
-                    </li>
-                    <li>
-                        <Link to="/snippets">Snippets</Link>
-                    </li>
-                    <li>
-                        <Link to="/projets">Projets</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
+            <ul className={click ? "navbar-menu active" : "navbar-menu"}>
+                <li>
+                    <Link to="/">Accueil</Link>
+                </li>
+                <li>
+                    <Link to="/a-propos">A Propos</Link>
+                </li>
+                <li>
+                    <Link to="/snippets">Snippets</Link>
+                </li>
+                <li>
+                    <Link to="/projets">Projets</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+            </ul>
 
-                <div className='navbar-hamburger' onClick={handleClick}>
-                    {/* Ternaire : au click j'affiche la croix pour fermer, sinon j'affiche l'icône hamburger */}
-                    {click ? (
-                        <FaTimes
-                            size={20}
-                            style={{color: "#fff"}}
-                        />
-                    ) : (
-                        <FaBars
-                            size={20}
-                            style={{color: "#fff"}}
-                        />
-                    )}
-                </div>
+            <div className='navbar-hamburger' onClick={handleClick}>
+                {/* Ternaire : au click j'affiche la croix pour fermer, sinon j'affiche l'icône hamburger */}
+                {click ? (
+                    <FaTimes
+                        size={20}
+                        style={{color: "#fff"}}
+                    />
+                ) : (
+                    <FaBars
+                        size={20}
+                        style={{color: "#fff"}}
+                    />
+                )}
+            </div>
         </div>
     );
 };
