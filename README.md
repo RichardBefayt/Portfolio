@@ -6,7 +6,7 @@ Bonjour et bienvenue sur mon Portfolio (Version 1 en cours).
 - React
 - Redux
 - CSS
-
+<!-- 
 ## Améliorations Portfolio
 Quelques exemples de modifications qui seront apportées :
 ### **A propos** :
@@ -14,7 +14,7 @@ Quelques exemples de modifications qui seront apportées :
 - Un système d'onglets dans la partie *Formations et Expériences Professionnelles*.
 
 ### **Sites Web** et **Jeux** :
-- Une courte vidéo de présentation au survol pour chaque carte.
+- Une courte vidéo de présentation au survol pour chaque carte. -->
 
 ## Contact
 Pour me contacter, vous pouvez me joindre : 
