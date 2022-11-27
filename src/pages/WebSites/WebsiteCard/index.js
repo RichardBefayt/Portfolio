@@ -10,16 +10,16 @@ import './website-card.css';
 const WebsiteCard = ({ subtitle, slug, thumbnail, description, target }) => {
     return (
         <div className='website-card'>
-            {/* <a href={slug} className="website-card__link" target="_blank" rel="noreferrer"> */}
-            <Link to='/en-construction' className="game-card__link">
+            <a href={slug} className="website-card__link" target="_blank" rel="noreferrer">
+            {/* <Link to='/en-construction' className="game-card__link"> */}
 
             
                 <h2 className="website-card__subtitle">{subtitle}</h2>
                 <div className="website-card__img-container">
                     <img className='website-card__img' src={thumbnail} alt={subtitle} />
                 </div>
-            </Link>
-            {/* </a> */}
+            {/* </Link> */}
+            </a>
             <p className="website-card__description">{description}</p>
             <a href={target} target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
         </div>

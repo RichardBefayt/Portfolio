@@ -9,9 +9,9 @@ const Home = () => (
             <h3 className='home-subtitle'>Développeur Web Front-End</h3>
             
             <div className='home-buttons'>
-                <NavLink to='/snippets' className='btn'>Snippets</NavLink>
-                <NavLink to='/projets' className='btn'>Projets</NavLink>
-                <NavLink to='/contact' className='btn'>Contact</NavLink>
+                {/* <NavLink to='/snippets' className='btn'>Snippets</NavLink> */}
+                <NavLink to='/projets/sites-web' className='btn'>Projets</NavLink>
+                {/* <NavLink to='/contact' className='btn'>Contact</NavLink> */}
             </div>
         </div>
     </div>

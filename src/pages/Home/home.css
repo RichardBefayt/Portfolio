@@ -28,6 +28,7 @@
 
 .home-buttons {
     display: flex;
+    justify-content: center;
 }
 
 .home-buttons .btn {
