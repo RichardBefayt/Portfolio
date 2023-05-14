@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-import cinema from '../assets/images/websites/cinema.jpg';
+// import cinema from '../assets/images/websites/cinema.jpg';
 import restaurant from '../assets/images/websites/restaurant.jpg';
-import moto from '../assets/images/websites/moto.jpg';
+// import moto from '../assets/images/websites/moto.jpg';
 import pizza from '../assets/images/websites/bs-pizza.jpg';
 
 export default [
