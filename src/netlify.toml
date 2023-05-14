@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  
+[context.production.environment]
+  # Définissez ici vos variables d'environnement spécifiques à l'environnement de production
+
+[context.branch-deploy.environment]
+  # Définissez ici vos variables d'environnement spécifiques aux déploiements sur les branches
+
+[context.deploy-preview.environment]
+  # Définissez ici vos variables d'environnement spécifiques aux déploiements de prévisualisation
