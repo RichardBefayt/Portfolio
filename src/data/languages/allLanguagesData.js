@@ -1,60 +1,59 @@
 /* eslint-disable import/no-anonymous-default-export */
-// Mettre importation des images dans 1 autre dossier puis importer ici
 // Images HTML
-import imgHtmlCard from "../../assets/images/html/illustrationHtml.jpg";
-import titlesImg from "../../assets/images/html/Titres.png";
-import linksImg from "../../assets/images/html/Images.png";
-import listsImg from "../../assets/images/html/Listes.png";
-import arraysHtmlImg from "../../assets/images/html/Tableaux.png";
-import formsImg from "../../assets/images/html/Formulaires.png";
+import imgHtmlCard from "../../assets/images/technos/html/illustrationHtml.jpg";
+import titlesImg from "../../assets/images/technos/html/Titres.png";
+import linksImg from "../../assets/images/technos/html/Images.png";
+import listsImg from "../../assets/images/technos/html/Listes.png";
+import arraysHtmlImg from "../../assets/images/technos/html/Tableaux.png";
+import formsImg from "../../assets/images/technos/html/Formulaires.png";
 
 // Images Css
-import imgCssCard from "../../assets/images/css/illustrationCss.jpg";
-import positionsImg from "../../assets/images/css/Positions.png";
-import flexboxImg from "../../assets/images/css/Flexbox.png";
-import gridImg from "../../assets/images/css/Grid.png";
-import animationsImg from "../../assets/images/css/Animations.png";
-import mediaQueriesImg from "../../assets/images/css/MediaQueries.png";
+import imgCssCard from "../../assets/images/technos/css/illustrationCss.jpg";
+import positionsImg from "../../assets/images/technos/css/Positions.png";
+import flexboxImg from "../../assets/images/technos/css/Flexbox.png";
+import gridImg from "../../assets/images/technos/css/Grid.png";
+import animationsImg from "../../assets/images/technos/css/Animations.png";
+import mediaQueriesImg from "../../assets/images/technos/css/MediaQueries.png";
 
 // Images Javascript
-import imgJsCard from "../../assets/images/js/illustrationJs.jpg";
-import functionsImg from "../../assets/images/js/Fonctions.png";
-import loopsImg from "../../assets/images/js/Boucles.png";
-import conditionsImg from "../../assets/images/js/Conditions.png";
-import objectsImg from "../../assets/images/js/Objets.png";
-import arraysJsImg from "../../assets/images/js/Tableaux.png";
-import domImg from "../../assets/images/js/DOM.png";
-import promisesImg from "../../assets/images/js/Promesses.png";
+import imgJsCard from "../../assets/images/technos/js/illustrationJs.jpg";
+import functionsImg from "../../assets/images/technos/js/Fonctions.png";
+import loopsImg from "../../assets/images/technos/js/Boucles.png";
+import conditionsImg from "../../assets/images/technos/js/Conditions.png";
+import objectsImg from "../../assets/images/technos/js/Objets.png";
+import arraysJsImg from "../../assets/images/technos/js/Tableaux.png";
+import domImg from "../../assets/images/technos/js/DOM.png";
+import promisesImg from "../../assets/images/technos/js/Promesses.png";
 
 // Images React/Redux
-import imgReactCard from "../../assets/images/react/illustrationReact.jpg";
-import componentsImg from "../../assets/images/react/Composants.png";
-import hooksImg from "../../assets/images/react/Hooks.png";
-import propsImg from "../../assets/images/react/Props.png";
-import renderingConditionalImg from "../../assets/images/react/AffichageConditionnel.png";
-import controlledFieldsImg from "../../assets/images/react/ChampsContrôlés.png";
-import storeImg from "../../assets/images/react/Store.png";
-import actionsImg from "../../assets/images/react/Actions.png";
+import imgReactCard from "../../assets/images/technos/react/illustrationReact.jpg";
+import componentsImg from "../../assets/images/technos/react/Composants.png";
+import hooksImg from "../../assets/images/technos/react/Hooks.png";
+import propsImg from "../../assets/images/technos/react/Props.png";
+import renderingConditionalImg from "../../assets/images/technos/react/AffichageConditionnel.png";
+import controlledFieldsImg from "../../assets/images/technos/react/ChampsContrôlés.png";
+import storeImg from "../../assets/images/technos/react/Store.png";
+import actionsImg from "../../assets/images/technos/react/Actions.png";
 
 // Images NodeJS
-import imgNodeCard from "../../assets/images/nodejs/illustrationNodeJs.jpg";
-import expressImg from "../../assets/images/nodejs/Express.png";
-import roadsImg from "../../assets/images/nodejs/Routes.png";
-import dotenvImg from "../../assets/images/nodejs/Dotenv.png";
-import ejsImg from "../../assets/images/nodejs/Ejs.png";
+import imgNodeCard from "../../assets/images/technos/nodejs/illustrationNodeJs.jpg";
+import expressImg from "../../assets/images/technos/nodejs/Express.png";
+import roadsImg from "../../assets/images/technos/nodejs/Routes.png";
+import dotenvImg from "../../assets/images/technos/nodejs/Dotenv.png";
+import ejsImg from "../../assets/images/technos/nodejs/Ejs.png";
 
 // Images SQL
-import imgSqlCard from "../../assets/images/sql/illustrationSql.jpg";
-import diagramImg from "../../assets/images/sql/Diagrams.png";
-import crudImg from "../../assets/images/sql/Crud.png";
+import imgSqlCard from "../../assets/images/technos/sql/illustrationSql.jpg";
+import diagramImg from "../../assets/images/technos/sql/Diagrams.png";
+import crudImg from "../../assets/images/technos/sql/Crud.png";
 
 // Images Git
-import imgGitCard from "../../assets/images/git/illustrationGit.png";
-import commitImg from "../../assets/images/git/Commit.png";
-import branchsImg from "../../assets/images/git/Branches.png";
+import imgGitCard from "../../assets/images/technos/git/illustrationGit.png";
+import commitImg from "../../assets/images/technos/git/Commit.png";
+import branchsImg from "../../assets/images/technos/git/Branches.png";
 
 // Autres
-import imgNeutre from "../../assets/images/autres/neutre.jpg"
+import imgIA from "../../assets/images/technos/ia/ia.jpg"
 
 export default [
     {
@@ -322,9 +321,10 @@ export default [
     {
         id: 8,
         slug: "next",
-        title: 'Autres',
-        definition: 'Langages à venir',
-        picture: imgNeutre,
+        title: 'Intelligence Artificielle',
+        definition: 'ChatGPT, Midjourney...',
+        picture: imgIA
+,
         elements: [
             {
                 id: 8.1,

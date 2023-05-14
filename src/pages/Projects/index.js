@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 import './projects.css';
 
-import WebsitesImg from "../../assets/images/sites-web.pe.jpg";
-import GamesImg from "../../assets/images/jeux.pe.jpg";
+import WebsitesImg from "../../assets/images/websites/sites-web.pe.jpg";
+import GamesImg from "../../assets/images/games/jeux.pe.jpg";
 
 const Projects = () => {
 

@@ -32,9 +32,10 @@
 }
 
 .sites-web {
-    background-image: url(../assets/images/websites-bg.jpg);
+    background-image: url(../assets/images/websites/websites-bg.jpg);
+    filter: brightness(50%) blur(2px);
 }
 
 .jeux {
-    background-image: url(../assets/images/jeux.jpg);
+    background-image: url(../assets/images/games/jeux.jpg);
 }

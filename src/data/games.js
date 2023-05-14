@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-import voitures from '../assets/images/voitures.jpg';
-import chevaux from '../assets/images/chevaux.jpg';
-import labyrinthe from '../assets/images/labyrinthe.jpg';
+import voitures from '../assets/images/games/voitures.jpg';
+import chevaux from '../assets/images/games/chevaux.jpg';
+import labyrinthe from '../assets/images/games/labyrinthe.jpg';
 
 export default [
     {
