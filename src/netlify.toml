@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "dist"
-  
+  publish = "index.html"
+
 [context.production.environment]
   # Définissez ici vos variables d'environnement spécifiques à l'environnement de production
 
