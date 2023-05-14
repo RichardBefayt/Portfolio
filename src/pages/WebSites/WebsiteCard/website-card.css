@@ -16,7 +16,7 @@
 
 .website-card__subtitle {
     font-size: 1.5rem;
-    padding: 0;
+    padding-bottom: 10px;
 }
 
 .website-card__img-container {
@@ -34,7 +34,7 @@
     transition: 0.3s ease-in-out;
 }
 .website-card__img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .website-card__description {

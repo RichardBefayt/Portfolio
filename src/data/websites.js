@@ -44,7 +44,7 @@ export default [
     //     slug: "https://monappcine.netlify.app/",
     //     subtitle: 'Salle de Cinéma (code en développement)',
     //     thumbnail: cinema,
-    //     description: "Actuellement je rencontre un problème sur ma clé d'API (pourtant valide), ce qui empêche l'accès au site.. Malgré tout, vous devriez pouvoir y accéder par le lien github ci-dessous. Bonne visite.",
+    //     description: "Sorties ciné en temps réel",
     //     target: "",
     // },
 ]
