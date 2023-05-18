@@ -25,7 +25,7 @@ export default [
     {
         id: 3,
         subtitle: "L'Art Culinaire",
-        slug: 'http://127.0.0.1:5500/html/home.html',
+        slug: 'https://lartculinaire.netlify.app/',
         thumbnail: restaurant,
         description: "Consultez la carte de notre restaurant, nous ne doutons pas que vous réserviez une table dans les 24h.",
         target: "https://github.com/RichardBefayt/l-art-culinaire",
