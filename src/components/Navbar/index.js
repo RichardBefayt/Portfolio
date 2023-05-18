@@ -34,12 +34,12 @@ const Navbar = () => {
                 <li>
                     <Link to="/a-propos">A Propos</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/snippets">Snippets</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link to="/projets">Projets</Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
