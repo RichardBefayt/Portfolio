@@ -12,8 +12,8 @@ import NotFound from '../pages/NotFound';
 // Pages
 import Home from '../pages/Home';
 import About from '../pages/About';
-import Skills from '../pages/Skills';
-import SkillsPage from '../pages/SkillsPage';
+// import Skills from '../pages/Skills';
+// import SkillsPage from '../pages/SkillsPage';
 import Projects from '../pages/Projects';
 import WebSites from '../pages/WebSites';
 import Games from '../pages/Games';
@@ -34,9 +34,9 @@ const App = () => {
 				setClassNameBackground('accueil');
 				break;
 
-			case "/snippets":
-				setClassNameBackground('snippets');
-				break;
+			// case "/snippets":
+			// 	setClassNameBackground('snippets');
+			// 	break;
 
 			case "/projets":
 				setClassNameBackground('projets');
