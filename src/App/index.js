@@ -16,7 +16,7 @@ import About from '../pages/About';
 // import SkillsPage from '../pages/SkillsPage';
 import Projects from '../pages/Projects';
 import WebSites from '../pages/WebSites';
-import Games from '../pages/Games';
+// import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 
 import "./app.css";
@@ -46,9 +46,9 @@ const App = () => {
 				setClassNameBackground('sites-web');
 				break;
 
-			case "/projets/jeux":
-				setClassNameBackground('jeux');
-				break;
+			// case "/projets/jeux":
+			// 	setClassNameBackground('jeux');
+			// 	break;
 
 		
 			default:
@@ -72,7 +72,7 @@ const App = () => {
 
 				<Route path='/projets' element={<Projects />} />
 				<Route path='/projets/sites-web' element={<WebSites />} />
-				<Route path='/projets/jeux' element={<Games />} />
+				{/* <Route path='/projets/jeux' element={<Games />} /> */}
 
 
 				<Route path='/contact' element={<Contact />} />
