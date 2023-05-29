@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,25 @@ const Navbar = () => {
     const [ click, setClick ] = useState(false);
     const handleClick = () => setClick(!click);
 
+    const closeMobileMenu = () => {
+        setClick(false);
+    };
+    
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!event.target.closest(".navbar-menu") && click) {
+                setClick(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [click]);
+      
+
     const [ color, setColor ] = useState(false);
     const changeColor = () => {
         if (window.scrollY >= 100) {
@@ -18,6 +37,7 @@ const Navbar = () => {
             setColor(false);
         }
     };
+    
 
     window.addEventListener("scroll", changeColor);
 
@@ -29,19 +49,19 @@ const Navbar = () => {
 
             <ul className={click ? "navbar-menu active" : "navbar-menu"}>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <Link to="/" onClick={closeMobileMenu}>Accueil</Link>
                 </li>
                 <li>
-                    <Link to="/a-propos">A Propos</Link>
+                    <Link to="/a-propos" onClick={closeMobileMenu}>A Propos</Link>
                 </li>
                 {/* <li>
                     <Link to="/snippets">Snippets</Link>
                 </li> */}
-                {/* <li>
-                    <Link to="/projets">Projets</Link>
-                </li> */}
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/projets/sites-web" onClick={closeMobileMenu}>Projets</Link>
+                </li>
+                <li>
+                    <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>
                 </li>
             </ul>
 
