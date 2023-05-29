@@ -1,8 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-// import cinema from '../assets/images/websites/cinema.jpg';
+import pizza from '../assets/images/websites/bs-pizza.jpg';
 import restaurant from '../assets/images/websites/restaurant.jpg';
 // import moto from '../assets/images/websites/moto.jpg';
-import pizza from '../assets/images/websites/bs-pizza.jpg';
+// import cinema from '../assets/images/websites/cinema.jpg';
 
 export default [
     // {
@@ -20,6 +20,7 @@ export default [
         slug: 'https://bs-pizza.netlify.app/',
         thumbnail: pizza,
         description: "Pour déguster les meilleures pizzas de la région, c'est ici.",
+        technos: "HTML, CSS, JavaScript",
         target: "https://github.com/RichardBefayt/Bs-Pizza",
     },
     {
@@ -28,15 +29,24 @@ export default [
         slug: 'https://lartculinaire.netlify.app/',
         thumbnail: restaurant,
         description: "Consultez la carte de notre restaurant, nous ne doutons pas que vous réserviez une table dans les 24h.",
+        technos: "HTML, CSS, JavaScript",
         target: "https://github.com/RichardBefayt/l-art-culinaire",
     },
 
     // {
+    //     id: 4,
+    //     subtitle: 'L'Univers du Geek (code en développement)',
+    //     // slug: '',
+    //     thumbnail: informatique,
+    //     description: "L'endroit parfait pour s'équiper et décorer son propre univers.",
+    //     // target: "",
+    // },
+    // {
     //     id: 5,
-    //     subtitle: 'Concessionnaire Moto (code en développement)',
+    //     subtitle: 'Ride On (code en développement)',
     //     // slug: '',
     //     thumbnail: moto,
-    //     description: "Envie d'un bolide ? Ne cherchez plus, vous l'avez trouvé.",
+    //     description: "Envie d'une balade en 2 roues ? Ne cherchez plus, vous l'avez trouvé.",
     //     // target: "",
     // },
     // {

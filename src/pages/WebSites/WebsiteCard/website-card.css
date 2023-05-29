@@ -37,9 +37,9 @@
     transform: scale(1.05);
 }
 
-.website-card__description {
+.website-card__technos {
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 1266px) {
