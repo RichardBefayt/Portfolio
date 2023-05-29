@@ -30,6 +30,6 @@ npm start
 ```
 
 ### Hébergement Netlify
-[Portfolio](https://richardbefayt.netlify.app)
+[Portfolio](https://richard-befayt.netlify.app)
 
 ## Bonne visite et à bientôt
