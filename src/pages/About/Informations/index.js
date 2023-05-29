@@ -36,7 +36,7 @@ const Informations = ({ openInfos, setOpenInfos }) => {
                         <li>59 avenue Roger Guichard</li>
                         <li>95610 - Éragny</li>
                         <li>06.35.02.11.58</li>
-                        <li>rbefayt@gmail.com</li>
+                        <li>richardbefaytdev@gmail.com</li>
                     </ul>
                 </div>    
             </div>

@@ -18,7 +18,7 @@ Quelques exemples de modifications qui seront apportées :
 
 ## Contact
 Pour me contacter, vous pouvez me joindre : 
-- Par mail : ```rbefayt@gmail.com```
+- Par mail : ```richardbefaytdev@gmail.com```
 - Par téléphone : ```06.35.02.11.58```
 - Par le formulaire de contact dans la page *Contact*.
 

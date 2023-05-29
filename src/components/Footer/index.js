@@ -10,13 +10,12 @@ const Footer = () => (
         <div className='main-content'>
             
             <div className="left box">
-                <h2>A propos</h2>
+                <h2>Réseaux</h2>
                 <div className="content">
-                    <p className="description">Bonjour et bienvenue sur mon Portfolio. Pour suivre les prochaines avancées de mon travail, rendez-vous sur les réseaux sociaux.</p>
                     <div className="social">
                         <a href="https://www.linkedin.com/in/richardbefayt/" target="_blank" rel="noreferrer"><FaLinkedin className="social-link" /></a>
+                        <a href="https://www.instagram.com/richardbefaytdev/" target="_blank" rel="noreferrer"><FaInstagram className="social-link" /></a>
                         <a href="https://twitter.com/RichardBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
-                        <a href="https://www.instagram.com/sprichie/" target="_blank" rel="noreferrer"><FaInstagram className="social-link" /></a>
                         <a href="https://github.com/RichardBefayt" target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
                     </div>
                 </div>
@@ -37,7 +36,7 @@ const Footer = () => (
                         <Link to="/contact">
                             <FaMailBulk className="fas" />
                         </Link>
-                        <span className="text">rbefayt@gmail.com</span>
+                        <span className="text">richardbefaytdev@gmail.com</span>
                     </div>
                 </div>
             </div>
