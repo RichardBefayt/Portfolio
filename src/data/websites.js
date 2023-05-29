@@ -17,10 +17,10 @@ export default [
     {
         id: 2,
         subtitle: 'Bs Pizza',
-        slug: 'https://bs-pizza.fr',
+        slug: 'https://bs-pizza.netlify.app/',
         thumbnail: pizza,
         description: "Pour déguster les meilleures pizzas de la région, c'est ici.",
-        target: "https://bs-pizza.fr",
+        target: "https://github.com/RichardBefayt/Bs-Pizza",
     },
     {
         id: 3,
