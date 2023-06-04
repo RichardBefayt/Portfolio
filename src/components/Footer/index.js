@@ -26,7 +26,7 @@ const Footer = () => (
                         <a href="https://codepen.io/sprichie" target="_blank" rel="noreferrer"><FaCodepen className="social-link" /></a>
 
                         {/* Twitter */}
-                        <a href="https://twitter.com/RichardBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
+                        <a href="https://twitter.com/RBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
                     </div>
                 </div>
             </div>
