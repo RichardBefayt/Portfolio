@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import './footer.css';
 
-import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaCodepen } from "react-icons/fa";
 
 const Footer = () => (
     <footer className='footer'>
@@ -13,10 +13,20 @@ const Footer = () => (
                 <h2>Réseaux</h2>
                 <div className="content">
                     <div className="social">
+                        {/* LinkedIn */}
                         <a href="https://www.linkedin.com/in/richardbefayt/" target="_blank" rel="noreferrer"><FaLinkedin className="social-link" /></a>
+
+                        {/* Instagram */}
                         <a href="https://www.instagram.com/richardbefaytdev/" target="_blank" rel="noreferrer"><FaInstagram className="social-link" /></a>
-                        <a href="https://twitter.com/RichardBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
+
+                        {/* Github */}
                         <a href="https://github.com/RichardBefayt" target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
+
+                        {/* CodePen */}
+                        <a href="https://codepen.io/sprichie" target="_blank" rel="noreferrer"><FaCodepen className="social-link" /></a>
+
+                        {/* Twitter */}
+                        <a href="https://twitter.com/RichardBefayt" target="_blank" rel="noreferrer"><FaTwitter className="social-link" /></a>
                     </div>
                 </div>
             </div>
