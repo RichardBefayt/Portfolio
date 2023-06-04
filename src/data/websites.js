@@ -28,7 +28,7 @@ export default [
         subtitle: "L'Art Culinaire",
         slug: 'https://lartculinaire.netlify.app/',
         thumbnail: restaurant,
-        description: "Consultez la carte de notre restaurant, nous ne doutons pas que vous réserviez une table dans les 24h.",
+        description: "Consultez la carte de notre restaurant et réservez votre table.",
         technos: "HTML, CSS, JavaScript",
         target: "https://github.com/RichardBefayt/l-art-culinaire",
     },
