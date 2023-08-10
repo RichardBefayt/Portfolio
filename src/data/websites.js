@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import pizza from '../assets/images/websites/bs-pizza.jpg';
 import restaurant from '../assets/images/websites/restaurant.jpg';
+import VR from '../assets/images/websites/VR.png';
 // import moto from '../assets/images/websites/moto.jpg';
 // import cinema from '../assets/images/websites/cinema.jpg';
 
@@ -33,14 +34,14 @@ export default [
         target: "https://github.com/RichardBefayt/l-art-culinaire",
     },
 
-    // {
-    //     id: 4,
-    //     subtitle: 'L'Univers du Geek (code en développement)',
-    //     // slug: '',
-    //     thumbnail: informatique,
-    //     description: "L'endroit parfait pour s'équiper et décorer son propre univers.",
-    //     // target: "",
-    // },
+    {
+        id: 4,
+        subtitle: 'VIRTUALX',
+        slug: 'https://virtualx.netlify.app/',
+        thumbnail: VR,
+        description: "Découvrez votre monde sous un nouveau regard",
+        target: "https://github.com/RichardBefayt/VirtualX",
+    },
     // {
     //     id: 5,
     //     subtitle: 'Ride On (code en développement)',
