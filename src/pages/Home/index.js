@@ -10,7 +10,7 @@ const Home = () => (
             
             <div className='home-buttons'>
                 {/* <NavLink to='/snippets' className='btn'>Snippets</NavLink> */}
-                <NavLink to='/projets/sites-web' className='btn'>Projets</NavLink>
+                <NavLink to='/projets' className='btn'>Projets</NavLink>
                 {/* <NavLink to='/contact' className='btn'>Contact</NavLink> */}
             </div>
         </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Link to="/snippets">Snippets</Link>
                 </li> */}
                 <li>
-                    <Link to="/projets/sites-web" onClick={closeMobileMenu}>Projets</Link>
+                    <Link to="/projets" onClick={closeMobileMenu}>Projets</Link>
                 </li>
                 <li>
                     <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>

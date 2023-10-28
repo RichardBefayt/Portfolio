@@ -15,7 +15,7 @@ import About from '../pages/About';
 // import Skills from '../pages/Skills';
 // import SkillsPage from '../pages/SkillsPage';
 import Projects from '../pages/Projects';
-import WebSites from '../pages/WebSites';
+// import WebSites from '../pages/WebSites';
 // import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 
@@ -39,12 +39,9 @@ const App = () => {
 			// 	break;
 
 			case "/projets":
-				setClassNameBackground('projets');
-				break;
-
-			case "/projets/sites-web":
 				setClassNameBackground('sites-web');
 				break;
+
 
 			// case "/projets/jeux":
 			// 	setClassNameBackground('jeux');
@@ -70,7 +67,7 @@ const App = () => {
 				{/* <Route path='/snippets/:slug' element={<SkillsPage />} /> */}
 
 				<Route path='/projets' element={<Projects />} />
-				<Route path='/projets/sites-web' element={<WebSites />} />
+				{/* <Route path='/projets/sites-web' element={<WebSites />} /> */}
 				{/* <Route path='/projets/jeux' element={<Games />} /> */}
 
 

@@ -3,57 +3,87 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: var(--firstColor);
     margin-bottom: auto;
+    color: var(--firstColor);
 }
 
 .projects-title {
+    margin: 2rem 0;
     font-size: 2.5rem;
-    margin-top: 2rem;
 }
 
-.projectsCard-container {
-    display: flex;
-    margin: 0 auto;
-    width: 70%;
-    min-width: 200px;
-    max-width: 1000px;
-    height: auto;
-}
-
-.projectsCard__websites-container,
-.projectsCard__games-container {
-    margin: 4rem 2rem;
-}
-
-.projectsCard__websites-link,
-.projectsCard__games-link {
+.projects-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    width: 95vw;
+    min-width: 200px;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
 }
 
-.projectsCard__websites-link:hover,
-.projectsCard__games-link:hover {
-    transform: scale(1.1);
+.projects-category-title {
+    cursor: pointer;
+    width: 33%;
+    height: 45px;
+	padding: 12px 32px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+    color: #222;
+    background: var(--secondColor);
+	border: 1px solid var(--firstColor);
+    border-radius: 0px;
+}
+.projects-category-title:hover {
+    color: var(--firstColor);
+	background: rgba(255, 255, 255, 0.2);
+	transition: 0.3s;
 }
 
-.projectsCard__websites-title,
-.projectsCard__games-title {
-    position: absolute;
-    text-align: center;
-    font-size: 1.5em;
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-card-details {
+    margin: 50px 0;
+}
+.projects-card-details > * {
+    margin: 20px 0;
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
 }
 
-.projectsCard__websites-img,
-.projectsCard__games-img {
+.projects-img-container {
+    width: 550px;
+    height: 280px;
+    border: 1px solid var(--firstColor);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+}
+.projects-img-container:hover {
+    transform: scale(1.05);
+}
+
+.projects-img {
     width: 100%;
     height: 100%;
     border: 1px solid var(--firstColor);
     border-radius: 10px;
     z-index: -4;
+}
+
+.projects-description {
+    
 }
 
 @media screen and (max-width: 1040px) {
@@ -64,19 +94,7 @@
 }
 
 @media screen and (max-width: 610px) {
-
     .projects-title {
-        font-size: 4vw;
-        margin-top: 0rem;
-    }
-
-    .projectsCard-container {
-        width: 50%;
-        flex-direction: column;
-    }
-
-    .projectsCard__websites-container,
-    .projectsCard__games-container {
-        margin: 2rem 2rem;
+        margin-top: 0;
     }
 }
