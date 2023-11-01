@@ -13,24 +13,24 @@ import projectsData from "../../data/projectsData";
 // import GamesImg from "../../assets/images/games/jeux.pe.jpg";
 
 const Projects = () => {
+    // Utilisez useState pour suivre l'indice de l'onglet actuellement sélectionné
     const [selectedTab, setSelectedTab] = useState(0);
-    // console.log(projectsData);
-    console.log(selectedTab);
+  
     return (
-        <div className='projects'>
+        <div className="projects">
             <h2 className="projects-title">PROJETS</h2>
             <div className="projects-container">
-                {/* Remarque : pour utiliser `index`, obligé d'ajouter obj en paramètre */}
-                {projectsData.map((obj, index) => (
+                {projectsData.map((project, index) => (
                     <button
-                        className="projects-category-title"
+                        className={`projects-category-title ${
+                            index === selectedTab ? "selected" : ""
+                        }`}
                         key={index}
                         onClick={() => setSelectedTab(index)}
                     >
-                        {projectsData[index].title}
+                        {project.title}
                     </button>
                 ))}
-                
             </div>
             <div className="projects-content">
                 <div className="projects-card">
@@ -51,6 +51,6 @@ const Projects = () => {
             </div>
         </div>
     );
-}
-
-export default Projects;
+};
+  
+  export default Projects;

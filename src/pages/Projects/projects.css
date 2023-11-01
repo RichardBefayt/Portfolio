@@ -3,12 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
     margin-bottom: auto;
     color: var(--firstColor);
 }
 
 .projects-title {
-    margin: 2rem 0;
+    margin: 0.5rem 0;
     font-size: 2.5rem;
 }
 
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95vw;
+    width: fit-content;
     min-width: 200px;
     max-width: 1000px;
     height: auto;
@@ -36,6 +37,10 @@
 	border: 1px solid var(--firstColor);
     border-radius: 0px;
 }
+.projects-category-title.selected {
+    color: var(--firstColor);
+    background: rgba(255, 255, 255, 0.2);
+}
 .projects-category-title:hover {
     color: var(--firstColor);
 	background: rgba(255, 255, 255, 0.2);
@@ -47,6 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .projects-card-details {

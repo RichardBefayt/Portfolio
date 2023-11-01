@@ -15,7 +15,7 @@
     height: 100%;
     filter: brightness(50%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Modifiez cette ligne */
     z-index: -5;
 }
 

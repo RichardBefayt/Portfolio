@@ -108,27 +108,27 @@ export default [
         slug: 'jeux',
         introduction: "Jeux seul ou à plusieurs",
         composition: [
-            {
-                id: 31,
-                subtitle: 'Course de voiture',
-                slug: '/voitures',
-                thumbnail: voitures,
-                description: "Jeu au tour par tour. Lequel de vous ou de vos amis franchirez la ligne d'arrivée ?"
-            },
-            {
-                id: 32,
-                subtitle: 'Course de chevaux',
-                slug: '/chevaux',
-                thumbnail: chevaux,
-                description: "Affrontez d'autres joueurs en temps réel dans une course intense de chevaux !",
-            },
-            {
-                id: 33,
-                subtitle: 'Labyrinthe',
-                slug: '/labyrinthe',
-                thumbnail: labyrinthe,
-                description: '',
-            },
+            // {
+            //     id: 31,
+            //     subtitle: 'Course de voiture',
+            //     slug: '/voitures',
+            //     thumbnail: voitures,
+            //     description: "Jeu au tour par tour. Lequel de vous ou de vos amis franchirez la ligne d'arrivée ?"
+            // },
+            // {
+            //     id: 32,
+            //     subtitle: 'Course de chevaux',
+            //     slug: '/chevaux',
+            //     thumbnail: chevaux,
+            //     description: "Affrontez d'autres joueurs en temps réel dans une course intense de chevaux !",
+            // },
+            // {
+            //     id: 33,
+            //     subtitle: 'Labyrinthe',
+            //     slug: '/labyrinthe',
+            //     thumbnail: labyrinthe,
+            //     description: '',
+            // },
         ]
     },
 ]
