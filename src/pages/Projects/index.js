@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import './projects.css';
 
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 
 import projectsData from "../../data/projectsData";
 
@@ -42,9 +42,20 @@ const Projects = () => {
                                     <img className="projects-img" src={item.thumbnail} alt="" />
                                 </div>
                             </a>
-                            <p className="projects-description">Objectif : {item.description}</p>
+                            <p className="projects-description">Objectif : {item.target}</p>
                             <p className="projects-technos">Technos utilisées : {item.technos}</p>
-                            <a href={item.target} target="_blank" rel="noreferrer">Code source : <FaGithub className="social-link" /></a>
+                            <div className="details-conditions">
+                                <p className="projects-tuto">
+                                    Tutoriel : {item.tuto ? <FaCheck className="condition-icon check-icon" /> : <FaTimes className="condition-icon cross-icon" />}
+                                </p>
+                                <p className="projects-personal-project">
+                                    Projet personnel : {item.personalProject ? <FaCheck className="condition-icon check-icon" /> : <FaTimes className="condition-icon cross-icon" />}
+                                </p>
+                                <p className="projects-real-client">
+                                    Projet pour un client : {item.realClient ? <FaCheck className="condition-icon check-icon" /> : <FaTimes className="condition-icon cross-icon" />}
+                                </p>
+                            </div>
+                            <a href={item.source} target="_blank" rel="noreferrer">Code source : <FaGithub className="social-link" /></a>
                         </div>
                     ))}
                 </div>

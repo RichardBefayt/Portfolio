@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 import './website-card.css';
 
-const WebsiteCard = ({ subtitle, slug, thumbnail, description, technos, target }) => {
+const WebsiteCard = ({ subtitle, slug, thumbnail, description, technos, source }) => {
     return (
         <div className='website-card'>
             <a href={slug} className="website-card__link" target="_blank" rel="noreferrer">
@@ -22,7 +22,7 @@ const WebsiteCard = ({ subtitle, slug, thumbnail, description, technos, target }
             </a>
             <p className="website-card__description">{description}</p>
             <p className="website-card__technos">{technos}</p>
-            <a href={target} target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
+            <a href={source} target="_blank" rel="noreferrer"><FaGithub className="social-link" /></a>
         </div>
     );
 }
@@ -33,7 +33,7 @@ WebsiteCard.propTypes = {
     thumbnail: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	technos: PropTypes.string.isRequired,
-	target: PropTypes.string.isRequired,
+	source: PropTypes.string.isRequired,
 }
 
 export default WebsiteCard;
