@@ -12,9 +12,9 @@ import VR from '../assets/images/websites/VR.png';
 // import cinema from '../assets/images/websites/cinema.jpg';
 
 // Images Jeux
-import voitures from '../assets/images/games/voitures.jpg';
-import chevaux from '../assets/images/games/chevaux.jpg';
-import labyrinthe from '../assets/images/games/labyrinthe.jpg';
+// import voitures from '../assets/images/games/voitures.jpg';
+// import chevaux from '../assets/images/games/chevaux.jpg';
+// import labyrinthe from '../assets/images/games/labyrinthe.jpg';
 
 export default [
     {
@@ -95,8 +95,10 @@ export default [
             //     slug: '',
             //     thumbnail: blog,
             //     target: 'Souvenirs de voyages',
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: "",
             // },
             // {
@@ -105,8 +107,10 @@ export default [
             //     // slug: '',
             //     thumbnail: moto,
             //     target: "Envie d'une balade en 2 roues ? Ne cherchez plus, vous l'avez trouvé.",
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: "",
             // },
             // {
@@ -115,8 +119,10 @@ export default [
             //     subtitle: 'Salle de Cinéma (code en développement)',
             //     thumbnail: cinema,
             //     target: "Sorties ciné en temps réel",
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: "",
             // },
         ]
@@ -133,8 +139,10 @@ export default [
             //     slug: '/voitures',
             //     thumbnail: voitures,
             //     target: "Jeu au tour par tour. Lequel de vous ou de vos amis franchirez la ligne d'arrivée ?",
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: ""
             // },
             // {
@@ -143,8 +151,10 @@ export default [
             //     slug: '/chevaux',
             //     thumbnail: chevaux,
             //     target: "Affrontez d'autres joueurs en temps réel dans une course intense de chevaux !",
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: ""
             // },
             // {
@@ -153,8 +163,10 @@ export default [
             //     slug: '/labyrinthe',
             //     thumbnail: labyrinthe,
             //     target: '',
-            //     tuto: false,
             //     technos: "HTML, CSS, JavaScript",
+            //     tuto: false,
+            //     personalProject: true,
+            //     realClient: false,
             //     source: ""
             // },
         ]
