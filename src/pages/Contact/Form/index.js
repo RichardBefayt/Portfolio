@@ -60,13 +60,13 @@ const Form = () => {
                         className='form-label'
                         htmlFor='name'
                     >
-                        Prénom & NOM
                     </label>
                     <Input
                         id='name'
                         type='text'
                         value={name}
                         handleChange={setName}
+                        placeholder='Prénom & Nom'
                     />
                 </div>
                 <div className="form-firme">
@@ -74,13 +74,13 @@ const Form = () => {
                         className='form-label'
                         htmlFor='firme'
                     >
-                        Nom de l'entreprise
                     </label>
                     <Input
                         id='firme'
                         type='text'
                         value={firme}
                         handleChange={setFirme}
+                        placeholder="Nom de l'entreprise"
                     />
                 </div>
             </div>
@@ -90,24 +90,24 @@ const Form = () => {
                     <label
                         className='form-label'
                     >
-                        Email
                     </label>
                     <Input
                         type='email'
                         value={mail}
                         handleChange={setMail}
+                        placeholder='Email'
                     />
                 </div>
                 <div className="form-message">
                     <label
                         className='form-label'
                     >
-                        Sujet
                     </label>
                     <Input
                         type='text'
                         value={subject}
                         handleChange={setSubject}
+                        placeholder='Sujet'
                     />
                 </div>
             </div>
@@ -117,7 +117,6 @@ const Form = () => {
                     <label
                         className='form-label'
                     >
-                        Message
                     </label>
                     <textarea
                         className='form-textarea'

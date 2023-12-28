@@ -19,6 +19,10 @@ form {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+/* 
+.form-label {
+    
+} */
 
 .form-input,
 .form-textarea {

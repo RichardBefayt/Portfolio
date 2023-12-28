@@ -14,28 +14,8 @@
     width: 100%;
     height: 100%;
     filter: brightness(50%);
-    background-repeat: no-repeat;
-    background-size: cover; /* Modifiez cette ligne */
-    z-index: -5;
-}
-
-.accueil {
     background-image: url(../assets/images/background.jpg);
-}
-
-.snippets {
-    background-image: url(../assets/images/programmation.jpg);
-}
-
-.projets {
-    background-image: url(../assets/images/projets-img.jpg);
-}
-
-.sites-web {
-    background-image: url(../assets/images/websites/websites-bg.jpg);
-    filter: brightness(50%) blur(2px);
-}
-
-.jeux {
-    background-image: url(../assets/images/games/jeux.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
 }

@@ -26,9 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.informations-middle>* {
     text-align: justify;
     line-height: 1.7rem;
 }

@@ -21,9 +21,7 @@ const Informations = ({ openInfos, setOpenInfos }) => {
                 </button>
             </div>
             <div className="informations-middle">
-                <p>Bonjour et bienvenue sur mon Portfolio. Passionné depuis toujours par la création, j'ai débuté ma carrière professionnelle par le cinéma.</p>
-                
-                <p>Aujourd'hui je me reconverti en tant que Développeur Web Front-End.</p>
+                <p>Bonjour et bienvenue sur mon Portfolio. Passionné depuis toujours par la création, j'ai débuté ma carrière professionnelle par le cinéma.<br/>Aujourd'hui je me reconverti en tant que Développeur Web Front-End.</p>
             </div>
             <div className='informations-footer'>
                 <div className="informations-map-container">

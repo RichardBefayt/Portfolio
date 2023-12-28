@@ -22,40 +22,10 @@ import Contact from '../pages/Contact';
 import "./app.css";
 
 const App = () => {
-	const [classNameBackground, setClassNameBackground] = useState('accueil');
-	const location = useLocation();
-	// console.log('location:', location);
-
-	useEffect(() => {
-		switch (location.pathname) {
-			case "/":
-			case "/a-propos":
-			case "/contact":
-				setClassNameBackground('accueil');
-				break;
-
-			// case "/snippets":
-			// 	setClassNameBackground('snippets');
-			// 	break;
-
-			case "/projets":
-				setClassNameBackground('sites-web');
-				break;
-
-
-			// case "/projets/jeux":
-			// 	setClassNameBackground('jeux');
-			// 	break;
-
-		
-			default:
-				break;
-		}
-	}, [location.pathname]);
 
     return (
         <div className="app">
-			<div className={`background ${classNameBackground}`}></div>
+			<div className="background"></div>
             <Navbar />
 
             <Routes>
@@ -67,9 +37,6 @@ const App = () => {
 				{/* <Route path='/snippets/:slug' element={<SkillsPage />} /> */}
 
 				<Route path='/projets' element={<Projects />} />
-				{/* <Route path='/projets/sites-web' element={<WebSites />} /> */}
-				{/* <Route path='/projets/jeux' element={<Games />} /> */}
-
 
 				<Route path='/contact' element={<Contact />} />
                 
