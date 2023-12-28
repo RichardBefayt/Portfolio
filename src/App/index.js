@@ -14,8 +14,6 @@ import About from '../pages/About';
 // import Skills from '../pages/Skills';
 // import SkillsPage from '../pages/SkillsPage';
 import Projects from '../pages/Projects';
-// import WebSites from '../pages/WebSites';
-// import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 
 import "./app.css";
