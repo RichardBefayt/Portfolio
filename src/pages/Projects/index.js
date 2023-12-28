@@ -73,7 +73,6 @@ const Projects = () => {
                                                             Projet pour un client : {item.realClient ? <FaCheck className="condition-icon check-icon" /> : <FaTimes className="condition-icon cross-icon" />}
                                                         </p>
                                                     </div>
-                                                    <a href={item.source} target="_blank" rel="noreferrer">Code source : <FaGithub className="social-link" /></a>
                                                 </div>
                                             </div>
                                         </div>
