@@ -1,8 +1,10 @@
 /* eslint-disable import/no-anonymous-default-export */
 
 // Images Applications
-import appCuisine from '../assets/images/applications/app-cuisine-1.png';
-import appToDo from '../assets/images/applications/todo-list-react.jpg';
+// import appCuisine from '../assets/images/applications/app-cuisine-1.png';
+import appCuisine from '../assets/images/applications/app-cuisine-2.png';
+// import appToDo from '../assets/images/applications/todo-list-react.jpg';
+import appToDo from '../assets/images/applications/todo-list-react2.png';
 
 // Images Sites Web
 import pizza from '../assets/images/websites/bs-pizza.jpg';
@@ -82,7 +84,7 @@ export default [
                 subtitle: 'VIRTUALX',
                 slug: 'https://virtualx.netlify.app/',
                 thumbnail: VR,
-                target: "Animations, Panier, Favoris, Login",
+                target: "Animations, Panier, Favoris, Login...",
                 technos: "HTML, CSS, JavaScript, Stripe",
                 tuto: false,
                 personalProject: true,
