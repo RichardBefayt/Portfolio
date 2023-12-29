@@ -2,8 +2,8 @@
 import { Routes, Route } from "react-router-dom";
 
 // Composants
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+// import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
 
 import InProgress from '../pages/InProgress';
 import NotFound from '../pages/NotFound';
@@ -23,7 +23,7 @@ const App = () => {
     return (
         <div className="app">
 			<div className="background"></div>
-            <Navbar />
+            {/* <Navbar /> */}
 
             <Routes>
 				<Route path='/' element={<Home />} />
@@ -42,7 +42,7 @@ const App = () => {
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 
-			<Footer />
+			{/* <Footer /> */}
         </div>
     )
 }

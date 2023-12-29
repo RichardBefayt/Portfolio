@@ -1,39 +1,153 @@
 .home {
-    flex: 0.7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+    width: 80%;
+    margin: auto 15px;
+    color: var(--firstColor);
+}
+
+.box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--firstColor);
-    width: 70%;
-    min-width: 200px;
-    max-width: 1200px;
-    margin-bottom: auto;
+    padding: 2rem;
+    font-size: .8rem;
+    background-color: var(--fourthColor);
+    border: 1px solid var(--firstColor);
 }
 
-.home-content {
-    text-align: center;
+.home-title {    
+    grid-area: 1 / 1 / 2 / 2; /* div 1 */
+    font-size: 1.8rem;
+    background-image: url(../../assets/images/bg-home-about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.home-title:hover {    
+    color: var(--secondColor);
 }
 
-.home-content h2 {
-    font-size: 3rem;
-    padding: 0.6rem 0 1.5rem;
+.home h2 {
+    font-size: 1.3rem;
 }
 
-.home-content h3 {
-    padding: 0.6rem 0 2.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
+/***** A PROPOS *****/
+.home-about {
+    position: relative;
+    grid-area: 2 / 1 / 5 / 2; /* div 2 */
+    padding: 10px;
+    gap: 15px;
+    color: var(--thirdColor);
+    background-color: var(--firstColor);
 }
 
-.home-buttons {
+.home-about-img-container {
+}
+
+.home-about-img {
+    width: 125px;
+    border-radius: 50%;
+}
+
+.home-about-img2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.home-about-name {
+
+}
+
+.home-about-job {
+
+}
+
+.home-about-infos > * {
+    padding: 7px;
+}
+
+.home-about-infos .details {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.home-buttons .btn {
-    margin: 1rem 0.2rem;
+.home-about-infos .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.home-about-infos .fas {
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.home-about-social {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.home-about-social a:hover {
+    transform: scale(1.5);
+}
+
+/***** CV *****/
+.home-cv {
+    grid-area: 5 / 1 / 7 / 2; /* div 3 */
+    background-image: url(../../assets/images/cv.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***** SITES WEB *****/
+.home-websites {
+    grid-area: 1 / 2 / 4 / 4; /* div 4 */
+    background-image: url(../../assets/images/websites/websites-bg-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***** APPLICATIONS *****/
+.home-applications {
+    grid-area: 1 / 4 / 4 / 5; /* div 5 */
+    background-image: url(../../assets/images/applications/applications-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***** JEUX *****/
+.home-games {
+    grid-area: 4 / 2 / 7 / 3; /* div 6 */
+    background-image: url(../../assets/images/games/jeux.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***** CONTACT *****/
+.home-contact {
+    grid-area: 4 / 3 / 7 / 5; /* div 7 */
+    background-image: url(../../assets/images/contact-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 @media screen and (max-width: 460px) {
     .home-buttons {

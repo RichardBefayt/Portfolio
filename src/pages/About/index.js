@@ -7,7 +7,7 @@ import Personal from "./Personal";
 
 import './about.css';
 
-import imgProfile from "../../assets/images/apropos-img.jpg";
+// import imgProfile from "../../assets/images/apropos-img.jpg";
 import imgJobs from "../../assets/images/travail.jpg";
 import imgBike from "../../assets/images/kawa.jpg";
 
@@ -27,7 +27,7 @@ const About = () => {
                     onClick={() => setOpenInfos(!openInfos)}
                 >
                     <div className="about-container-img">
-                        <img src={imgProfile} alt="Photo de profil" />
+                        {/* <img src={imgProfile} alt="Photo de profil" /> */}
                     </div>
                     <h3>Informations</h3>
                 </div>
