@@ -68,26 +68,33 @@ const Home = () => (
         </div>
 
         <div className="home-cv box">
-            <h2>CV</h2>
+            <Link to="/about">
+                <h2>CV</h2>
+            </Link>
         </div>
 
         <div className="home-websites box">
-            <h2>SITES WEB</h2>
+            <Link to="/websites">
+                <h2>SITES WEB</h2>
+            </Link>
         </div>
-
 
         <div className="home-applications box">
-            <h2>APPLICATIONS</h2>
+            <Link to="/applications">
+                <h2>APPLICATIONS</h2>
+            </Link>
         </div>
-
 
         <div className="home-games box">
-            <h2>JEUX</h2>
+            <Link to="/games">
+                <h2>JEUX</h2>
+            </Link>
         </div>
 
-
         <div className="home-contact box">
-            <h2>CONTACT</h2>
+            <Link to="/contact">
+                <h2>CONTACT</h2>
+            </Link>
         </div>
 
     </div>

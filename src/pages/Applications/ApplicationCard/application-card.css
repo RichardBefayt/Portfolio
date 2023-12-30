@@ -1,0 +1,17 @@
+.application-card__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.application-card__img {
+    max-width: 100%;
+    height: 230px;
+    border: 1px solid var(--firstColor);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}

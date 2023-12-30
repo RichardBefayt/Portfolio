@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 // Composants
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Navbar from "../components/Navbar"; // Importez la Navbar ici
+import Footer from "../components/Footer";
 
 import InProgress from '../pages/InProgress';
 import NotFound from '../pages/NotFound';
@@ -11,38 +11,44 @@ import NotFound from '../pages/NotFound';
 // Pages
 import Home from '../pages/Home';
 import About from '../pages/About';
-// import Skills from '../pages/Skills';
-// import SkillsPage from '../pages/SkillsPage';
-import Projects from '../pages/Projects';
+import Applications from '../pages/Applications';
+import Websites from '../pages/WebSites';
+import Games from '../pages/Games';
 import Contact from '../pages/Contact';
 
 import "./app.css";
 
 const App = () => {
+    const location = useLocation();
+
+    // Fonction pour vérifier si la page est la page Home
+    const isHome = location.pathname === '/';
 
     return (
         <div className="app">
-			<div className="background"></div>
-            {/* <Navbar /> */}
+            <div className="background"></div>
+
+            {/* Afficher la Navbar pour toutes les pages sauf la page Home */}
+            {!isHome && <Navbar />}
 
             <Routes>
-				<Route path='/' element={<Home />} />
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
 
-				<Route path='/a-propos' element={<About />} />
+                <Route path='/websites' element={<Websites />} />
 
-				{/* <Route path='/snippets' element={<Skills />} /> */}
-				{/* <Route path='/snippets/:slug' element={<SkillsPage />} /> */}
+                <Route path='/applications' element={<Applications />} />
 
-				<Route path='/projets' element={<Projects />} />
+                <Route path='/games' element={<Games />} />
 
-				<Route path='/contact' element={<Contact />} />
-                
-				<Route path='/en-construction' element={<InProgress />} />
+                <Route path='/contact' element={<Contact />} />
 
-				<Route path='*' element={<NotFound />} />
-			</Routes>
+                <Route path='/in-progress' element={<InProgress />} />
 
-			{/* <Footer /> */}
+                <Route path='*' element={<NotFound />} />
+            </Routes>
+
+            <Footer />
         </div>
     )
 }

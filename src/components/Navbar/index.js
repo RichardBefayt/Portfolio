@@ -52,13 +52,19 @@ const Navbar = () => {
                     <Link to="/" onClick={closeMobileMenu}>Accueil</Link>
                 </li>
                 <li>
-                    <Link to="/a-propos" onClick={closeMobileMenu}>A Propos</Link>
+                    <Link to="/about" onClick={closeMobileMenu}>A Propos</Link>
                 </li>
                 {/* <li>
                     <Link to="/snippets">Snippets</Link>
                 </li> */}
                 <li>
-                    <Link to="/projets" onClick={closeMobileMenu}>Projets</Link>
+                    <Link to="/websites" onClick={closeMobileMenu}>Sites Web</Link>
+                </li>
+                <li>
+                    <Link to="/applications" onClick={closeMobileMenu}>Applications</Link>
+                </li>
+                <li>
+                    <Link to="/games" onClick={closeMobileMenu}>Jeux</Link>
                 </li>
                 <li>
                     <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>
