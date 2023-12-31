@@ -7,14 +7,16 @@ const Applications = () => {
 
     return (
         <div className='applications'>
-            <h2 className="applications-title">Applications</h2>
+            <h2 className="applications-title">{applications.title}</h2>
+            
             <div className='applications-container'>
-                {applications.map((application) => (
+                {applications.composition.map((application) => (
                     <ApplicationCard key={application.id} {...application} />
                 ))}
             </div>
+            
         </div>
     );
 };
 
-export default Applications; 
+export default Applications;

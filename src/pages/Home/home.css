@@ -17,12 +17,14 @@
     font-size: .8rem;
     background-color: var(--fourthColor);
     border: 1px solid var(--firstColor);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+      
 }
 
 .home-title {    
     grid-area: 1 / 1 / 2 / 2; /* div 1 */
     font-size: 1.8rem;
-    background-image: url(../../assets/images/bg-home-about.jpg);
+    background-image: url(../../assets/images/pages/home/portfolio-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,7 +109,7 @@
 /***** CV *****/
 .home-cv {
     grid-area: 5 / 1 / 7 / 2; /* div 3 */
-    background-image: url(../../assets/images/cv.png);
+    background-image: url(../../assets/images/pages/home/cv-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +118,7 @@
 /***** SITES WEB *****/
 .home-websites {
     grid-area: 1 / 2 / 4 / 4; /* div 4 */
-    background-image: url(../../assets/images/websites/websites-bg-2.png);
+    background-image: url(../../assets/images/pages/home/websites-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -125,7 +127,7 @@
 /***** APPLICATIONS *****/
 .home-applications {
     grid-area: 1 / 4 / 4 / 5; /* div 5 */
-    background-image: url(../../assets/images/applications/applications-bg.png);
+    background-image: url(../../assets/images/pages/home/applications-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -134,7 +136,7 @@
 /***** JEUX *****/
 .home-games {
     grid-area: 4 / 2 / 7 / 3; /* div 6 */
-    background-image: url(../../assets/images/games/jeux.jpg);
+    background-image: url(../../assets/images/pages/home/games-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,7 +145,7 @@
 /***** CONTACT *****/
 .home-contact {
     grid-area: 4 / 3 / 7 / 5; /* div 7 */
-    background-image: url(../../assets/images/contact-img.jpg);
+    background-image: url(../../assets/images/pages/home/contact-img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

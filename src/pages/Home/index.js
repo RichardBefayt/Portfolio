@@ -4,8 +4,8 @@ import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGith
 
 import './home.css';
 
-import imgProfil from "../../assets/images/profil.png";
-import imgPunaise from "../../assets/images/punaise.png";
+import imgProfil from "../../assets/images/pages/home/profil.png";
+import imgPunaise from "../../assets/images/pages/home/punaise.png";
 
 const Home = () => (
     <div className='home'>

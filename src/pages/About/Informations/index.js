@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import infosImg from "../../../assets/images/infosImg.jpg";
-import infosEragny from "../../../assets/images/eragny.jpg";
+import infosImg from "../../../assets/images/pages/about/infosImg.jpg";
+import infosEragny from "../../../assets/images/pages/about/eragny.jpg";
 
 import "./informations.css";
 

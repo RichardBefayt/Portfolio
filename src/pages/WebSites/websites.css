@@ -3,14 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--firstColor);
+    max-width: 100vw;
     margin-bottom: auto;
+    color: #fff;
 }
 
 .websites-title {
-    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
     text-align: center;
-    margin-top: 2vh;
+}
+
+.websites-introduction {
+    margin: 20px 0;
 }
 
 .websites-container {
@@ -18,14 +23,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (max-width: 1040px) {
-    .websites-title {
-        margin-top: 0vh;
-    }
-
-    .websites-container {
-        flex-direction: column;
-    }
+    max-width: max-content;
+    height: 100%;
+    gap: 20px;
+    padding: 20px;
 }

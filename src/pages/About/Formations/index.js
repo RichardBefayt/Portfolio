@@ -6,7 +6,7 @@ import FormationsItems from "./FormationsItems";
 
 import './formations.css';
 
-import formationsImg from "../../../assets/images/formations-img.jpeg";
+import formationsImg from "../../../assets/images/pages/about/formations-img.jpeg";
 
 const Formations = ({ openFormations, setOpenFormations }) => {
     const curriculums = useSelector((state) => state.curriculum.data);

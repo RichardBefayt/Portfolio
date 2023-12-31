@@ -1,7 +1,7 @@
 import websitesData from "../data/websitesData";
 
 export const initialState = {
-    websitesData,
+    websitesData: websitesData[0],
 };
 
 const websitesReducer = (state = initialState, action = {}) => {

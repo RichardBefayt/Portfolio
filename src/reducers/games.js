@@ -1,7 +1,7 @@
 import gamesData from "../data/gamesData";
 
 export const initialState = {
-    gamesData,
+    gamesData: gamesData[0],
 };
 
 const gamesReducer = (state = initialState, action = {}) => {

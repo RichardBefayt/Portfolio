@@ -1,10 +1,12 @@
 // import projectsData from '../data/projectsData';
+import applicationsData from "../data/applicationsData";
 import websitesData from "../data/websitesData";
 import gamesData from "../data/gamesData";
 
 export const initialState = {
-    websitesData,
-    gamesData,
+    applicationsData: applicationsData[0],
+    websitesData: websitesData[0],
+    gamesData: gamesData[0],
 };
 
 const projectsReducer = (state = initialState, action = {}) => {

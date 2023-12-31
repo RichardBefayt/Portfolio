@@ -8,8 +8,8 @@ import Personal from "./Personal";
 import './about.css';
 
 // import imgProfile from "../../assets/images/apropos-img.jpg";
-import imgJobs from "../../assets/images/travail.jpg";
-import imgBike from "../../assets/images/kawa.jpg";
+import imgJobs from "../../assets/images/pages/about/travail.jpg";
+import imgBike from "../../assets/images/pages/about/kawa.jpg";
 
 const About = () => {
     const [openInfos, setOpenInfos] = useState(false);

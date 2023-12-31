@@ -1,7 +1,7 @@
 
 import './personal.css';
 
-import personalImg from "../../../assets/images/loisirs-img.jpg";
+import personalImg from "../../../assets/images/pages/about/loisirs-img.jpg";
 
 import { CgGames } from "react-icons/cg";
 import { MdDirectionsBike, MdHistoryEdu, MdLocalMovies } from "react-icons/md";
