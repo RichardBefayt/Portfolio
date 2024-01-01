@@ -28,13 +28,17 @@ const About = () => {
                 <div className="about-top">
                     <div className="about-left">
                         <div className="about-img-container">
-                            <img src={imgProfile} alt="" />
+                            <div className="img-border">
+                                <img src={imgProfile} alt="" />
+                            </div>
                         </div>
                     </div>
 
                     <div className="about-right">
-                        <h2>Richard BEFAYT</h2>
-                        <h3>Développeur Web Front-End</h3>
+                        <div className="about-subtitles">
+                            <h2>Richard BEFAYT</h2>
+                            <h3>Développeur Web Front-End</h3>
+                        </div>
 
                         <div className="about-presentation">
                             <p className="about-intro">
@@ -42,10 +46,10 @@ const About = () => {
                             </p>
 
                             <p className="about-intro">
-                                Passionné depuis toujours par la création, je me reconvertis aujourd'hui en tant que Développeur Web.
+                                Passionné depuis toujours par la création, je me suis reconvertis en tant que Développeur Web.
                             </p>
                             <p className="about-intro">
-                                Grâce à une pratique quotidienne, mon ambition est d'acquérir sans cesse de nouvelles compétences afin d'obtenir un niveau satisfaisant dans le domaine du Front-End.
+                                Grâce à une pratique quotidienne, j'ai pu acquérir de nouvelles compétences dans le domaine du Front-End.
                             </p>
                                 
                             <p className="about-intro">    

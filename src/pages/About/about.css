@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     width: 80%;
 }
 
@@ -29,24 +29,38 @@
 }
 
 .about-left {
-    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 
 .about-img-container {
+    width: 40%; /* Utilisation de 40% de la largeur pour l'image */
     position: relative;
-    top: 30px;
-    left: 0;
-    width: 350px;
-    height: 240px;
+    max-width: 350px; /* Ajout d'une largeur maximale */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+}
+
+.img-border {
+    position: absolute;
+    top: -50px; /* Ajustez selon vos besoins */
+    left: -150px; /* Ajustez selon vos besoins */
+    width: calc(100% + 150px); /* Ajout de la largeur du cadre */
+    height: calc(100% + 150px); /* Ajout de la hauteur du cadre */
     border: 1px solid #fff;
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    z-index: -1; /* Décalage sous l'image */
 }
 
 .about-img-container img {
     position: absolute;
-    top: -30px;
-    left: 30px;
+    top: -50px; /* Ajustez selon vos besoins */
+    left: 25px; /* Ajustez selon vos besoins */
+    width: calc(100% + 150px); /* Ajout de la largeur du cadre */
+    height: calc(100% + 150px); /* Ajout de la hauteur du cadre */
     width: 100%;
+    height: auto;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
 }
 
@@ -73,7 +87,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 15px;
-    width: 90%;
+    width: 100%;
     font-size: 0.9em;
 }
 
@@ -88,7 +102,7 @@
 }
 
 .about-bottom {
-    max-width: 100%;
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -104,7 +118,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    min-width: 210px;
+    max-width: 300px;
     height: 210px;
     filter: brightness(120%);
     opacity: 0.6;
@@ -131,3 +146,27 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: var(--thirdColor);
 }
+
+@media only screen and (max-width: 767px) {
+    .about-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img-container {
+        margin-bottom: 20px; /* Pour l'espace entre l'image et les sous-titres */
+    }
+
+    .about-subtitles,
+    .about-presentation,
+    .about-btn {
+        width: 100%;
+    }
+
+    .about-subtitles,
+    .about-presentation {
+        text-align: center; /* Centrer le texte */
+    }
+}
+  
