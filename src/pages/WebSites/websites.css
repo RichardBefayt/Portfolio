@@ -28,3 +28,13 @@
     gap: 20px;
     padding: 20px;
 }
+
+.websites-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.websites-back svg {
+    margin-right: 10px;
+}

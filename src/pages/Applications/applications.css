@@ -28,3 +28,13 @@
     gap: 20px;
     padding: 20px;
 }
+
+.applications-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.applications-back svg {
+    margin-right: 10px;
+}

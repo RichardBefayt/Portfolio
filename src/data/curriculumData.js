@@ -8,7 +8,7 @@ export default [
         description: "Durant 3 mois nous avons appris les bases des langages : HTML, CSS, JavaScript, NodeJS, SQL... Puis un mois de spécialisation où j'ai choisi le Front avec React. Et enfin, un dernier mois sur la réalisation d'un projet fullstack en équipe.",
         job: 'Développeur Web Front-End',
         time: 'De votre réponse - à la retraite',
-        experience: "Une pratique quotidienne, 7 jours sur 7. Mon ambition est d'acquérir sans cesse de nouvelles compétences pour atteindre un niveau satisfaisant en tant que Développeur Web Front-End. Par la suite, j'aimerai développer celles du Back, dans le but de devenir Fullstack."
+        experience: "Une pratique quotidienne, mon ambition est d'acquérir sans cesse de nouvelles compétences pour atteindre un niveau satisfaisant en tant que Développeur Web Front-End. Par la suite, j'aimerai développer celles du Back, dans le but de devenir Fullstack."
     },
     {
         id: 2,

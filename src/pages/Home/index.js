@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { FaHome, FaPhone, FaMailBulk, FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaHome, FaPhone, FaEnvelope, FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaCodepen } from "react-icons/fa";
 
 import './home.css';
 
@@ -10,9 +10,7 @@ import imgPunaise from "../../assets/images/pages/home/punaise.png";
 const Home = () => (
     <div className='home'>
         <div className="home-title box">
-            <Link to="/">
-                <h1>PORTFOLIO</h1>
-            </Link>
+            <h1>PORTFOLIO</h1>
         </div>
 
         <div className="home-about box">
@@ -26,7 +24,7 @@ const Home = () => (
             </div>
 
             <div className="home-about-job">
-                <h3>Développeur Front-End</h3>
+                <h3>Développeur Web Front-End</h3>
             </div>
 
             <div className="home-about-infos">
@@ -43,7 +41,7 @@ const Home = () => (
                 </div>
                 <div className="details">
                     <Link to="/contact">
-                        <FaMailBulk className="fas" />
+                        <FaEnvelope className="fas" />
                         <span className="text">richardbefaytdev@gmail.com</span>
                     </Link>
                 </div>

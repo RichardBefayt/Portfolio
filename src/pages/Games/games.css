@@ -28,3 +28,13 @@
     gap: 20px;
     padding: 20px;
 }
+
+.games-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games-back svg {
+    margin-right: 10px;
+}
