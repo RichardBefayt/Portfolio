@@ -27,7 +27,6 @@ const About = () => {
 
                 <div className="about-top">
                     <div className="about-left">
-                        <div className="about-empty-box"></div>
                         <div className="about-img-container">
                             <img src={imgProfile} alt="" />
                         </div>
@@ -37,16 +36,22 @@ const About = () => {
                         <h2>Richard BEFAYT</h2>
                         <h3>Développeur Web Front-End</h3>
 
-                        <p className="about-intro">
-                            Bonjour et bienvenue sur mon Portfolio !
-                        </p>
+                        <div className="about-presentation">
+                            <p className="about-intro">
+                                Bonjour et bienvenue sur mon Portfolio !
+                            </p>
 
-                        <p className="about-intro">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus earum aut quis ratione molestias ea voluptas ipsam dicta ducimus similique..
-                        </p>
-                        <p className="about-intro">
-                            Grâce à une pratique quotidienne, mon ambition est d'acquérir sans cesse de nouvelles compétences pour atteindre un niveau satisfaisant en tant que Développeur Web Front-End. <br /> Par la suite, j'aimerai développer celles du Back, dans le but de devenir Fullstack.
-                        </p>
+                            <p className="about-intro">
+                                Passionné depuis toujours par la création, je me reconvertis aujourd'hui en tant que Développeur Web.
+                            </p>
+                            <p className="about-intro">
+                                Grâce à une pratique quotidienne, mon ambition est d'acquérir sans cesse de nouvelles compétences afin d'obtenir un niveau satisfaisant dans le domaine du Front-End.
+                            </p>
+                                
+                            <p className="about-intro">    
+                                Mon ambition est de devenir Fullstack.
+                            </p>
+                        </div>
 
                         <div className="about-btn">
                             <Link to="/contact">
@@ -67,10 +72,18 @@ const About = () => {
 
                 <div className="about-bottom">
                     <div className="about-boxes">
-                        <div className="about-box box-one"></div>
-                        <div className="about-box box-two"></div>
-                        <div className="about-box box-three"></div>
-                        <div className="about-box box-four"></div>
+                        <div className="about-box box-one">
+                            <h3>Informations</h3>
+                        </div>
+                        <div className="about-box box-two">
+                            <h3>Formations</h3>
+                        </div>
+                        <div className="about-box box-three">
+                            <h3>Compétences</h3>
+                        </div>
+                        <div className="about-box box-four">
+                            <h3>Loisirs</h3>
+                        </div>
                     </div>
                 </div>
 

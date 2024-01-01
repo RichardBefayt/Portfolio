@@ -83,6 +83,12 @@
     align-items: center;
 }
 
+.home-about-infos .details a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-about-infos .details-container {
     display: flex;
     flex-direction: column;
