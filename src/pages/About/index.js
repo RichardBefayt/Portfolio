@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 
 import './about.css';
 
-import { FaPenNib , FaDownload } from "react-icons/fa";
+import { FaPenNib } from "react-icons/fa";
 
 import imgProfile from "../../assets/images/pages/about/about-profil-img.jpeg";
+import DownloadCV from "./DownloadCV";
 // import imgJobs from "../../assets/images/pages/about/travail.jpg";
 // import imgBike from "../../assets/images/pages/about/kawa.jpg";
 
@@ -62,14 +63,9 @@ const About = () => {
                                 <button className="btn">
                                     Contact <FaPenNib />
                                 </button>
-
                             </Link>
 
-                            <Link to="/">
-                                <button className="btn btn-light">
-                                    CV <FaDownload />
-                                </button>
-                            </Link>
+                            <DownloadCV />
                         </div>
                     </div>
                 </div>
