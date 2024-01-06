@@ -47,7 +47,7 @@ const About = () => {
                             </p>
 
                             <p className="about-intro">
-                                Passionné depuis toujours par la création, je me suis reconvertis en tant que Développeur Web.
+                                Passionné depuis toujours par la création, je me suis reconverti en tant que Développeur Web.
                             </p>
                             <p className="about-intro">
                                 Grâce à une pratique quotidienne, j'ai pu acquérir de nouvelles compétences dans le domaine du Front-End.
