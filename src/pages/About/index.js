@@ -1,24 +1,29 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-// import { useState } from "react";
+
+import { useSelector, useDispatch } from "react-redux";
+
 import { Link } from "react-router-dom";
 
-// import Informations from "./Informations";
+import Informations from "./Informations";
 // import Formations from "./Formations";
 // import Personal from "./Personal";
+import DownloadCV from "./DownloadCV";
 
 import './about.css';
 
 import { FaPenNib } from "react-icons/fa";
 
 import imgProfile from "../../assets/images/pages/about/about-profil-img.jpeg";
-import DownloadCV from "./DownloadCV";
 // import imgJobs from "../../assets/images/pages/about/travail.jpg";
 // import imgBike from "../../assets/images/pages/about/kawa.jpg";
 
 const About = () => {
-    // const [openInfos, setOpenInfos] = useState(false);
-    // const [openFormations, setOpenFormations] = useState(false);
-    // const [openPersonal, setOpenPersonal] = useState(false);
+    const dispatch = useDispatch();
+    const { cvData, open } = useSelector((state) => state.curriculum);
+
+    const handleInformationsToggle = () => {
+        dispatch({ type: "TOGGLE_SETTINGS" });
+    };
 
     return (
         <div className='about'>
@@ -29,9 +34,7 @@ const About = () => {
                 <div className="about-top">
                     <div className="about-left">
                         <div className="about-img-container">
-                            <div className="img-border">
-                                <img src={imgProfile} alt="" />
-                            </div>
+                            <img src={imgProfile} alt="" />
                         </div>
                     </div>
 
@@ -72,19 +75,32 @@ const About = () => {
 
                 <div className="about-bottom">
                     <div className="about-boxes">
-                        <div className="about-box box-one">
-                            <h3>Informations</h3>
+
+                        <div
+                            className="about-box box-one" onClick={handleInformationsToggle}
+                        >
+                            <h3 className={open ? 'title-open' : ''}>{cvData.title}</h3>
+                            {open && (
+                                cvData.details.map((detail) => (
+                                    <Informations {...cvData.details[0]} isOpen={open} />
+                                ))
+                            )}
                         </div>
+
                         <div className="about-box box-two">
                             <h3>Formations</h3>
                         </div>
+
                         <div className="about-box box-three">
                             <h3>Compétences</h3>
                         </div>
+
                         <div className="about-box box-four">
                             <h3>Loisirs</h3>
                         </div>
+
                     </div>
+                    
                 </div>
 
             </div>

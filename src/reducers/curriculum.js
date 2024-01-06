@@ -1,7 +1,7 @@
 import curriculumData from "../data/curriculumData";
 
 export const initialState = {
-    data: curriculumData,
+    cvData: curriculumData[0],
     isClick: false,
     open: false,
 };
