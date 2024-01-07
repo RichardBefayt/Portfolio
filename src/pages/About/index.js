@@ -108,10 +108,6 @@ const About = () => {
                         <div className="about-box box-five">
                             <h3>Loisirs</h3>
                         </div>
-                        
-                        {/* <div className="about-box box-six">
-                            <h3>Loisirs</h3>
-                        </div> */}
 
                     </div>
                     

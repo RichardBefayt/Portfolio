@@ -41,10 +41,10 @@ export default [
         title: "Compétences",
         details: [
             {
-                firstLine: "",
-                secondLine: "",
-                thirdLine: "",
-                fourthLine: "",
+                firstLine: "Organisé",
+                secondLine: "Persévérant",
+                thirdLine: "Travail en équipe",
+                fourthLine: "Créatif",
             }
         ],
     },
@@ -60,18 +60,7 @@ export default [
             }
         ],
     },
-    {
-        id: 6,
-        title: "Loisirs",
-        details: [
-            {
-                firstLine: "",
-                secondLine: "",
-                thirdLine: "",
-                fourthLine: "",
-            }
-        ],
-    },
+
     // {
     //     entitled: '💻 Développeur Web',
     //     subtitle: "Formation Développeur Web Fullstack - O'clock",

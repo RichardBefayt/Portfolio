@@ -148,10 +148,7 @@
     background: linear-gradient(135deg, #f8fb4b 0%, #fde249 100%);
 }
 .box-five {
-    background: linear-gradient(135deg, #fbb54b 0%, #f57621 100%);
-}
-.box-six {
-    background: linear-gradient(135deg, #f8fb4b 0%, #fde249 100%);
+    background: linear-gradient(135deg, #d3d3d3 0%, #414141 100%);
 }
 
 .about-bottom h3 {
@@ -163,12 +160,12 @@
 
 .title-open {
     padding: 15px;
-    transform: translateY(100px);
+    transform: translateY(80px);
     animation: slideTitle 0.7s ease-in-out forwards;
 }
 @keyframes slideTitle {
     from {
-        transform: translateY(100px);
+        transform: translateY(80px);
     }
     to {
         transform: translateY(0);
@@ -176,12 +173,12 @@
 }
 
 .title-closed {
-    transform: translateY(-100px);
+    transform: translateY(-80px);
     animation: slideTitleClosed 0.7s ease-in-out forwards;
 }
 @keyframes slideTitleClosed {
     from {
-        transform: translateY(-100px);
+        transform: translateY(-80px);
     }
     to {
         transform: translateY(0);
@@ -228,6 +225,6 @@
 
     .about-box {
         width: 80%;
-        height: 250px;
+        height: 210px;
     }
 }
