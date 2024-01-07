@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Link } from "react-router-dom";
 
+// import AboutItems from "./AboutItems";
 import Informations from "./Informations";
 // import Formations from "./Formations";
 // import Personal from "./Personal";
@@ -77,27 +78,40 @@ const About = () => {
                     <div className="about-boxes">
 
                         <div
-                            className="about-box box-one" onClick={handleInformationsToggle}
+                            className="about-box box-one"
+                            onClick={handleInformationsToggle}
                         >
-                            <h3 className={open ? 'title-open' : ''}>{cvData.title}</h3>
+                            <h3
+                                className={open ? 'title-open' : 'title-closed'}
+                            >
+                                {cvData.title}
+                            </h3>
                             {open && (
-                                cvData.details.map((detail) => (
-                                    <Informations {...cvData.details[0]} isOpen={open} />
+                                cvData.details.map((detail, index) => (
+                                    <Informations key={index} {...detail} isOpen={open} />
                                 ))
                             )}
                         </div>
 
-                        <div className="about-box box-two">
+                        <div className="about-box box-two onClick={handleInformationsToggle}">
                             <h3>Formations</h3>
                         </div>
 
                         <div className="about-box box-three">
+                            <h3>Technos</h3>
+                        </div>
+                        
+                        <div className="about-box box-four">
                             <h3>Compétences</h3>
                         </div>
 
-                        <div className="about-box box-four">
+                        <div className="about-box box-five">
                             <h3>Loisirs</h3>
                         </div>
+                        
+                        {/* <div className="about-box box-six">
+                            <h3>Loisirs</h3>
+                        </div> */}
 
                     </div>
                     

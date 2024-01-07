@@ -113,24 +113,26 @@
 }
 
 .about-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     gap: 10px;
+    width: 80%;
 }
+
 
 .about-box {
     cursor: pointer;
-    flex: 1 0 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 210px;
+    border: 0.5px solid #ffffff;
+    box-shadow: -9px 9px 4px 0 rgba(255, 255, 255, 0.3);
     filter: brightness(120%);
     opacity: 0.6;
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.5);
 }
 
 .box-one {
@@ -145,20 +147,52 @@
 .box-four {
     background: linear-gradient(135deg, #f8fb4b 0%, #fde249 100%);
 }
+.box-five {
+    background: linear-gradient(135deg, #fbb54b 0%, #f57621 100%);
+}
+.box-six {
+    background: linear-gradient(135deg, #f8fb4b 0%, #fde249 100%);
+}
 
 .about-bottom h3 {
     font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: var(--thirdColor);
 }
 
 .title-open {
     padding: 15px;
+    transform: translateY(100px);
+    animation: slideTitle 0.7s ease-in-out forwards;
+}
+@keyframes slideTitle {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.title-closed {
+    transform: translateY(-100px);
+    animation: slideTitleClosed 0.7s ease-in-out forwards;
+}
+@keyframes slideTitleClosed {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .about-container {
+        gap: 40px;
+    }
+
     .about-top {
         display: flex;
         flex-direction: column;
@@ -193,7 +227,7 @@
     }
 
     .about-box {
-        max-width: 250px;
+        width: 80%;
         height: 250px;
     }
 }

@@ -5,10 +5,70 @@ export default [
         title: "Informations",
         details: [
             {
-                fullName: "🧑 Richard Befayt",
-                street: "🏠 59 avenue Roger Guichard - 95610 Éragny",
-                phone: "☎️ 06 35 02 11 58",
-                mail: "✉️ richardbefaytdev@gmail.com",
+                firstLine: "🧑 Richard Befayt",
+                secondLine: "🏠 59 avenue Roger Guichard - 95610 Éragny",
+                thirdLine: "☎️ 06 35 02 11 58",
+                fourthLine: "✉️ richardbefaytdev@gmail.com",
+            }
+        ],
+    },
+    {
+        id: 2,
+        title: "Formations",
+        details: [
+            {
+                firstLine: "🏫 O'Clock",
+                secondLine: "💻 Formations en ligne",
+                thirdLine: "💻 Tutos",
+                fourthLine: "🎓 Opquast",
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: "Technos",
+        details: [
+            {
+                firstLine: "HTML",
+                secondLine: "CSS",
+                thirdLine: "JavaScript",
+                fourthLine: "React",
+            }
+        ],
+    },
+    {
+        id: 4,
+        title: "Compétences",
+        details: [
+            {
+                firstLine: "",
+                secondLine: "",
+                thirdLine: "",
+                fourthLine: "",
+            }
+        ],
+    },
+    {
+        id: 5,
+        title: "",
+        details: [
+            {
+                firstLine: "",
+                secondLine: "",
+                thirdLine: "",
+                fourthLine: "",
+            }
+        ],
+    },
+    {
+        id: 6,
+        title: "Loisirs",
+        details: [
+            {
+                firstLine: "",
+                secondLine: "",
+                thirdLine: "",
+                fourthLine: "",
             }
         ],
     },

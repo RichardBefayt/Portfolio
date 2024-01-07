@@ -1,14 +1,14 @@
 import "./informations.css";
 
-const Informations = ({ fullName, street, phone, mail, isOpen }) => {
-    const informationClass = isOpen ? "informations open" : "informations";
+const Informations = ({ firstLine, secondLine, thirdLine, fourthLine, isOpen }) => {
+    const informationClass = isOpen ? "informations open" : "informations closed";
 
     return (
         <div className={informationClass}>
-            <strong>{fullName}</strong>
-            <p>{street}</p>
-            <p>{phone}</p>
-            <p>{mail}</p>
+            <p>{firstLine}</p>
+            <p>{secondLine}</p>
+            <p>{thirdLine}</p>
+            <p>{fourthLine}</p>
         </div>
     );
 };
