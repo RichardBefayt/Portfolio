@@ -50,13 +50,13 @@ export default [
     },
     {
         id: 5,
-        title: "",
+        title: "Loisirs",
         details: [
             {
-                firstLine: "",
-                secondLine: "",
-                thirdLine: "",
-                fourthLine: "",
+                firstLine: "Moto",
+                secondLine: "Histoire",
+                thirdLine: "Astronomie",
+                fourthLine: "Jeux Vidéo",
             }
         ],
     },

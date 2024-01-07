@@ -1,29 +1,36 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-
-import { useSelector, useDispatch } from "react-redux";
-
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-// import AboutItems from "./AboutItems";
-import Informations from "./Informations";
-// import Formations from "./Formations";
-// import Personal from "./Personal";
 import DownloadCV from "./DownloadCV";
+import AboutItems from "./AboutItems";
+import curriculumData from "../../data/curriculumData";
 
 import './about.css';
-
-import { FaPenNib } from "react-icons/fa";
-
 import imgProfile from "../../assets/images/pages/about/about-profil-img.jpeg";
-// import imgJobs from "../../assets/images/pages/about/travail.jpg";
-// import imgBike from "../../assets/images/pages/about/kawa.jpg";
 
 const About = () => {
-    const dispatch = useDispatch();
-    const { cvData, open } = useSelector((state) => state.curriculum);
+    const [cvData, setCVData] = useState([]);
+    
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await new Promise((resolve) =>
+                    setTimeout(() => resolve(curriculumData), 1000)
+                );
+                setCVData(data);
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données CV : ', error);
+            }
+        };
+        fetchData();
+    }, []);
 
-    const handleInformationsToggle = () => {
-        dispatch({ type: "TOGGLE_SETTINGS" });
+    const [openBox, setOpenBox] = useState({});
+
+    const handleInformationsToggle = (boxId) => {
+        setOpenBox(prevState => ({
+            ...prevState,
+            [boxId]: !prevState[boxId]
+        }));
     };
 
     return (
@@ -65,7 +72,7 @@ const About = () => {
                         <div className="about-btn">
                             <Link to="/contact">
                                 <button className="btn">
-                                    Contact <FaPenNib />
+                                    Contact
                                 </button>
                             </Link>
 
@@ -75,39 +82,19 @@ const About = () => {
                 </div>
 
                 <div className="about-bottom">
-                    <div className="about-boxes">
-
+                <div className="about-boxes">
+                    {cvData.map((item) => (
                         <div
-                            className="about-box box-one"
-                            onClick={handleInformationsToggle}
+                            key={item.id}
+                            className={`about-box box-${item.id}`}
+                            onClick={() => handleInformationsToggle(item.id)}
                         >
-                            <h3
-                                className={open ? 'title-open' : 'title-closed'}
-                            >
-                                {cvData.title}
+                            <h3 className={openBox[item.id] ? 'title-open' : 'title-closed'}>
+                                {item.title}
                             </h3>
-                            {open && (
-                                cvData.details.map((detail, index) => (
-                                    <Informations key={index} {...detail} isOpen={open} />
-                                ))
-                            )}
+                            {openBox[item.id] && <AboutItems {...item} isOpen={openBox[item.id]} />}
                         </div>
-
-                        <div className="about-box box-two onClick={handleInformationsToggle}">
-                            <h3>Formations</h3>
-                        </div>
-
-                        <div className="about-box box-three">
-                            <h3>Technos</h3>
-                        </div>
-                        
-                        <div className="about-box box-four">
-                            <h3>Compétences</h3>
-                        </div>
-
-                        <div className="about-box box-five">
-                            <h3>Loisirs</h3>
-                        </div>
+                        ))}
 
                     </div>
                     
@@ -118,4 +105,5 @@ const About = () => {
         </div>
     );
 };
+
 export default About;

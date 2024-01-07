@@ -1,14 +1,20 @@
 import "./about-items.css";
 
-const AboutItems = ({ firstLine, secondLine, thirdLine, fourthLine, isOpen }) => {
-    const aboutItemsClass = isOpen ? "about-items open" : "about-items closed";
+const AboutItems = ({ title, details = [], isOpen }) => {
+    const aboutItems = isOpen ? "about-items open" : "about-items closed";
 
     return (
-        <div className={aboutItemsClass}>
-            <p>{firstLine}</p>
-            <p>{secondLine}</p>
-            <p>{thirdLine}</p>
-            <p>{fourthLine}</p>
+        <div className={aboutItems}>
+            {isOpen &&
+                details.map((detail, index) => (
+                    <div className="about-items-details" key={index}>
+                        <p>{detail.firstLine}</p>
+                        <p>{detail.secondLine}</p>
+                        <p>{detail.thirdLine}</p>
+                        <p>{detail.fourthLine}</p>
+                    </div>
+                ))
+            }
         </div>
     );
 };
