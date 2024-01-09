@@ -82,18 +82,18 @@ const About = () => {
                 </div>
 
                 <div className="about-bottom">
-                <div className="about-boxes">
-                    {cvData.map((item) => (
-                        <div
-                            key={item.id}
-                            className={`about-box box-${item.id}`}
-                            onClick={() => handleInformationsToggle(item.id)}
-                        >
-                            <h3 className={openBox[item.id] ? 'title-open' : 'title-closed'}>
-                                {item.title}
-                            </h3>
-                            {openBox[item.id] && <AboutItems {...item} isOpen={openBox[item.id]} />}
-                        </div>
+                    <div className="about-boxes">
+                        {cvData.map((item) => (
+                            <div
+                                key={item.id}
+                                className={`about-box box-${item.id}`}
+                                onClick={() => handleInformationsToggle(item.id)}
+                            >
+                                <h3 className={openBox[item.id] ? 'title-open' : 'title-closed'}>
+                                    {item.title}
+                                </h3>
+                                {openBox[item.id] && <AboutItems {...item} isOpen={openBox[item.id]} />}
+                            </div>
                         ))}
 
                     </div>
