@@ -1,37 +1,28 @@
-import { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+
+
+
 import { Link } from "react-router-dom";
+
+import AboutBoxes from "./AboutBoxes";
+// import AboutItems from "./AboutItems";
+// import Informations from "./Informations";
+// import Formations from "./Formations";
+// import HardSkills from "./HardSkills";
+// import SoftSkills from "./SoftSkills";
+// import Personal from "./Personal";
 import DownloadCV from "./DownloadCV";
-import AboutItems from "./AboutItems";
-import curriculumData from "../../data/curriculumData";
 
 import './about.css';
+
+import { FaPenNib } from "react-icons/fa";
+
 import imgProfile from "../../assets/images/pages/about/about-profil-img.jpeg";
+// import imgJobs from "../../assets/images/pages/about/travail.jpg";
+// import imgBike from "../../assets/images/pages/about/kawa.jpg";
 
 const About = () => {
-    const [cvData, setCVData] = useState([]);
     
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = await new Promise((resolve) =>
-                    setTimeout(() => resolve(curriculumData), 1000)
-                );
-                setCVData(data);
-            } catch (error) {
-                console.error('Erreur lors de la récupération des données CV : ', error);
-            }
-        };
-        fetchData();
-    }, []);
-
-    const [openBox, setOpenBox] = useState({});
-
-    const handleInformationsToggle = (boxId) => {
-        setOpenBox(prevState => ({
-            ...prevState,
-            [boxId]: !prevState[boxId]
-        }));
-    };
 
     return (
         <div className='about'>
@@ -72,7 +63,7 @@ const About = () => {
                         <div className="about-btn">
                             <Link to="/contact">
                                 <button className="btn">
-                                    Contact
+                                    Contact <FaPenNib />
                                 </button>
                             </Link>
 
@@ -82,21 +73,73 @@ const About = () => {
                 </div>
 
                 <div className="about-bottom">
-                    <div className="about-boxes">
-                        {cvData.map((item) => (
-                            <div
-                                key={item.id}
-                                className={`about-box box-${item.id}`}
-                                onClick={() => handleInformationsToggle(item.id)}
-                            >
-                                <h3 className={openBox[item.id] ? 'title-open' : 'title-closed'}>
-                                    {item.title}
-                                </h3>
-                                {openBox[item.id] && <AboutItems {...item} isOpen={openBox[item.id]} />}
-                            </div>
-                        ))}
+                    <AboutBoxes />
+                    
+                    {/* <div className="about-boxes">
 
-                    </div>
+                        <div
+                            className="about-box box-one"
+                            onClick={handleInformationsToggle}
+                        >
+                            <h3
+                                className={open ? 'title-open' : 'title-closed'}
+                            >
+                                {cvData[0].title}
+                            </h3>
+                            {open && (
+                                cvData.map((item) => (
+                                    item.details.map((detail, index) => (
+                                        <Informations key={index} {...detail} isOpen={open} />
+                                    ))
+                                ))
+                            )}
+                        </div>
+
+                        <div className="about-box box-two">
+                            <h3>{cvData[1].title}</h3>
+                            {open && (
+                                cvData.map((item) => (
+                                    item.details.map((detail, index) => (
+                                        <Formations key={index} {...detail} isOpen={open} />
+                                    ))
+                                ))
+                            )}
+                        </div>
+
+                        <div className="about-box box-three">
+                            <h3>{cvData[2].title}</h3>
+                            {open && (
+                                cvData.map((item) => (
+                                    item.details.map((detail, index) => (
+                                        <HardSkills key={index} {...detail} isOpen={open} />
+                                    ))
+                                ))
+                            )}
+                        </div>
+                        
+                        <div className="about-box box-four">
+                            <h3>{cvData[3].title}</h3>
+                            {open && (
+                                cvData.map((item) => (
+                                    item.details.map((detail, index) => (
+                                        <SoftSkills key={index} {...detail} isOpen={open} />
+                                    ))
+                                ))
+                            )}
+                        </div>
+
+                        <div className="about-box box-five">
+                            <h3>{cvData[4].title}</h3>
+                            {open && (
+                                cvData.map((item) => (
+                                    item.details.map((detail, index) => (
+                                        <Personal key={index} {...detail} isOpen={open} />
+                                    ))
+                                ))
+                            )}
+                        </div>
+
+                    </div> */}
                     
                 </div>
 
@@ -105,5 +148,4 @@ const About = () => {
         </div>
     );
 };
-
 export default About;

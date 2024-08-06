@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 
 import './download-cv.css';
-import CV from "../../../assets/pdf/CV_Richard_Befayt.jpg"
+import CV from "../../../assets/pdf/CV_Richard_Befayt.pdf"
 import { FaDownload } from "react-icons/fa";
 
 const DownloadCV = () => (

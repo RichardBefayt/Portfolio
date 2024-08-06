@@ -5,10 +5,10 @@ export default [
         title: "Informations",
         details: [
             {
-                firstLine: "🧑 Richard Befayt",
-                secondLine: "🏠 59 avenue Roger Guichard - 95610 Éragny",
-                thirdLine: "☎️ 06 35 02 11 58",
-                fourthLine: "✉️ richardbefaytdev@gmail.com",
+                fullname: "🧑 Richard Befayt",
+                adress: "🏠 59 avenue Roger Guichard - 95610 Éragny",
+                tel: "☎️ 06 35 02 11 58",
+                mail: "✉️ richardbefaytdev@gmail.com",
             }
         ],
     },
@@ -17,10 +17,10 @@ export default [
         title: "Formations",
         details: [
             {
-                firstLine: "🏫 O'Clock",
-                secondLine: "💻 Formations en ligne",
-                thirdLine: "💻 Tutos",
-                fourthLine: "🎓 Opquast",
+                school: "🏫 O'Clock",
+                online: "💻 Formations en ligne",
+                tutos: "💻 Tutos",
+                degree: "🎓 Opquast",
             }
         ],
     },
@@ -29,10 +29,11 @@ export default [
         title: "Technos",
         details: [
             {
-                firstLine: "HTML",
-                secondLine: "CSS",
-                thirdLine: "JavaScript",
-                fourthLine: "React",
+                technoOne: "HTML",
+                technoTwo: "CSS",
+                technoThree: "JavaScript",
+                technoFour: "React",
+                technoFive: "SQL",
             }
         ],
     },
@@ -41,10 +42,10 @@ export default [
         title: "Compétences",
         details: [
             {
-                firstLine: "Organisé",
-                secondLine: "Persévérant",
-                thirdLine: "Travail en équipe",
-                fourthLine: "Créatif",
+                skillOne: "Organisé",
+                killTwo: "Persévérant",
+                killThree: "Travail en équipe",
+                killFour: "Créatif",
             }
         ],
     },
@@ -53,10 +54,10 @@ export default [
         title: "Loisirs",
         details: [
             {
-                firstLine: "Moto",
-                secondLine: "Histoire",
-                thirdLine: "Astronomie",
-                fourthLine: "Jeux Vidéo",
+                activityOne: "Moto",
+                activityTwo: "Histoire",
+                activityThree: "Astronomie",
+                activityFour: "Jeux Vidéo",
             }
         ],
     },

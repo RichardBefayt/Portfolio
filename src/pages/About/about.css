@@ -135,19 +135,19 @@
     opacity: 0.6;
 }
 
-.box-1 {
+.box-one {
     background: linear-gradient(135deg, #2fc691 0%, #2ad544 100%);
 }
-.box-2 {
+.box-two {
     background: linear-gradient(135deg, #f353b1 0%, #c259e8 100%);
 }
-.box-3 {
+.box-three {
     background: linear-gradient(135deg, #35dcfd 0%, #369cfc 100%);
 }
-.box-4 {
+.box-four {
     background: linear-gradient(135deg, #f8fb4b 0%, #fde249 100%);
 }
-.box-5 {
+.box-five {
     background: linear-gradient(135deg, #d3d3d3 0%, #414141 100%);
 }
 
@@ -161,7 +161,7 @@
 .title-open {
     padding: 15px;
     transform: translateY(80px);
-    animation: slideTitle 0.31s ease-in-out forwards;
+    animation: slideTitle 0.7s ease-in-out forwards;
 }
 @keyframes slideTitle {
     from {
